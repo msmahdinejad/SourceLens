@@ -1,0 +1,266 @@
+{
+  "title": "How EV Fast Charging at Stores Turns Shopping into Road-Trip Time: Key Insights for Drivers, Retailers, and Planners",
+  "root": "ev_fast_charging_benefits",
+  "nodes": [
+    {
+      "id": "ev_fast_charging_benefits",
+      "label": "EV Fast Charging at Retail Stores",
+      "description": "Fast charging stations at retail stores transform routine shopping stops into productive road-trip time by allowing drivers to charge their vehicles while completing errands or grabbing a meal.",
+      "citations": []
+    },
+    {
+      "id": "consumer_preferences",
+      "label": "Consumer Preferences for Fast Charging",
+      "description": "Consumers prefer DC fast charging over AC charging for public charging stations, especially during long-distance travel, to reduce waiting time. AC charging is favored for home use due to cost-effectiveness and convenience [S1].",
+      "citations": [
+        "S1"
+      ]
+    },
+    {
+      "id": "charging_time_reduction",
+      "label": "Reduction in Charging Time",
+      "description": "DC fast charging significantly shortens charging time compared to AC charging, addressing consumer dissatisfaction with slow charging speeds [S1].",
+      "citations": [
+        "S1"
+      ]
+    },
+    {
+      "id": "retailer_convenience",
+      "label": "Retailer Convenience and Customer Retention",
+      "description": "Retailers like Walmart and Ricker’s offer EV charging to attract customers who can shop or dine while their vehicles charge, enhancing convenience and customer loyalty [S3][S5][S10][S12].",
+      "citations": [
+        "S3",
+        "S5",
+        "S10",
+        "S12"
+      ]
+    },
+    {
+      "id": "cost_savings",
+      "label": "Cost Savings for Drivers",
+      "description": "Retailers aim to provide low-cost charging options, helping drivers save on transportation costs, which are the second-highest household expense for many Americans [S3][S10].",
+      "citations": [
+        "S3",
+        "S10"
+      ]
+    },
+    {
+      "id": "retailer_network_expansion",
+      "label": "Retailer-Led Network Expansion",
+      "description": "Walmart plans to install thousands of EV fast-charging stations at its stores and clubs by 2030, expanding domestic EV charging capacity and improving accessibility [S3][S10][S17][S23].",
+      "citations": [
+        "S3",
+        "S10",
+        "S17",
+        "S23"
+      ]
+    },
+    {
+      "id": "accessibility",
+      "label": "Accessibility and Coverage",
+      "description": "Retailers like Walmart, with locations within 10 miles of 90% of Americans, are uniquely positioned to provide convenient and accessible charging options for rural, suburban, and urban drivers [S10][S23].",
+      "citations": [
+        "S10",
+        "S23"
+      ]
+    },
+    {
+      "id": "driver_hesitation",
+      "label": "Addressing Driver Hesitation",
+      "description": "Easy access to fast charging at safe, well-lit retail locations helps overcome driver hesitation about EV adoption due to concerns about finding chargers during trips [S10][S23].",
+      "citations": [
+        "S10",
+        "S23"
+      ]
+    },
+    {
+      "id": "charging_speed_preferences",
+      "label": "Charging Speed Preferences",
+      "description": "Drivers prefer the fastest possible DC charging compatible with their vehicles, up to 350+ kW, to minimize charging time during road trips [S4][S11][S18].",
+      "citations": [
+        "S4",
+        "S11",
+        "S18"
+      ]
+    },
+    {
+      "id": "retailer_partnerships",
+      "label": "Retailer Partnerships and Incentives",
+      "description": "Retailers like Ricker’s partnered with automakers (e.g., Nissan) to install fast-charging stations at minimal cost, leveraging incentives to expand charging infrastructure [S5][S12][S19].",
+      "citations": [
+        "S5",
+        "S12",
+        "S19"
+      ]
+    },
+    {
+      "id": "customer_demand_growth",
+      "label": "Growth in Customer Demand",
+      "description": "Retailers like Ricker’s have seen steady increases in customer usage of EV charging stations, indicating growing demand for accessible charging options [S5][S12].",
+      "citations": [
+        "S5",
+        "S12"
+      ]
+    },
+    {
+      "id": "grid_friendly_charging",
+      "label": "Grid-Friendly Charging Solutions",
+      "description": "Charge point management systems (CPMS) can optimize grid reliability by managing EV charging demand, especially for AC chargers, to support grid stability [S2][S22].",
+      "citations": [
+        "S2",
+        "S22"
+      ]
+    },
+    {
+      "id": "infrastructure_standards",
+      "label": "Infrastructure Standards and Interoperability",
+      "description": "Adopting standardized technical requirements (e.g., IEC 61851, ISO 15118) ensures interoperability and avoids stranded assets in publicly funded EV charging infrastructure [S9][S16].",
+      "citations": [
+        "S9",
+        "S16"
+      ]
+    },
+    {
+      "id": "site_selection_guidance",
+      "label": "Site Selection Guidance for Retailers",
+      "description": "Retailers should follow site selection checklists and best practices to optimize charger placement, considering factors like accessibility, dwell time, and grid capacity [S13].",
+      "citations": [
+        "S13"
+      ]
+    },
+    {
+      "id": "battery_technology_limits",
+      "label": "Battery Technology Limitations",
+      "description": "Battery technology often limits DC charging speeds, as maximum acceptance rates decrease during charging and under adverse thermal conditions [S4][S11].",
+      "citations": [
+        "S4",
+        "S11"
+      ]
+    },
+    {
+      "id": "range_anxiety",
+      "label": "Addressing Range Anxiety",
+      "description": "Range anxiety stems from difficulty finding charging stations during long trips or in winter, highlighting the need for increased charging infrastructure density [S1][S21].",
+      "citations": [
+        "S1",
+        "S21"
+      ]
+    },
+    {
+      "id": "retailer_business_models",
+      "label": "Retailer Business Models for Charging",
+      "description": "Retailers can adopt various business models for EV charging, such as offering free charging to attract customers or implementing pay-per-use models [S5][S12][S13].",
+      "citations": [
+        "S5",
+        "S12",
+        "S13"
+      ]
+    },
+    {
+      "id": "future_proofing",
+      "label": "Future-Proofing Charging Infrastructure",
+      "description": "Retailers and planners should invest in modular, upgradable charging infrastructure to accommodate future advancements in EV technology and grid demands [S2][S16].",
+      "citations": [
+        "S2",
+        "S16"
+      ]
+    }
+  ],
+  "edges": [
+    {
+      "source": "ev_fast_charging_benefits",
+      "target": "consumer_preferences",
+      "label": "Driven by consumer demand for faster charging"
+    },
+    {
+      "source": "ev_fast_charging_benefits",
+      "target": "charging_time_reduction",
+      "label": "Reduces waiting time for drivers"
+    },
+    {
+      "source": "ev_fast_charging_benefits",
+      "target": "retailer_convenience",
+      "label": "Enhances customer experience at retail stores"
+    },
+    {
+      "source": "consumer_preferences",
+      "target": "charging_time_reduction",
+      "label": "DC fast charging preferred to minimize time"
+    },
+    {
+      "source": "charging_time_reduction",
+      "target": "driver_hesitation",
+      "label": "Reduces hesitation by addressing slow charging concerns"
+    },
+    {
+      "source": "retailer_convenience",
+      "target": "cost_savings",
+      "label": "Offers low-cost charging to attract customers"
+    },
+    {
+      "source": "retailer_convenience",
+      "target": "retailer_network_expansion",
+      "label": "Expands retailer-led charging networks"
+    },
+    {
+      "source": "retailer_network_expansion",
+      "target": "accessibility",
+      "label": "Improves accessibility for drivers nationwide"
+    },
+    {
+      "source": "accessibility",
+      "target": "driver_hesitation",
+      "label": "Reduces hesitation by improving charger availability"
+    },
+    {
+      "source": "driver_hesitation",
+      "target": "charging_speed_preferences",
+      "label": "Fast charging addresses range and time concerns"
+    },
+    {
+      "source": "charging_speed_preferences",
+      "target": "battery_technology_limits",
+      "label": "Limited by battery acceptance rates"
+    },
+    {
+      "source": "retailer_convenience",
+      "target": "retailer_partnerships",
+      "label": "Partnerships enable cost-effective installations"
+    },
+    {
+      "source": "retailer_partnerships",
+      "target": "customer_demand_growth",
+      "label": "Incentives drive customer usage growth"
+    },
+    {
+      "source": "retailer_network_expansion",
+      "target": "grid_friendly_charging",
+      "label": "Requires grid-friendly charging solutions"
+    },
+    {
+      "source": "grid_friendly_charging",
+      "target": "infrastructure_standards",
+      "label": "Standards ensure grid reliability and interoperability"
+    },
+    {
+      "source": "retailer_network_expansion",
+      "target": "site_selection_guidance",
+      "label": "Site selection critical for effective deployment"
+    },
+    {
+      "source": "range_anxiety",
+      "target": "retailer_network_expansion",
+      "label": "Expansion reduces range anxiety by increasing availability"
+    },
+    {
+      "source": "retailer_convenience",
+      "target": "retailer_business_models",
+      "label": "Business models determine charging cost structures"
+    },
+    {
+      "source": "infrastructure_standards",
+      "target": "future_proofing",
+      "label": "Standards support future-proof infrastructure"
+    }
+  ]
+}

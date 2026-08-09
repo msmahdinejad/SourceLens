@@ -1,0 +1,308 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "authored_for_sourcelens": false,
+  "source_kind": "wikidata",
+  "source_count": 13,
+  "documents": [
+    {
+      "document_id": "Q42",
+      "title": "Wikidata Q42: Q42",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q42. English label: Q42. Persian label: داگلاس آدامز. English description: British science fiction writer and humorist (1952–2001). Persian description: فیلمنامه‌نویس و نویسنده بریتانیایی."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q42 (Q42; داگلاس آدامز). English aliases: none recorded. Persian aliases: none recorded."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q42 (Q42). P31 (instance of) points to Q5 (human)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q42 (Q42). P569 (date of birth) = +1952-03-11T00:00:00Z. P570 (date of death) = +2001-05-11T00:00:00Z. Derived equation: Δyears = year(P570) - year(P569) = 2001 - 1952 = 49. Source revision 2528752352; modified 2026-08-08T10:46:54Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q937",
+      "title": "Wikidata Q937: Albert Einstein",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q937. English label: Albert Einstein. Persian label: آلبرت اینشتین. English description: German-born theoretical physicist (1879–1955). Persian description: فیزیکدان نظری آلمانی‌تبار (۱۹۵۵–۱۸۷۹)."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q937 (Albert Einstein; آلبرت اینشتین). English aliases: A. Einsten. Persian aliases: none recorded."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q937 (Albert Einstein). P27 (country of citizenship) points to Q39 (Switzerland). P27 (country of citizenship) points to Q183 (Germany). P27 (country of citizenship) points to Q30 (United States). P31 (instance of) points to Q5 (human)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q937 (Albert Einstein). P569 (date of birth) = +1879-03-14T00:00:00Z. P570 (date of death) = +1955-04-18T00:00:00Z. Derived equation: Δyears = year(P570) - year(P569) = 1955 - 1879 = 76. Source revision 2527638597; modified 2026-08-05T13:48:28Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q7186",
+      "title": "Wikidata Q7186: Marie Curie",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q7186. English label: Marie Curie. Persian label: ماری کوری. English description: Polish-French physicist and chemist (1867–1934). Persian description: فیزیکدان و شیمیدان فرانسوی-لهستانی."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q7186 (Marie Curie; ماری کوری). English aliases: Marie Sklodowska-Curie. Persian aliases: ماریا اسکودوسکا کوری, ماریا سالومیا کوری, مادام کوری."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q7186 (Marie Curie). P27 (country of citizenship) points to Q142 (France). P31 (instance of) points to Q5 (human)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q7186 (Marie Curie). P569 (date of birth) = +1867-11-07T00:00:00Z. P570 (date of death) = +1934-07-04T00:00:00Z. Derived equation: Δyears = year(P570) - year(P569) = 1934 - 1867 = 67. Source revision 2528551181; modified 2026-08-07T20:10:07Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q7259",
+      "title": "Wikidata Q7259: Ada Lovelace",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q7259. English label: Ada Lovelace. Persian label: ایدا لاولیس. English description: English mathematician (1815–1852). Persian description: ریاضی‌دان انگلیسی، به عنوان اولین برنامه‌نویس شناخته می‌شود."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q7259 (Ada Lovelace; ایدا لاولیس). English aliases: Lady Ada, Augusta Ada King, Countess of Lovelace, Ada Byron. Persian aliases: none recorded."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q7259 (Ada Lovelace). P31 (instance of) points to Q5 (human)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q7259 (Ada Lovelace). P569 (date of birth) = +1815-12-10T00:00:00Z. P570 (date of death) = +1852-11-27T00:00:00Z. Derived equation: Δyears = year(P570) - year(P569) = 1852 - 1815 = 37. Source revision 2524521660; modified 2026-07-29T21:21:42Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q76",
+      "title": "Wikidata Q76: Barack Obama",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q76. English label: Barack Obama. Persian label: باراک اوباما. English description: president of the United States from 2009 to 2017. Persian description: ۴۴اُمین رئیس‌جمهور ایالات متحدۀ آمریکا (۲۰۰۹–۲۰۱۷)."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q76 (Barack Obama; باراک اوباما). English aliases: POTUS 44. Persian aliases: باراک حسین اوباما."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q76 (Barack Obama). P27 (country of citizenship) points to Q30 (United States). P31 (instance of) points to Q5 (human)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q76 (Barack Obama). P569 (date of birth) = +1961-08-04T00:00:00Z. Source revision 2528128756; modified 2026-08-06T13:59:10Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q868",
+      "title": "Wikidata Q868: Aristotle",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q868. English label: Aristotle. Persian label: ارسطو. English description: 4th-century BCE Classical Greek philosopher and polymath. Persian description: فیلسوف یونانی."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q868 (Aristotle; ارسطو). English aliases: the Stagirite. Persian aliases: none recorded."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q868 (Aristotle). P31 (instance of) points to Q5 (human)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q868 (Aristotle). P569 (date of birth) = -0384-00-00T00:00:00Z. P569 (date of birth) = -0383-00-00T00:00:00Z. P570 (date of death) = -0322-00-00T00:00:00Z. P570 (date of death) = -0322-03-07T00:00:00Z. Derived equation: Δyears = year(P570) - year(P569) = 322 - 384 = -62. Source revision 2526641573; modified 2026-08-03T05:51:50Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q5",
+      "title": "Wikidata Q5: human",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q5. English label: human. Persian label: انسان. English description: any single member of Homo sapiens, unique extant species of the genus Homo. Persian description: گونه‌ای از پستانداران."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q5 (human; انسان). English aliases: human being, people, nonfictional human, non-fictional human, individual Homo sapiens, modern human. Persian aliases: آدم, بشر, خلق, مردم, کس, آدمیزاد, انس, ناس."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q5 (human). P5869 (property) points to Q42 (Q42). P5869 (property) points to Q7186 (Marie Curie)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q5 (human). No selected scalar claims recorded. Source revision 2528141456; modified 2026-08-06T14:37:43Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q30",
+      "title": "Wikidata Q30: United States",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q30. English label: United States. Persian label: ایالات متحده آمریکا. English description: country located primarily in North America. Persian description: کشوری در آمریکای شمالی."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q30 (United States; ایالات متحده آمریکا). English aliases: the States, the United States of America, US of America, the US, the U.S., the US of A, U.S. of America, the US of America. Persian aliases: امریکا, ایالات متحده, آمریکا."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q30 (United States). P17 (country) points to Q30 (United States). P530 (property) points to Q183 (Germany). P530 (property) points to Q668 (India). P530 (property) points to Q142 (France). P530 (property) points to Q39 (Switzerland). P530 (property) points to Q36 (Poland). P6 (property) points to Q76 (Barack Obama)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q30 (United States). P571 (inception) = +1776-07-04T00:00:00Z. P571 (inception) = +1784-05-12T00:00:00Z. Source revision 2528574265; modified 2026-08-07T21:29:39Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q183",
+      "title": "Wikidata Q183: Germany",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q183. English label: Germany. Persian label: آلمان. English description: country in Central Europe. Persian description: کشوری در مرکز قارهٔ اروپا."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q183 (Germany; آلمان). English aliases: Federal Republic of Germany, DE, DEU, FRG, BRD. Persian aliases: جمهوری فدرال آلمان."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q183 (Germany). P17 (country) points to Q183 (Germany). P47 (shares border with) points to Q36 (Poland). P47 (shares border with) points to Q39 (Switzerland). P47 (shares border with) points to Q142 (France). P530 (property) points to Q30 (United States). P530 (property) points to Q142 (France). P530 (property) points to Q39 (Switzerland). P530 (property) points to Q36 (Poland). P530 (property) points to Q668 (India)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q183 (Germany). P571 (inception) = +1949-05-23T00:00:00Z. P571 (inception) = +1933-00-00T00:00:00Z. P571 (inception) = +1918-00-00T00:00:00Z. P571 (inception) = +1871-01-01T00:00:00Z. P571 (inception) = +1867-07-01T00:00:00Z. P571 (inception) = +0641-00-00T00:00:00Z. P571 (inception) = +0800-12-25T00:00:00Z. Source revision 2528135490; modified 2026-08-06T14:18:31Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q39",
+      "title": "Wikidata Q39: Switzerland",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q39. English label: Switzerland. Persian label: سوئیس. English description: country in Central Europe. Persian description: کشوری در اروپای مرکزی."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q39 (Switzerland; سوئیس). English aliases: Swiss Confederation, Swiss, Confoederatio Helvetica. Persian aliases: سوییس."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q39 (Switzerland). P17 (country) points to Q39 (Switzerland). P47 (shares border with) points to Q183 (Germany). P47 (shares border with) points to Q142 (France). P530 (property) points to Q183 (Germany). P530 (property) points to Q142 (France). P530 (property) points to Q30 (United States)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q39 (Switzerland). P571 (inception) = +1291-08-01T00:00:00Z. P571 (inception) = +1848-09-12T00:00:00Z. Source revision 2528128636; modified 2026-08-06T13:58:52Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q36",
+      "title": "Wikidata Q36: Poland",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q36. English label: Poland. Persian label: لهستان. English description: country in Central Europe. Persian description: کشوری در اروپای مرکزی."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q36 (Poland; لهستان). English aliases: Republic of Poland. Persian aliases: لهستانی, پولند."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q36 (Poland). P17 (country) points to Q36 (Poland). P47 (shares border with) points to Q183 (Germany). P530 (property) points to Q183 (Germany). P530 (property) points to Q142 (France). P530 (property) points to Q30 (United States). P530 (property) points to Q668 (India)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q36 (Poland). P571 (inception) = +1000-00-00T00:00:00Z. P571 (inception) = +1918-11-11T00:00:00Z. P571 (inception) = +0960-00-00T00:00:00Z. P571 (inception) = +1025-00-00T00:00:00Z. P571 (inception) = +1807-00-00T00:00:00Z. P571 (inception) = +1815-00-00T00:00:00Z. P571 (inception) = +1917-01-14T00:00:00Z. P571 (inception) = +1918-11-00T00:00:00Z. P571 (inception) = +1947-07-22T00:00:00Z. P571 (inception) = +1989-12-31T00:00:00Z. Source revision 2528427745; modified 2026-08-07T13:33:03Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q142",
+      "title": "Wikidata Q142: France",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q142. English label: France. Persian label: فرانسه. English description: country in Western Europe and other continents (through its overseas territories in America, Africa and Oceania). Persian description: کشوری در غرب اروپا."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q142 (France; فرانسه). English aliases: French Republic. Persian aliases: جمهوري فرانسه, شب‌های سفید, کشور فرانسه, شبهای سفید, جمهوری فرانسه, فرانسوی."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q142 (France). P17 (country) points to Q142 (France). P47 (shares border with) points to Q183 (Germany). P47 (shares border with) points to Q39 (Switzerland). P530 (property) points to Q183 (Germany). P530 (property) points to Q30 (United States). P530 (property) points to Q36 (Poland). P530 (property) points to Q39 (Switzerland). P530 (property) points to Q668 (India)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q142 (France). P571 (inception) = +1958-10-04T00:00:00Z. P571 (inception) = +1792-00-00T00:00:00Z. P571 (inception) = +0843-08-00T00:00:00Z. P571 (inception) = +0481-00-00T00:00:00Z. P571 (inception) = +1804-05-18T00:00:00Z. Source revision 2528308322; modified 2026-08-06T23:59:00Z."
+        }
+      ]
+    },
+    {
+      "document_id": "Q668",
+      "title": "Wikidata Q668: India",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "Wikidata identity. Item identifier: Q668. English label: India. Persian label: هند. English description: country in South Asia. Persian description: کشوری در جنوب آسیا."
+        },
+        {
+          "page": 2,
+          "text": "Names and aliases for Q668 (India; هند). English aliases: Republic of India, Bharatvarsh, Hindustan, Bharata, Hindoostan, Indostan, Bharat Ganarajya, Al Hind. Persian aliases: هندوستان."
+        },
+        {
+          "page": 3,
+          "text": "Entity relations for Q668 (India). P17 (country) points to Q668 (India). P530 (property) points to Q183 (Germany). P530 (property) points to Q30 (United States). P530 (property) points to Q36 (Poland). P530 (property) points to Q142 (France)."
+        },
+        {
+          "page": 4,
+          "text": "Dates and scalar claims for Q668 (India). P571 (inception) = +1947-08-15T00:00:00Z. Source revision 2528007058; modified 2026-08-06T08:01:44Z."
+        }
+      ]
+    }
+  ]
+}

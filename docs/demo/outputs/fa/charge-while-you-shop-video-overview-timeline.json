@@ -1,0 +1,282 @@
+{
+  "title": "شارژ سریع در فروشگاه؛ وقتی توقف کوتاه به فرصتی تبدیل می‌شود",
+  "durationSeconds": 60,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "silentVideo": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-silent.mp4",
+  "musicVideo": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-with-music.mp4",
+  "finalVideo": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-final.mp4",
+  "audio": {
+    "backgroundMusic": true,
+    "musicProvider": "sourcelens-prepared",
+    "musicPlanPath": "",
+    "voiceoverMixed": true
+  },
+  "direction": {
+    "version": "7.0.4",
+    "mode": "autonomous",
+    "seed": "public",
+    "profile": "educational",
+    "style": "warm",
+    "styleLabel": "Warm Documentary",
+    "energy": "balanced",
+    "mediaPolicy": "video-first",
+    "music": {
+      "genre": "ambient",
+      "moods": [
+        "calm",
+        "focused",
+        "gentle"
+      ],
+      "instruments": [
+        "piano",
+        "pads"
+      ],
+      "speed": [
+        "low",
+        "medium"
+      ],
+      "instrumental": true,
+      "purpose": "voiceover-bed",
+      "foreground": false,
+      "rhythmDensity": "low",
+      "avoid": [
+        "vocals",
+        "gloomy",
+        "dark",
+        "dramatic",
+        "epic",
+        "aggressive",
+        "heavy percussion"
+      ],
+      "energyCurve": "low-steady-soft-resolve"
+    }
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "startSeconds": 0,
+      "endSeconds": 12.52,
+      "narrationStartSeconds": 0,
+      "narrationEndSeconds": 12,
+      "transitionInSeconds": 0,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-01.mp4",
+      "mediaCredit": "Esra Erdoğdu",
+      "mediaSourceUrl": "https://www.pexels.com/video/snowy-train-station-in-winter-black-white-35795702/",
+      "mediaSelectedQuery": "safety 359 hybrid 179 BYD 123 mode 102 Ei5 99 station Roewe design 596 hours 356 capacity 178 like 122 this 101 99 ei5 model 581 system 347",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "زمان توقف، زمان مفید",
+      "onScreenText": "شارژ سریع در فروشگاه‌ها",
+      "narration": "تصور کنید در سفر هستید و خودرویتان نیاز به شارژ دارد. اگر همین زمان را در فروشگاهی بگذرانید که ایستگاه شارژ دارد، هم خودرو شارژ می‌شود، هم شما خرید می‌کنید [S1].",
+      "mediaQueries": [
+        "safety 359 hybrid 179 BYD 123 mode 102 Ei5 99 station Roewe design 596 hours 356 capacity 178 like 122 this 101 99 ei5 model 581 system 347",
+        "'electric vehicle charging at a shopping center parking lot', 'driver plugging in EV while holding shopping bags', 'modern fast charging station with digital display'"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "hero-cinematic",
+        "motion": "type-reveal",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "soft",
+        "icon": "clock",
+        "typing": {
+          "enabled": true,
+          "target": "title",
+          "cps": 8.069014883064664,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.22
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 2,
+      "startSeconds": 12,
+      "endSeconds": 24.52,
+      "narrationStartSeconds": 12,
+      "narrationEndSeconds": 24,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-02.mp4",
+      "mediaCredit": "Mikhail Nilov",
+      "mediaSourceUrl": "https://www.pexels.com/video/man-using-cellphone-while-holding-his-credit-card-6898026/",
+      "mediaSelectedQuery": "For details see: is website Appropriately implement cybersecurity measures in the communication layers and the memory-devices of the e-mobility charging ecosystem, including VGI and SCM. E-mobility infrastructure cybersecurity",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "شارژ سریع، خرید راحت",
+      "onScreenText": "۳۰ دقیقه شارژ = یک خرید کوتاه",
+      "narration": "با شارژ سریع، در همان نیم‌ساعتی که خودرو شارژ می‌شود، می‌توانید خرید کنید یا استراحت داشته باشید. شرکت‌هایی مثل BYD و NIO این تجربه را ممکن کرده‌اند [S4].",
+      "mediaQueries": [
+        "For details see: is website Appropriately implement cybersecurity measures in the communication layers and the memory-devices of the e-mobility charging ecosystem, including VGI and SCM. E-mobility infrastructure cybersecurity",
+        "'timelapse of EV charging at a mall', 'shopper browsing store shelves while car charges', 'digital timer showing 30-minute countdown'"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "spotlight",
+        "motion": "fade",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "cinematic",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": false,
+          "target": "title",
+          "cps": 8.001235693506896,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 3,
+      "startSeconds": 24,
+      "endSeconds": 36.52,
+      "narrationStartSeconds": 24,
+      "narrationEndSeconds": 36,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-03.mp4",
+      "mediaCredit": "Nowrin Sanjana",
+      "mediaSourceUrl": "https://www.pexels.com/video/vibrant-night-street-scene-with-neon-lights-38031213/",
+      "mediaSelectedQuery": "time 408 BYD 219 X5 157 time 129 parameters 121 lot company 706 parameters 407 mode 216 owner 156 like 129 large 118 fast NIO 703 China 404",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "جذب مشتری بیشتر",
+      "onScreenText": "ایستگاه شارز = مشتری بیشتر",
+      "narration": "فروشگاه‌ها با نصب ایستگاه‌های شارز، مشتریان بیشتری را جذب می‌کنند. رانندگان برای شارز خودرو، زمان بیشتری در فروشگاه می‌مانند و خرید می‌کنند [S7].",
+      "mediaQueries": [
+        "time 408 BYD 219 X5 157 time 129 parameters 121 lot company 706 parameters 407 mode 216 owner 156 like 129 large 118 fast NIO 703 China 404",
+        "'aerial view of shopping center with EV charging spots', 'store manager reviewing sales data with charging station in background', 'happy customers shopping while EV charges'"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "lower-third",
+        "motion": "fade",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "mono",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": false,
+          "target": "title",
+          "cps": 8.601308302651159,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 4,
+      "startSeconds": 36,
+      "endSeconds": 48.52,
+      "narrationStartSeconds": 36,
+      "narrationEndSeconds": 48,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-04.mp4",
+      "mediaCredit": "Kindel Media",
+      "mediaSourceUrl": "https://www.pexels.com/video/video-of-signage-9789996/",
+      "mediaSelectedQuery": "For details see: is website Conduct coordinated RD&D on furthering and optimizing the capability of EVs and charging infrastructure to provide grid services. All of the following could",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "شارژ هوشمند و امن",
+      "onScreenText": "امنیت سایبری و شبکه دوطرفه",
+      "narration": "ایستگاه‌ها باید امن باشند. حفاظت از داده‌ها و سیستم‌های ارتباطی ضروری است. با مدیریت هوشمند، خودروها انرژی را به شبکه برگردانند؛ سود برای راننده، پایداری برای شهر [S2, S5].",
+      "mediaQueries": [
+        "For details see: is website Conduct coordinated RD&D on furthering and optimizing the capability of EVs and charging infrastructure to provide grid services. All of the following could",
+        "'cybersecurity interface on a charging station display', 'electric vehicle plugged into bidirectional charger', 'smart grid control room with EV charging data'"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "glass-card",
+        "motion": "type-reveal",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "soft",
+        "icon": "brain",
+        "typing": {
+          "enabled": true,
+          "target": "title",
+          "cps": 7.5554758827667685,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 5,
+      "startSeconds": 48,
+      "endSeconds": 60,
+      "narrationStartSeconds": 48,
+      "narrationEndSeconds": 60,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0,
+      "mediaType": "video",
+      "mediaPath": "scene-05.mp4",
+      "mediaCredit": "Kindel Media",
+      "mediaSourceUrl": "https://www.pexels.com/video/close-up-shot-of-a-car-at-a-charging-station-9790134/",
+      "mediaSelectedQuery": "'happy driver unplugging fully charged EV', 'aerial view of a shopping center with EV chargers', 'urban street with multiple charging stations'",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "گام بعدی چیست؟",
+      "onScreenText": "شارژ سریع، خرید هوشمند",
+      "narration": "این ایستگاه‌ها برای رانندگان زمان می‌خرند، برای فروشگاه‌ها مشتری جذب می‌کنند و برای شهرها شبکه‌ای پایدارتر می‌سازند. کافیست از فناوری‌های موجود بهره ببریم [S1, S4, S7].",
+      "mediaQueries": [
+        "Gao,H.Y.WesternEconomics MicroSection ,5thed.;ChinaRenminUniversityPress:Beijing,China,2011. Gao, D.Q.;Li,J.T.,Translators;ChinaMachinePress:Beijing,China,2016. 28. Trstenjak,B.;Mikac,S.;Donko,D.KNNwithTF-IDFBasedFrameworkforTextCategorization.ProcediaEng.2014,69,1356–1364. CrossRef 29. EVCIPA.2019–2020ChinaChargingInfrastructureDevelopmentReport.2020.Availableonline: cOHUkUWx865Y3qM5qaK_eA accessedon15December2020 . 30. Bryden,T.S.;Hilton,G.;Cruden,A.;Holton,T.Electricvehiclefastchargingstationusageandpowerrequirements.Energy2018, 152,322–332. CrossRef 31. Fu,Z.T.;Dong,P.W.;Ju,Y.B.Anintelligentelectricvehiclechargingsystemfornewenergycompaniesbasedonconsortium blockchain.J.Clean.Prod.2020,261,121219. CrossRef 32. Hardman,S.;Jenn,A.;Tal,G.;Axsen,J.;Beard,G.;Daina,N.;Witkamp,B.Areviewofconsumerpreferencesofandinteractions withelectricvehiclecharginginfrastructure.Transp.Res.PartDTransp.Environ.2018,62,508–523. CrossRef 33. D1EV.FirstElectricSurvey:88%ofElectricCarOwnersAreHinderedfromInstallingPrivateChargingPiles,and36%ofResis- tanceComesfromProperty!2019.Availableonline",
+        "'happy driver unplugging fully charged EV', 'aerial view of a shopping center with EV chargers', 'urban street with multiple charging stations'"
+      ],
+      "visual": {
+        "intent": "statement",
+        "layout": "closing-statement",
+        "motion": "type-reveal",
+        "transition": "fade",
+        "transitionDuration": 0.52,
+        "treatment": "cinematic",
+        "icon": "brain",
+        "typing": {
+          "enabled": true,
+          "target": "title",
+          "cps": 8.630870764539576,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    }
+  ]
+}

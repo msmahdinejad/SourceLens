@@ -1,0 +1,83 @@
+{
+  "title": "How EV Fast Charging at Stores Turns Shopping into Road-Trip Time: Key Insights for Drivers, Retailers, and Planners",
+  "cards": [
+    {
+      "front": "Why do EV drivers prefer DC fast charging over AC charging during long-distance trips?",
+      "back": "EV drivers prefer DC fast charging because it significantly shortens charging time compared to AC charging. This is especially important during long-distance travel, where reducing waiting time is a priority [S1]. AC charging is more economical and convenient for home use but is considered too slow for public charging stations during trips [S1].",
+      "citations": [
+        "[S1]"
+      ]
+    },
+    {
+      "front": "How does Walmart plan to make EV charging more convenient for its customers?",
+      "back": "Walmart plans to install EV fast-charging stations at thousands of its Supercenters, Neighborhood Markets, and Sam’s Clubs. This allows customers to shop for essentials or grab a meal while their vehicle charges, turning a routine stop into productive time [S3][S10].",
+      "citations": [
+        "[S3]",
+        "[S10]"
+      ]
+    },
+    {
+      "front": "What is one major concern EV drivers have about current charging infrastructure?",
+      "back": "EV drivers are concerned about charging speed being too slow, especially during peak times like holidays when highway service areas are congested and queueing for charging takes a lot of time [S1].",
+      "citations": [
+        "[S1]"
+      ]
+    },
+    {
+      "front": "How does Tesla’s Destination Charging program enhance the EV ownership experience?",
+      "back": "Tesla’s Destination Charging program allows drivers to charge their vehicles at locations like hotels, restaurants, and stores while they relax or shop. This turns a necessary charging stop into a seamless part of their journey [S7][S14].",
+      "citations": [
+        "[S7]",
+        "[S14]"
+      ]
+    },
+    {
+      "front": "What role do convenience stores like Ricker’s play in supporting EV adoption?",
+      "back": "Convenience stores like Ricker’s provide accessible and strategically located DC fast-charging stations, making EV ownership more practical. Their partnership with Nissan’s No Charge to Charge program helped establish a reliable charging network, increasing customer convenience and EV adoption [S5][S12].",
+      "citations": [
+        "[S5]",
+        "[S12]"
+      ]
+    },
+    {
+      "front": "What is the primary benefit of installing EV chargers at retail locations for businesses?",
+      "back": "Installing EV chargers at retail locations attracts EV drivers, who may spend time (and money) shopping or dining while their vehicle charges. This can increase foot traffic and customer loyalty, turning charging time into revenue for the business [S3][S10].",
+      "citations": [
+        "[S3]",
+        "[S10]"
+      ]
+    },
+    {
+      "front": "Why is it important for retailers to offer \"Every Day Low Price\" charging?",
+      "back": "Offering \"Every Day Low Price\" charging helps ease transportation costs for customers, which is the second-highest household expense for many Americans. This aligns with retailers' goals of providing affordable and convenient services [S3][S10].",
+      "citations": [
+        "[S3]",
+        "[S10]"
+      ]
+    },
+    {
+      "front": "What is \"range anxiety,\" and how does fast charging at stores help reduce it?",
+      "back": "Range anxiety is the fear of not finding a charging station in time to recharge an EV, especially during long trips or in winter when battery range is reduced. Fast charging at stores provides a reliable and convenient option for drivers to top up quickly, reducing this anxiety [S1][S21].",
+      "citations": [
+        "[S1]",
+        "[S21]"
+      ]
+    },
+    {
+      "front": "How do high-power charging stations (e.g., 350 kW) benefit EV drivers on road trips?",
+      "back": "High-power charging stations (e.g., 350 kW) allow EV drivers to recharge their vehicles as quickly as possible, minimizing downtime during road trips. Drivers prefer the fastest charging option compatible with their vehicle to get back on the road quickly [S11][S18].",
+      "citations": [
+        "[S11]",
+        "[S18]"
+      ]
+    },
+    {
+      "front": "What should charging planners consider when designing EV charging infrastructure at retail sites?",
+      "back": "Charging planners should consider factors like accessibility, grid reliability, and customer convenience. They should also ensure chargers are located in safe, well-lit areas and offer amenities like shopping or dining to enhance the charging experience [S6][S13].",
+      "citations": [
+        "[S6]",
+        "[S13]"
+      ]
+    }
+  ]
+}

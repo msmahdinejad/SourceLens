@@ -1,0 +1,83 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - "v*"
+
+concurrency:
+  group: release-${{ github.ref }}
+  cancel-in-progress: false
+
+permissions:
+  checks: read
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          enable-cache: true
+
+      - name: Require green CI for this commit
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for check in windows linux-smoke; do
+            conclusion="$(gh api "repos/$GITHUB_REPOSITORY/commits/$GITHUB_SHA/check-runs" \
+              --jq ".check_runs | map(select(.name == \"$check\" and .status == \"completed\")) | sort_by(.completed_at) | last | .conclusion")"
+            test "$conclusion" = success || {
+              echo "Required check '$check' is not successful for $GITHUB_SHA (found: ${conclusion:-missing})." >&2
+              exit 1
+            }
+          done
+
+      - run: uv sync --frozen --extra dev
+
+      - name: Verify tag matches package version
+        env:
+          TAG_VERSION: ${{ github.ref_name }}
+        run: |
+          uv run python - <<'PY'
+          import os
+          import tomllib
+          from packaging.version import Version
+
+          with open("pyproject.toml", "rb") as project_file:
+              project_version = tomllib.load(project_file)["project"]["version"]
+          tag_version = os.environ["TAG_VERSION"].removeprefix("v")
+          if Version(tag_version) != Version(project_version):
+              raise SystemExit(
+                  f"Tag {os.environ['TAG_VERSION']} does not match package {project_version}."
+              )
+          PY
+
+      - run: python scripts/repository_policy.py audit
+      - run: uv run python scripts/license_audit.py
+      - run: uv run pytest tests/test_release.py -q
+
+      - name: Build release assets
+        run: |
+          uv build
+          uv run python scripts/build_release.py
+          uv run python scripts/repository_policy.py audit-archive dist release/SourceLens-final.zip
+
+      - name: Publish release assets
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release view "$GITHUB_REF_NAME" >/dev/null 2>&1 || \
+            gh release create "$GITHUB_REF_NAME" --verify-tag \
+              --title "SourceLens ${GITHUB_REF_NAME#v}" --generate-notes
+          gh release upload "$GITHUB_REF_NAME" \
+            dist/paperlens-*.whl \
+            dist/paperlens-*.tar.gz \
+            release/SourceLens-final.zip \
+            --clobber

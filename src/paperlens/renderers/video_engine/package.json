@@ -1,0 +1,25 @@
+{
+  "name": "@sourcelens/video-renderer",
+  "version": "7.0.4",
+  "private": true,
+  "type": "module",
+  "description": "Authoritative MP4 video renderer for SourceLens",
+  "scripts": {
+    "render": "node entrypoint.mjs",
+    "test": "node --test ../../../../../tests/node/video_engine.test.mjs"
+  },
+  "paperlens": {
+    "contract": "paperlens.visual-engine.v1",
+    "layouts": 13,
+    "duration_minutes": [
+      2,
+      20
+    ]
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "2.6.2"
+  }
+}

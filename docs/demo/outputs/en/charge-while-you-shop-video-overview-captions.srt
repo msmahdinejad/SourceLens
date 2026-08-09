@@ -1,0 +1,19 @@
+1
+00:00:00,000 --> 00:00:11,920
+Most drivers charge at home, but road trips demand fast public chargers nearby.
+
+2
+00:00:12,000 --> 00:00:23,920
+Indiana convenience stores add fast charging, steadily drawing more customers every day.
+
+3
+00:00:24,000 --> 00:00:35,920
+By 2030, 182 thousand fast ports serve renters, ride-hail drivers, and long-distance travelers.
+
+4
+00:00:36,000 --> 00:00:47,920
+Research models combine home, destination, and highway charging into one national network plan.
+
+5
+00:00:48,000 --> 00:00:59,920
+Vehicles maximize home charging, using fast options only when truly needed away.

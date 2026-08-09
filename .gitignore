@@ -1,0 +1,39 @@
+.env
+providers.json
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.DS_Store
+.idea/
+.vscode/
+.agents/
+node_modules/
+
+data/chroma/
+data/cache/
+data/workspaces/
+data/traces/
+data/fonts/
+outputs/*
+!outputs/.gitkeep
+
+# Uploaded and legacy demonstration documents stay local.
+papers/*.pdf
+papers/*.tmp
+
+# Local-only fonts. Keep installed copies, never redistribute without documented rights.
+src/paperlens/assets/fonts/Kalameh/
+src/paperlens/assets/fonts/IRANYekanX/
+src/paperlens/web/fonts/
+
+# Local model and audio artifacts can be very large.
+models/
+audio/
+tmp/
+release/
+dist/
+*.log

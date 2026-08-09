@@ -1,0 +1,30 @@
+name: Bug report
+description: Report reproducible SourceLens behavior.
+title: "[Bug]: "
+labels: [bug]
+body:
+  - type: textarea
+    id: behavior
+    attributes:
+      label: Observed behavior
+      description: Include the smallest reproduction and expected result. Remove private data and keys.
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Version or commit
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: OS, Python, Node, FFmpeg, and relevant optional providers. Never paste credentials.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Sanitized diagnostics
+      render: shell

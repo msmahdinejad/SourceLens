@@ -1,0 +1,7 @@
+{
+  "name": "image-size",
+  "version": "3.0.0-sourcelens.0",
+  "private": true,
+  "main": "index.cjs",
+  "license": "MIT"
+}

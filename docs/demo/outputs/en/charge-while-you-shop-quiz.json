@@ -1,0 +1,122 @@
+{
+  "title": "How EV Fast Charging at Stores Turns Shopping Stops into Road-Trip Time: Key Insights for Drivers, Retailers, and Planners",
+  "questions": [
+    {
+      "question": "Why do consumers prefer DC fast charging over AC charging when using public charging stations, especially during long-distance travel?",
+      "choices": [
+        "DC charging is cheaper than AC charging.",
+        "DC charging significantly reduces charging time, which is more convenient for long-distance travel.",
+        "DC charging is more widely available than AC charging.",
+        "DC charging is safer than AC charging."
+      ],
+      "correct_index": 1,
+      "explanation": "Consumers prefer DC fast charging because it greatly reduces the waiting time for charging, which is particularly important during long-distance travel. AC charging, while economical, is slower and more suited for home use or locations where vehicles are parked for extended periods [S1].",
+      "citations": [
+        "S1"
+      ]
+    },
+    {
+      "question": "What is one of the main reasons consumers experience 'range anxiety'?",
+      "choices": [
+        "High cost of electric vehicles.",
+        "Inability to find charging piles in time during long-distance travel.",
+        "Lack of interest in electric vehicles.",
+        "Preference for gasoline vehicles."
+      ],
+      "correct_index": 1,
+      "explanation": "Range anxiety is primarily caused by the inability to find charging piles in time during long-distance travel, especially when air conditioning usage reduces the actual driving range [S1].",
+      "citations": [
+        "S1"
+      ]
+    },
+    {
+      "question": "How does Walmart plan to make EV ownership more accessible and convenient for its customers?",
+      "choices": [
+        "By offering free electric vehicles to customers.",
+        "By building an EV fast-charging network at thousands of Walmart and Sam’s Club locations by 2030.",
+        "By eliminating all gasoline vehicles from their parking lots.",
+        "By providing free charging for only Walmart-branded electric vehicles."
+      ],
+      "correct_index": 1,
+      "explanation": "Walmart plans to build its own EV fast-charging network at thousands of Walmart and Sam’s Club locations across the U.S. by 2030, making EV ownership more accessible and convenient for customers [S3][S10].",
+      "citations": [
+        "S3",
+        "S10"
+      ]
+    },
+    {
+      "question": "What is a key benefit of installing EV charging stations at retail locations like convenience stores?",
+      "choices": [
+        "It allows retailers to increase the price of their products.",
+        "It turns an everyday shopping stop into useful road-trip time by offering charging while customers shop or dine.",
+        "It eliminates the need for home charging stations.",
+        "It reduces the number of customers visiting the store."
+      ],
+      "correct_index": 1,
+      "explanation": "Installing EV charging stations at retail locations allows customers to charge their vehicles while they shop or dine, turning an everyday stop into useful road-trip time [S3][S5][S10].",
+      "citations": [
+        "S3",
+        "S5",
+        "S10"
+      ]
+    },
+    {
+      "question": "According to industry stakeholders, where is the most convenient and cost-effective place for EV owners to charge their vehicles?",
+      "choices": [
+        "Public fast-charging stations.",
+        "Workplace charging stations.",
+        "Home charging stations.",
+        "Gas stations."
+      ],
+      "correct_index": 2,
+      "explanation": "Industry stakeholders agree that home is the most convenient and cost-effective location for EV owners to charge their vehicles, especially for those with residential access [S4].",
+      "citations": [
+        "S4"
+      ]
+    },
+    {
+      "question": "What is one of the challenges mentioned regarding the current speed of EV charging infrastructure?",
+      "choices": [
+        "Charging speeds are too fast, causing battery damage.",
+        "Consumers are satisfied with the current charging speeds.",
+        "Consumers believe the charging speed is too slow, particularly during peak times like holidays.",
+        "Charging stations are too widely available, causing overuse."
+      ],
+      "correct_index": 2,
+      "explanation": "Consumers are not satisfied with the current charging speed of the infrastructure, especially during peak times like holidays when charging stations can become congested [S1].",
+      "citations": [
+        "S1"
+      ]
+    },
+    {
+      "question": "What is a potential benefit of smart charging technology for the power grid?",
+      "choices": [
+        "It increases the cost of electricity for consumers.",
+        "It stabilizes the grid by managing EV demand and supports the integration of renewable energy sources.",
+        "It reduces the number of EVs on the road.",
+        "It eliminates the need for charging infrastructure."
+      ],
+      "correct_index": 1,
+      "explanation": "Smart charging technology can stabilize the grid by managing EV demand and better integrating renewable energy sources like solar and wind power [S28].",
+      "citations": [
+        "S28"
+      ]
+    },
+    {
+      "question": "What did Nissan’s No Charge to Charge Program aim to achieve in partnership with Ricker’s convenience stores?",
+      "choices": [
+        "To sell more gasoline vehicles.",
+        "To provide free charging for Nissan LEAF owners and expand EV charging infrastructure in Indianapolis.",
+        "To eliminate all charging stations in the city.",
+        "To increase the price of electricity at charging stations."
+      ],
+      "correct_index": 1,
+      "explanation": "Nissan’s No Charge to Charge Program aimed to provide free charging for Nissan LEAF owners and expand EV charging infrastructure by partnering with local businesses like Ricker’s convenience stores [S5][S12][S19].",
+      "citations": [
+        "S5",
+        "S12",
+        "S19"
+      ]
+    }
+  ]
+}

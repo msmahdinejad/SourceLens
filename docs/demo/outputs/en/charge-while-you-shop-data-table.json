@@ -1,0 +1,143 @@
+{
+  "title": "How EV Fast Charging at Stores Turns Shopping Stops into Useful Road-Trip Time: Key Considerations for Drivers, Retailers, and Planners",
+  "columns": [
+    "technology",
+    "use case",
+    "charging time or power",
+    "driver benefit",
+    "source",
+    "page",
+    "limitation"
+  ],
+  "rows": [
+    {
+      "technology": "DC fast charging",
+      "use case": "Public charging during long-distance travel or road trips",
+      "charging time or power": "Short time (high power, e.g., 50-350 kW)",
+      "driver benefit": "Reduces waiting time; enables quick top-ups during trips",
+      "source": "[S1], [S11]",
+      "page": "9-10, 1",
+      "limitation": "Consumer dissatisfaction with current charging speeds; infrastructure may not meet demand for highest-power charging [S1]"
+    },
+    {
+      "technology": "AC charging (Level 2)",
+      "use case": "Home charging or public charging with long dwell times (e.g., 8+ hours)",
+      "charging time or power": "Slow (e.g., 7-22 kW)",
+      "driver benefit": "Cheap and economical; convenient for overnight or extended stops",
+      "source": "[S1], [S4]",
+      "page": "9-10, 1",
+      "limitation": "Inconvenient for road trips or short stops due to slow charging speed [S1]"
+    },
+    {
+      "technology": "DC fast charging at retail stores (e.g., Walmart, Ricker's)",
+      "use case": "Combining shopping or errands with charging during road trips or daily use",
+      "charging time or power": "50-350 kW (highest available power selected by vehicle)",
+      "driver benefit": "Convenience of multitasking (e.g., grocery shopping, meals) while charging; expands charging access in rural/suburban areas",
+      "source": "[S3], [S5], [S10], [S12]",
+      "page": "1, 1, 1, 1",
+      "limitation": "Limited by vehicle's maximum DC acceptance rate; may not be universally accessible (e.g., lack of standardization) [S11]"
+    },
+    {
+      "technology": "Bidirectional charging (V2G)",
+      "use case": "Grid reliability and renewable energy integration (future potential)",
+      "charging time or power": "mark_unknown",
+      "driver benefit": "Potential for cost savings or grid support incentives",
+      "source": "[S2]",
+      "page": "11",
+      "limitation": "Requires further research and infrastructure development; not yet widely implemented [S2]"
+    },
+    {
+      "technology": "Smart charging (e.g., charge point management systems)",
+      "use case": "Grid-friendly charging with optimized energy use",
+      "charging time or power": "mark_unknown",
+      "driver benefit": "Reduces grid strain; may lower charging costs",
+      "source": "[S2]",
+      "page": "11",
+      "limitation": "Requires communication between vehicle, charger, and grid; complexity may deter adoption [S2]"
+    },
+    {
+      "technology": "Battery energy storage systems (BESS) for fast charging",
+      "use case": "Supporting high-power charging in capacity-constrained areas",
+      "charging time or power": "mark_unknown",
+      "driver benefit": "Enables fast charging in locations with limited grid capacity",
+      "source": "[S6]",
+      "page": "1",
+      "limitation": "Increases infrastructure costs; requires additional space and maintenance [S6]"
+    },
+    {
+      "technology": "Tesla Destination Charging (Level 2 or DC)",
+      "use case": "Charging at hotels, restaurants, or retail locations during extended stops",
+      "charging time or power": "mark_unknown (varies by location)",
+      "driver benefit": "Convenience of charging while engaged in other activities (e.g., dining, shopping)",
+      "source": "[S7], [S14]",
+      "page": "1, 1",
+      "limitation": "Primarily benefits Tesla owners; may not be universally available [S7]"
+    },
+    {
+      "technology": "Publicly funded EV infrastructure (e.g., IEC 61851, ISO 15118)",
+      "use case": "Standardized public charging networks",
+      "charging time or power": "mark_unknown",
+      "driver benefit": "Improves interoperability and reliability of charging stations",
+      "source": "[S9]",
+      "page": "6",
+      "limitation": "Requires coordination between governments and industry; may face adoption delays [S9]"
+    },
+    {
+      "technology": "Curbside charging (e.g., pole-mounted chargers)",
+      "use case": "Urban or dense areas with limited private parking",
+      "charging time or power": "mark_unknown (typically Level 2)",
+      "driver benefit": "Increases access for drivers without home charging",
+      "source": "[S13]",
+      "page": "1",
+      "limitation": "May face permitting or space constraints; slower charging speeds [S13]"
+    },
+    {
+      "technology": "Complimentary charging programs (e.g., Nissan No Charge to Charge)",
+      "use case": "Incentivizing EV adoption through free or low-cost charging",
+      "charging time or power": "mark_unknown (varies by program)",
+      "driver benefit": "Reduces charging costs for early adopters; increases accessibility",
+      "source": "[S5], [S12]",
+      "page": "1, 1",
+      "limitation": "Limited to specific vehicle brands or markets; may not be sustainable long-term [S5]"
+    },
+    {
+      "technology": "Modular charging infrastructure",
+      "use case": "Future-proofing charging stations for upgrades",
+      "charging time or power": "mark_unknown",
+      "driver benefit": "Ensures compatibility with evolving vehicle and grid needs",
+      "source": "[S9]",
+      "page": "6",
+      "limitation": "Higher upfront costs; requires planning for future demand [S9]"
+    },
+    {
+      "technology": "Over-the-air (OTA) updates for chargers",
+      "use case": "Maintaining and upgrading charging infrastructure remotely",
+      "charging time or power": "mark_unknown",
+      "driver benefit": "Improves reliability and adds features without physical upgrades",
+      "source": "[S9]",
+      "page": "6",
+      "limitation": "Requires digital infrastructure; cybersecurity risks must be managed [S9]"
+    }
+  ],
+  "notes": [
+    "Claims about charging power (e.g., 50-350 kW) are based on industry standards and vehicle capabilities, not specific retailer implementations [S11].",
+    "Driver benefits such as convenience or cost savings are derived from consumer preferences and retailer claims [S1], [S3], [S5], [S10].",
+    "Limitations reflect consumer feedback, technical constraints, or policy gaps identified in sources [S1], [S2], [S4], [S9], [S11].",
+    "Retailer-specific claims (e.g., Walmart, Tesla, Ricker's) are distinguished from independent or government evidence."
+  ],
+  "citations": [
+    "[S1] consumer-preferences-ev-charging.pdf",
+    "[S2] transatlantic-ev-charging-recommendations.pdf",
+    "[S3] Leading the Charge_ Walmart Announces Plan To Expand Electric Vehicle Charging Network.txt",
+    "[S4] The 2030 National Charging Network_ Estimating U.S. Light-Duty Demand for Electric Vehicle Charging Infrastructure.txt",
+    "[S5] Alternative Fuels Data Center_ Going Beyond Gas_ Nissan Brings Car Charging to Indianapolis Convenience Store Chain.txt",
+    "[S6] Public electric vehicle charging infrastructure playbook _ Joint Office of Energy and Transportation.txt",
+    "[S7] Destination Charging _ Tesla.txt",
+    "[S9] transatlantic-ev-charging-recommendations.pdf (standards section)",
+    "[S10] Leading the Charge_ Walmart Announces Plan To Expand Electric Vehicle Charging Network.txt (business section)",
+    "[S11] The 2030 National Charging Network_ Estimating U.S. Light-Duty Demand for Electric Vehicle Charging Infrastructure.txt (charging behavior)",
+    "[S12] Alternative Fuels Data Center_ Going Beyond Gas_ Nissan Brings Car Charging to Indianapolis Convenience Store Chain.txt (incentives section)",
+    "[S13] Public electric vehicle charging infrastructure playbook _ Joint Office of Energy and Transportation.txt (siting guidance)",
+    "[S14] Destination Charging _ Tesla.txt (network description)"
+  ]
+}

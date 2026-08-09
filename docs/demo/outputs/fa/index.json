@@ -1,0 +1,148 @@
+{
+  "language": "fa",
+  "artifacts": [
+    {
+      "artifact_type": "audio_overview",
+      "title": "شارژ هنگام خرید: مرور صوتی",
+      "path": "charge-while-you-shop-audio-overview.mp3",
+      "size": 3586796,
+      "sha256": "44b9bf4b907f3a6cfe7a4706a137872a1e513fce85fc97104d8ee105d682c888",
+      "assets": [
+        {
+          "role": "transcript",
+          "path": "charge-while-you-shop-audio-overview-transcript.txt",
+          "size": 3277,
+          "sha256": "2f5bd0e4922cca7c5e63631743a7282d51e8c1c1c14459880a09d0e5dcdba547"
+        }
+      ]
+    },
+    {
+      "artifact_type": "report",
+      "title": "شارژ هنگام خرید: گزارش شواهد",
+      "path": "charge-while-you-shop-report.md",
+      "size": 11364,
+      "sha256": "8da726467a30d6db32e63e916046ace8c337bd7920a41922b092d537636221a6",
+      "assets": []
+    },
+    {
+      "artifact_type": "concept_map",
+      "title": "نقشه مفهومی شارژ خودرو در فروشگاه",
+      "path": "charge-while-you-shop-concept-map.json",
+      "size": 11229,
+      "sha256": "f32f510a56d2fec51711cf9bfb32d0963411540044d0517edc81fbcbf51b62df",
+      "assets": []
+    },
+    {
+      "artifact_type": "flashcards",
+      "title": "فلش‌کارت‌های شارژ خودرو در فروشگاه",
+      "path": "charge-while-you-shop-flashcards.json",
+      "size": 5878,
+      "sha256": "441487c5205f265509604e1ca4e30fed06541311a73d16430b89514c8d26d993",
+      "assets": []
+    },
+    {
+      "artifact_type": "quiz",
+      "title": "آزمون شارژ خودرو در فروشگاه",
+      "path": "charge-while-you-shop-quiz.json",
+      "size": 7023,
+      "sha256": "9f779b6960564dd139b89172b8c06b32cc6ddc51ceff7843a930d0187c58ca89",
+      "assets": []
+    },
+    {
+      "artifact_type": "infographic",
+      "title": "از جای پارک تا ایستگاه جابه‌جایی",
+      "path": "charge-while-you-shop-infographic.json",
+      "size": 9590,
+      "sha256": "77352dfc0e2515a8d7dbaa2178dbd938b85d07480032c3c60e526732333e6b30",
+      "assets": []
+    },
+    {
+      "artifact_type": "data_table",
+      "title": "جدول شواهد شارژ در فروشگاه",
+      "path": "charge-while-you-shop-data-table.json",
+      "size": 9789,
+      "sha256": "82def9731f4ea82a7ffe24b8f64bdf8ede2ac41d7b5384954a25d82a01f058aa",
+      "assets": []
+    },
+    {
+      "artifact_type": "chart",
+      "title": "نمودار شواهد شارژ عمومی",
+      "path": "charge-while-you-shop-chart.json",
+      "size": 2047,
+      "sha256": "05aa1a63b5b79fd8892ad1b5de54a3bf43ad7b2a07f4ac9371ac62ea08c127f3",
+      "assets": []
+    },
+    {
+      "artifact_type": "timeline",
+      "title": "خط زمانی شارژ خودرو در فروشگاه",
+      "path": "charge-while-you-shop-timeline.json",
+      "size": 8591,
+      "sha256": "6bcd73c58e4f83a3bf8978dccc75dac0b26dc6f90667480568c780fc7a948c36",
+      "assets": []
+    },
+    {
+      "artifact_type": "comparison",
+      "title": "مقایسه گزینه‌های شارژ در فروشگاه",
+      "path": "charge-while-you-shop-comparison.md",
+      "size": 16248,
+      "sha256": "7d9c20d45f576de92992b199f32d2883dd55a020704da950a6d8648408720b8e",
+      "assets": []
+    },
+    {
+      "artifact_type": "research_gap",
+      "title": "پرسش‌های باز شارژ خودرو در فروشگاه",
+      "path": "charge-while-you-shop-research-gap.md",
+      "size": 16578,
+      "sha256": "2cff3b0a5d58f59bcc7eaf2ec85f0041cd2e1f8211d71e1f43ea22d561837f98",
+      "assets": []
+    },
+    {
+      "artifact_type": "slide_deck",
+      "title": "شارژ هنگام خرید",
+      "path": "charge-while-you-shop-slide-deck.pptx",
+      "size": 1095124,
+      "sha256": "a4fd6d01969404618f2b30dd5c2373c7f8c7e2fee953578dfeae69c46019cfca",
+      "assets": [
+        {
+          "role": "manifest",
+          "path": "charge-while-you-shop-slide-deck-manifest.json",
+          "size": 2926,
+          "sha256": "d6bfd66206e6128ea89d12fb1852e4bd7d39d3925c1afbdf85b494014e32ade6"
+        }
+      ]
+    },
+    {
+      "artifact_type": "video_overview",
+      "title": "شارژ هنگام خرید در ۶۰ ثانیه",
+      "path": "charge-while-you-shop-video-overview.mp4",
+      "size": 59742116,
+      "sha256": "f3704520a678e98a4d510266dcff8d8182948f70128529ecad44d04bca200db7",
+      "assets": [
+        {
+          "role": "manifest",
+          "path": "charge-while-you-shop-video-overview-manifest.json",
+          "size": 8645,
+          "sha256": "8dbea2f9ec6fd442a98f04c22a0e1bfc792214500e67e043596717bf8f5fb1f9"
+        },
+        {
+          "role": "captions",
+          "path": "charge-while-you-shop-video-overview-captions.srt",
+          "size": 1613,
+          "sha256": "f9f9c5eb5d9f1d103dc4bb1c770640cfe1507d8647aa582669cf3ee7e9b3fe24"
+        },
+        {
+          "role": "timeline",
+          "path": "charge-while-you-shop-video-overview-timeline.json",
+          "size": 13082,
+          "sha256": "675c181f3dcb92c6f959258bcdfa71cdb5107e43cfbbc032356205ebd78566eb"
+        },
+        {
+          "role": "music_credits",
+          "path": "audio-credits.txt",
+          "size": 376,
+          "sha256": "be20ba85a1ef350d34f1d694fc97791416e3d1c7b774c038a3435fbb5bbec7f0"
+        }
+      ]
+    }
+  ]
+}

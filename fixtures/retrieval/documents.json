@@ -1,0 +1,159 @@
+{
+  "version": 1,
+  "license": "CC0-1.0",
+  "authored_for_sourcelens": true,
+  "documents": [
+    {
+      "document_id": "hydro-atlas",
+      "title": "Delta Flow Observatory Field Atlas",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "The Delta Flow Observatory, also called DFO, began operation in 2019. Its exact station identifier is DFO-17. The station is beside the Sefid River delta."
+        },
+        {
+          "page": 2,
+          "text": "Discharge follows Q = A × v. With cross-sectional area A = 12 m² and velocity v = 2.5 m/s, the measured discharge is Q = 30 m³/s."
+        },
+        {
+          "page": 3,
+          "text": "The 2023 calibration recorded nitrate at 4.2 mg/L. The DFO-17 dataset was deposited in the Orion Archive under accession ARC-314."
+        }
+      ]
+    },
+    {
+      "document_id": "solar-lab",
+      "title": "گزارش آزمایشگاه خورشیدی پارس",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "آزمایشگاه خورشیدی پارس که با نام کوتاه PSL نیز شناخته می‌شود، در سال ۱۳۹۹ تأسیس شد. شناسه دقیق سامانه PSL-42 است."
+        },
+        {
+          "page": 2,
+          "text": "توان خروجی از رابطه E = η × A × G محاسبه می‌شود. با بازده η = ۰٫۲۰، مساحت A = ۱۰ متر مربع و تابش G = ۸۰۰ وات بر متر مربع، خروجی ۱۶۰۰ وات است."
+        },
+        {
+          "page": 3,
+          "text": "باتری اصلی در سال ۱۴۰۲ تعویض شد. در سال ۱۴۰۳ ظرفیت ذخیره‌سازی دو برابر شد. داده‌های آزمون با شناسه ARC-314 در آرشیو اوریون نگهداری می‌شوند."
+        }
+      ]
+    },
+    {
+      "document_id": "transit-plan",
+      "title": "Northstar Transit Delivery Plan",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "The Northstar Line is also known as NL. Its construction permit is TR-88. Civil works started in March 2024."
+        },
+        {
+          "page": 2,
+          "text": "The 2024 plan targeted passenger service in 2027. A signed revision dated February 2025 moved passenger service to 2028 after tunnel testing expanded."
+        },
+        {
+          "page": 3,
+          "text": "Each train is designed for 1,200 passengers. The revised plan retains twelve trains at opening."
+        }
+      ]
+    },
+    {
+      "document_id": "water-policy",
+      "title": "سیاست مصرف آب شهری آبی",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "برنامه آب شهری آبی که طرح آبی نیز نامیده می‌شود، شناسه AW-9 دارد و از سال ۱۴۰۲ اجرا شده است."
+        },
+        {
+          "page": 2,
+          "text": "سقف مصرف روزانه در سال ۱۴۰۲ برابر ۹۰ لیتر برای هر نفر بود. مصوبه سال ۱۴۰۳ این سقف را به ۸۵ لیتر کاهش داد."
+        },
+        {
+          "page": 3,
+          "text": "طبق مصوبه نهایی، هیچ واحد نمک‌زدایی پیش از سال ۱۴۰۵ وارد مدار نمی‌شود. گزارش‌های قدیمی‌تر زمان دیگری ذکر کرده‌اند."
+        }
+      ]
+    },
+    {
+      "document_id": "archive-catalog",
+      "title": "Orion Research Archive Catalog",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "The Orion Research Archive, abbreviated OA, catalogs local scientific datasets. The accession ARC-314 contains measurements from station DFO-17 and tests from system PSL-42."
+        },
+        {
+          "page": 2,
+          "text": "Farid Nouri, also cited as F. Nouri, became archive director in 2021. He approved the ARC-314 accession record."
+        },
+        {
+          "page": 3,
+          "text": "ARC-314 preserves page-level provenance: Delta Flow data cite field-atlas page 3, while solar tests cite the Persian laboratory report page 3."
+        }
+      ]
+    },
+    {
+      "document_id": "legacy-memo",
+      "title": "Superseded Planning Memo",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "This unsigned memo from June 2024 says the Northstar Line will open in 2027. It predates the signed February 2025 transit-plan revision."
+        },
+        {
+          "page": 2,
+          "text": "The memo claims the AW-9 water limit remains 90 liters in 1403. The later enacted water policy instead sets 85 liters for 1403."
+        },
+        {
+          "page": 3,
+          "text": "The memo proposes desalination in 1404, but the final policy prohibits any unit entering service before 1405."
+        }
+      ]
+    },
+    {
+      "document_id": "clinical-protocol",
+      "title": "Helix Trial Data Protocol",
+      "language": "en",
+      "pages": [
+        {
+          "page": 1,
+          "text": "The Helix Trial protocol identifier is HTX-9B. The biomarker named Kappa-7 is also written κ7 in laboratory notes."
+        },
+        {
+          "page": 2,
+          "text": "Dose density is D = m / V. A 45 mg sample in 15 mL therefore has D = 3 mg/mL."
+        },
+        {
+          "page": 3,
+          "text": "Enrollment opened in 2022 and closed on 30 September 2024. No participant recruitment is authorized after that date."
+        }
+      ]
+    },
+    {
+      "document_id": "climate-notes",
+      "title": "یادداشت‌های پایش اقلیم کوهستان",
+      "language": "fa",
+      "pages": [
+        {
+          "page": 1,
+          "text": "ایستگاه پایش اقلیم کوهستان با نام اختصاری MCS و شناسه MCS-5 فعالیت می‌کند. آغاز ثبت پیوسته داده‌ها سال ۱۳۹۸ بود."
+        },
+        {
+          "page": 2,
+          "text": "میانگین دمای زمستان ۱۴۰۱ برابر منفی ۳٫۵ درجه و در زمستان ۱۴۰۲ برابر منفی ۲٫۸ درجه سلسیوس ثبت شد."
+        },
+        {
+          "page": 3,
+          "text": "داده‌های MCS-5 در آرشیو اوریون نگهداری نمی‌شوند؛ مخزن مستقل کوهستان مالک این مجموعه است."
+        }
+      ]
+    }
+  ]
+}

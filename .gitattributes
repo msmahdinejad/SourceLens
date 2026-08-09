@@ -1,0 +1,13 @@
+*.pdf binary
+*.pptx binary
+*.mp3 binary
+*.mp4 binary
+*.srt binary
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.ttf binary
+*.woff2 binary
+docs/demo/outputs/**/*.json text eol=lf
+docs/demo/outputs/**/*.md text eol=lf
+docs/demo/outputs/**/*.txt binary

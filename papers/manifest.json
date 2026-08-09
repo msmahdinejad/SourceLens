@@ -1,0 +1,26 @@
+[
+  {
+    "paper_id": "ev-charging-consumer-preferences",
+    "file_name": "2021-consumer-preferences-ev-charging-infrastructure.pdf",
+    "title": "Consumer Preferences for Electric Vehicle Charging Infrastructure Based on the Text Mining Method",
+    "authors": ["Yuan-Yuan Wang", "Yuan-Ying Chi", "Jin-Hua Xu", "Jia-Lin Li"],
+    "year": 2021,
+    "venue": "Energies",
+    "source_url": "https://res.mdpi.com/d_attachment/energies/energies-14-04598/article_deploy/energies-14-04598-v2.pdf",
+    "license_spdx": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "5513d2a355ed952d33a1580d85eccf0d1733f07398f20ceb4eae5e61eafee154"
+  },
+  {
+    "paper_id": "ev-charging-transatlantic-recommendations",
+    "file_name": "2024-transatlantic-ev-charging-recommendations.pdf",
+    "title": "Transatlantic Technical Recommendations for Government Funded Implementation of Electric Vehicle Charging Infrastructure",
+    "authors": ["Keith Hardy", "Harald Scholz"],
+    "year": 2024,
+    "venue": "European Commission Joint Research Centre",
+    "source_url": "https://publications.jrc.ec.europa.eu/repository/bitstream/JRC133895/JRC133895_01.pdf",
+    "license_spdx": "CC-BY-4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0/",
+    "sha256": "0bccb224fca1493c2f69d7cc90f482cf0e03e944085560d1e690c66fd2351999"
+  }
+]

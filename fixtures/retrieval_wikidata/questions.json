@@ -1,0 +1,848 @@
+{
+  "benchmark_id": "sourcelens-wikidata-retrieval-v1",
+  "version": 1,
+  "cases": [
+    {
+      "case_id": "wd-01",
+      "query": "What is the exact Wikidata item identifier for Q42?",
+      "language": "en",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q42"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q42",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-02",
+      "query": "شناسه دقیق ویکی‌داده برای آلبرت اینشتین چیست؟",
+      "language": "fa",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-03",
+      "query": "What is the exact Wikidata item identifier for Marie Curie?",
+      "language": "en",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-04",
+      "query": "شناسه دقیق ویکی‌داده برای ایدا لاولیس چیست؟",
+      "language": "fa",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7259"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7259",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-05",
+      "query": "What is the exact Wikidata item identifier for Barack Obama?",
+      "language": "en",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q76"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q76",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-06",
+      "query": "شناسه دقیق ویکی‌داده برای ارسطو چیست؟",
+      "language": "fa",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q868"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q868",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-07",
+      "query": "What is the exact Wikidata item identifier for human?",
+      "language": "en",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q5"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q5",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-08",
+      "query": "شناسه دقیق ویکی‌داده برای ایالات متحده آمریکا چیست؟",
+      "language": "fa",
+      "category": "exact_identifier",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q30"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q30",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-09",
+      "query": "Which entity has the alias 'A. Einsten'? Give its canonical label.",
+      "language": "en",
+      "category": "entity_alias",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-10",
+      "query": "Which entity has the alias 'Marie Sklodowska-Curie'? Give its canonical label.",
+      "language": "en",
+      "category": "entity_alias",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-11",
+      "query": "Which entity has the alias 'Lady Ada'? Give its canonical label.",
+      "language": "en",
+      "category": "entity_alias",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7259"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7259",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-12",
+      "query": "Which entity has the alias 'POTUS 44'? Give its canonical label.",
+      "language": "en",
+      "category": "entity_alias",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q76"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q76",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-13",
+      "query": "Which entity has the alias 'the Stagirite'? Give its canonical label.",
+      "language": "en",
+      "category": "entity_alias",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q868"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q868",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-14",
+      "query": "Which entity has the alias 'human being'? Give its canonical label.",
+      "language": "en",
+      "category": "entity_alias",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q5"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q5",
+          "pages": [
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-15",
+      "query": "What temporal value does Q42 record for P569 (date of birth)?",
+      "language": "en",
+      "category": "temporal",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q42"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q42",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-16",
+      "query": "در صفحه تاریخ‌ها و ادعاهای عددی، برای Q42 مقدار زمانی ویژگی P570 چیست؟",
+      "language": "fa",
+      "category": "temporal",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q42"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q42",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-17",
+      "query": "What temporal value does Albert Einstein record for P569 (date of birth)?",
+      "language": "en",
+      "category": "temporal",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-18",
+      "query": "در صفحه تاریخ‌ها و ادعاهای عددی، برای Albert Einstein مقدار زمانی ویژگی P570 چیست؟",
+      "language": "fa",
+      "category": "temporal",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-19",
+      "query": "What temporal value does Marie Curie record for P569 (date of birth)?",
+      "language": "en",
+      "category": "temporal",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-20",
+      "query": "در صفحه تاریخ‌ها و ادعاهای عددی، برای Marie Curie مقدار زمانی ویژگی P570 چیست؟",
+      "language": "fa",
+      "category": "temporal",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-21",
+      "query": "For Q42, evaluate Δyears = year(P570) - year(P569) from the recorded dates.",
+      "language": "en",
+      "category": "equation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q42"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q42",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-22",
+      "query": "For Albert Einstein, evaluate Δyears = year(P570) - year(P569) from the recorded dates.",
+      "language": "en",
+      "category": "equation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-23",
+      "query": "For Marie Curie, evaluate Δyears = year(P570) - year(P569) from the recorded dates.",
+      "language": "en",
+      "category": "equation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            4
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-24",
+      "query": "On the Wikidata identity page, cite where both the English and Persian labels for Q42 are recorded.",
+      "language": "en",
+      "category": "citation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q42"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q42",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-25",
+      "query": "On the Wikidata identity page, cite where both the English and Persian labels for Albert Einstein are recorded.",
+      "language": "en",
+      "category": "citation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-26",
+      "query": "On the Wikidata identity page, cite where both the English and Persian labels for Marie Curie are recorded.",
+      "language": "en",
+      "category": "citation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-27",
+      "query": "On the Wikidata identity page, cite where both the English and Persian labels for Ada Lovelace are recorded.",
+      "language": "en",
+      "category": "citation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7259"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7259",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-28",
+      "query": "On the Wikidata identity page, cite where both the English and Persian labels for Barack Obama are recorded.",
+      "language": "en",
+      "category": "citation",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q76"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q76",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-29",
+      "query": "Using P31, connect Q42 to human and identify both Wikidata items.",
+      "language": "en",
+      "category": "multi_hop",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q42",
+        "Q5"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q42",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "document_id": "Q5",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-30",
+      "query": "Using P27, connect Albert Einstein to Germany and identify both Wikidata items.",
+      "language": "en",
+      "category": "multi_hop",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937",
+        "Q183"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "document_id": "Q183",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-31",
+      "query": "Using P27, connect Albert Einstein to United States and identify both Wikidata items.",
+      "language": "en",
+      "category": "multi_hop",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937",
+        "Q30"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "document_id": "Q30",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-32",
+      "query": "Using P27, connect Albert Einstein to Switzerland and identify both Wikidata items.",
+      "language": "en",
+      "category": "multi_hop",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937",
+        "Q39"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "document_id": "Q39",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-33",
+      "query": "Using P31, connect Albert Einstein to human and identify both Wikidata items.",
+      "language": "en",
+      "category": "multi_hop",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937",
+        "Q5"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            3
+          ]
+        },
+        {
+          "document_id": "Q5",
+          "pages": [
+            1,
+            2
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-34",
+      "query": "Check the claim that Albert Einstein links only to Germany; does the record also link it to United States via P27?",
+      "language": "en",
+      "category": "contradiction",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q937"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q937",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-35",
+      "query": "Check the claim that Marie Curie links only to France; does the record also link it to human via P31?",
+      "language": "en",
+      "category": "contradiction",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q7186"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q7186",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-36",
+      "query": "Check the claim that Barack Obama links only to United States; does the record also link it to human via P31?",
+      "language": "en",
+      "category": "contradiction",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q76"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q76",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-37",
+      "query": "Check the claim that human links only to Q42; does the record also link it to Marie Curie via P5869?",
+      "language": "en",
+      "category": "contradiction",
+      "scope": "in_scope",
+      "relevant_document_ids": [
+        "Q5"
+      ],
+      "expected_citations": [
+        {
+          "document_id": "Q5",
+          "pages": [
+            3
+          ]
+        }
+      ],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-38",
+      "query": "What is the pressure reading from the fictional Aurora-9 submarine trial?",
+      "language": "en",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-39",
+      "query": "Give the checksum for the unpublished Zephyr lattice experiment.",
+      "language": "en",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-40",
+      "query": "در گزارش خیالی باران-۷ مقدار حسگر کوانتومی چند است؟",
+      "language": "fa",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-41",
+      "query": "Which reagent was used in the nonexistent Borealis protein assay?",
+      "language": "en",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "calibration"
+    },
+    {
+      "case_id": "wd-42",
+      "query": "What was the 2099 revenue of the fictional company Amber Quasar?",
+      "language": "en",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-43",
+      "query": "صفحه مربوط به مأموریت ساختگی آفتاب-۹۹ را ذکر کن.",
+      "language": "fa",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-44",
+      "query": "Who won the imaginary Northbridge theorem prize in 2088?",
+      "language": "en",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "test"
+    },
+    {
+      "case_id": "wd-45",
+      "query": "State the orbital period of the invented moon Caligo Prime.",
+      "language": "en",
+      "category": "abstention",
+      "scope": "out_of_scope",
+      "relevant_document_ids": [],
+      "expected_citations": [],
+      "split": "calibration"
+    }
+  ],
+  "thresholds": {
+    "recall_at_6": 0.85,
+    "citation_precision": 0.75,
+    "abstention_accuracy": 0.7,
+    "p95_latency_ms": 250.0
+  }
+}

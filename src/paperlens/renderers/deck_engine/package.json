@@ -1,0 +1,26 @@
+{
+  "name": "@sourcelens/deck-renderer",
+  "version": "5.1.0",
+  "private": true,
+  "type": "module",
+  "description": "Authoritative PowerPoint deck renderer for SourceLens",
+  "scripts": {
+    "render": "node entrypoint.mjs"
+  },
+  "dependencies": {
+    "image-size": "file:vendor/image-size",
+    "pptxgenjs": "^4.0.1"
+  },
+  "overrides": {
+    "pptxgenjs": {
+      "image-size": "$image-size"
+    }
+  },
+  "paperlens": {
+    "contract": "paperlens.visual-engine.v1",
+    "layouts": 17
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}

@@ -1,0 +1,114 @@
+{
+  "contract_version": "paperlens.visual-engine.v1",
+  "artifact_type": "slide_deck",
+  "engine": {
+    "name": "sourcelens-deck-renderer",
+    "version": "5.1.0"
+  },
+  "created_at": "2026-08-09T14:31:43.649383+00:00",
+  "assets": [
+    {
+      "role": "output:pptx_filename",
+      "path": "presentation.pptx",
+      "size": 1095124,
+      "sha256": "a4fd6d01969404618f2b30dd5c2373c7f8c7e2fee953578dfeae69c46019cfca",
+      "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    },
+    {
+      "role": "diagnostic",
+      "path": "deck-plan.normalized.json",
+      "size": 21131,
+      "sha256": "15bcd3d714e16b769194acc5eec12c18a6941b97881f29ff7052bfc7ee77172c",
+      "media_type": "application/json"
+    }
+  ],
+  "metadata": {
+    "slide_count": 8,
+    "layout_distribution": {
+      "cover_cinematic": 1,
+      "editorial_split": 2,
+      "chart_focus": 1,
+      "comparison_dual": 1,
+      "process_flow": 1,
+      "cards_icon": 1,
+      "closing_actions": 1
+    },
+    "supported_layouts": [
+      "cover_cinematic",
+      "editorial_split",
+      "cards_icon",
+      "metrics_dashboard",
+      "timeline_story",
+      "comparison_dual",
+      "chart_focus",
+      "matrix_2x2",
+      "process_flow",
+      "photo_mosaic",
+      "quote_photo",
+      "big_statement",
+      "case_study",
+      "table_clean",
+      "funnel",
+      "dashboard",
+      "closing_actions"
+    ],
+    "editable": true,
+    "editable_charts": true,
+    "font_family": "Kalameh",
+    "aspect_ratio": "wide",
+    "canvas_inches": {
+      "width": 13.333,
+      "height": 7.5
+    },
+    "media_credits": [
+      {
+        "source_url": "https://www.pexels.com/photo/garage-place-for-electric-car-20589759/",
+        "credit": "Jakub Zerdzicki"
+      },
+      {
+        "source_url": "https://www.pexels.com/photo/electric-car-charging-at-station-with-multiple-chargers-37576187/",
+        "credit": "Giant Asparagus"
+      },
+      {
+        "source_url": "https://www.pexels.com/photo/ev-charger-in-california-usa-9800004/",
+        "credit": "Kindel Media"
+      }
+    ]
+  },
+  "warnings": [],
+  "events": [
+    {
+      "type": "progress",
+      "stage": "normalizing",
+      "progress": 8,
+      "message": "Validating and repairing the slide plan",
+      "details": {}
+    },
+    {
+      "type": "diagnostic",
+      "stage": "assets_ready",
+      "progress": 28,
+      "message": "Resolved slide media received from SourceLens",
+      "details": {
+        "asset_count": 3
+      }
+    },
+    {
+      "type": "progress",
+      "stage": "rendering",
+      "progress": 42,
+      "message": "Rendering editable PowerPoint shapes and charts",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "completed",
+      "progress": 100,
+      "message": "PowerPoint rendering completed",
+      "details": {
+        "slide_count": 8,
+        "output": "presentation.pptx"
+      }
+    }
+  ]
+}

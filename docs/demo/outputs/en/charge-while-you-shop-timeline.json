@@ -1,0 +1,93 @@
+{
+  "title": "EV Fast Charging at Retail: Turning Shopping Stops into Road-Trip Time",
+  "events": [
+    {
+      "date": "2021",
+      "title": "Consumer Study Confirms Strong Preference for DC Fast Charging on Long Trips",
+      "description": "Analysis of Chinese social media data shows consumers associate charging with \"DC charging,\" \"short time,\" and \"public charging pile\" more strongly than AC charging. The term \"too slow\" ranks among the highest similarity to \"charging,\" indicating dissatisfaction with current speeds. Consumers prefer DC fast charging to reduce waiting time during long-distance travel, while AC charging remains preferred at home for cost and convenience.",
+      "significance": "Establishes empirical evidence that road-trip drivers prioritize speed over cost, validating retailer investment in DC fast charging over slower Level 2 options.",
+      "uncertain": false,
+      "citations": [
+        "S1"
+      ]
+    },
+    {
+      "date": "~2019-2021",
+      "title": "Nissan Partners with Ricker's Convenience Stores for Largest U.S. Retail DC Fast Charging Deployment",
+      "description": "Nissan's No Charge to Charge program selected Ricker's 56-store Indianapolis convenience-store chain for the largest citywide deployment of DC fast chargers at retail fueling stations in the U.S. at that time. Installation was smooth; Ricker's won a Nissan retailer competition for fastest deployment. The program grew to 51 markets nationwide. Chargers are free for LEAF owners, pay-per-use for others, and Ricker's reports a steady customer-base increase since installation.",
+      "significance": "Demonstrated early viability of convenience-store DC fast charging: low-cost entry via OEM partnership, quick installation, and measurable foot-traffic lift.",
+      "uncertain": true,
+      "citations": [
+        "S5",
+        "S12"
+      ]
+    },
+    {
+      "date": "2022-2023",
+      "title": "2030 National Charging Network Report Models Driver Behavior: Fastest Possible DC Charging Preferred",
+      "description": "The U.S. national framework assumes that when drivers use public fast charging, they select the highest-power charger their vehicle can accept (50–350 kW). Stakeholder consensus confirms drivers want charging \"as fast as possible\\); pricing models that incentivize slower charging are deemed too complex for the nascent market. Home remains primary for those with access; away-from-home L2 only works with 8+ hour dwell times.",
+      "significance": "Sets the planning baseline: retail sites must offer high-power DCFC, not L2, to capture road-trip charging sessions.",
+      "uncertain": false,
+      "citations": [
+        "S4",
+        "S11"
+      ]
+    },
+    {
+      "date": "Ongoing (2022+)",
+      "title": "Transatlantic Recommendations Push Harmonized Standards, Grid Integration, and Cybersecurity for Public Charging",
+      "description": "Joint U.S.-EU recommendations call for mandated IEC 61851/62196 and ISO 15118 in publicly funded infrastructure, pre-normative RD&D on grid reliability under mass EV charging, bidirectional charging integration with renewables, and cybersecurity measures for charging ecosystems. They also stress avoiding stranded assets via non-proprietary networks, modular upgrades, and OTA updates.",
+      "significance": "Creates the regulatory and technical floor that retail hosts must meet—interoperable, grid-friendly, secure, upgradable chargers—to access public funding and future-proof investments.",
+      "uncertain": false,
+      "citations": [
+        "S2",
+        "S9",
+        "S16"
+      ]
+    },
+    {
+      "date": "Pre-2024",
+      "title": "Walmart Operates ~1,300 Fast-Charging Stalls at 280+ U.S. Stores",
+      "description": "Before its 2030 network announcement, Walmart and Sam's Club already hosted nearly 1,300 EV fast-charging stations across more than 280 U.S. facilities, leveraging a footprint within 10 miles of ~90% of Americans.",
+      "significance": "Proves large-scale retail fast charging is operationally feasible and geographically well-distributed for both local and corridor travel.",
+      "uncertain": false,
+      "citations": [
+        "S3",
+        "S10"
+      ]
+    },
+    {
+      "date": "2024",
+      "title": "Walmart Announces Coast-to-Coast Own-Brand Fast-Charging Network at Thousands of Sites by 2030",
+      "description": "Walmart and Sam's Club plan to build and operate their own EV fast-charging network at thousands of Supercenters, Neighborhood Markets, and Sam's Clubs by 2030. The retailer emphasizes Every Day Low Price charging, co-location with shopping/dining, and clean, bright, safe locations to address driver hesitation. This expands domestic charging capacity across rural, suburban, and urban areas.",
+      "significance": "Signals the largest U.S. retailer committing to owner-operated fast charging, turning routine shopping trips into reliable road-trip charging stops and setting pricing/experience benchmarks for other retail hosts.",
+      "uncertain": false,
+      "citations": [
+        "S3",
+        "S10"
+      ]
+    },
+    {
+      "date": "Current",
+      "title": "Joint Office Publishes EV Charging Playbook with Retail Site Host Guidance and Business Models",
+      "description": "The Joint Office of Energy and Transportation's playbook includes a financial analysis of EV charging business models for retail site hosts, a site selection checklist, and accessible design criteria. Resources cover battery storage for grid-friendly fast charging, siting case studies, and right-of-way alternatives.",
+      "significance": "Gives retailers a federal playbook for evaluating costs, revenue models, site suitability, and compliance—lowering barriers to entry for chains considering fast charging.",
+      "uncertain": false,
+      "citations": [
+        "S6",
+        "S13"
+      ]
+    },
+    {
+      "date": "Ongoing",
+      "title": "Tesla Destination Charging Expands at Hotels, Restaurants, and Retail Partners",
+      "description": "Tesla's Destination Charging program invites businesses to install Tesla Wall Connectors (typically 11–19 kW AC) for patron use. The network is mapped in-vehicle and via Trip Planner, targeting locations with longer dwell times. Recent pages highlight solar integration and a \"Charging for Your Business\" onboarding flow.",
+      "significance": "Complements DC fast charging by covering the 2–4 hour shopping/dining dwell segment; however, power levels are below road-trip fast-charging needs, so retail hosts increasingly pair Destination with DCFC.",
+      "uncertain": false,
+      "citations": [
+        "S7",
+        "S14"
+      ]
+    }
+  ]
+}

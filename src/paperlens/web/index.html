@@ -1,0 +1,474 @@
+<!doctype html>
+<html lang="fa" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0d3b36">
+  <meta name="description" content="SourceLens is a multilingual research workspace for documents, images, audio, and text.">
+  <title>SourceLens — Research Workspace</title>
+  <link rel="icon" href="/favicon.svg?v=20260802-visual-research-v1" type="image/svg+xml">
+  <link rel="stylesheet" href="/styles.css?v=20260802-visual-research-v1">
+</head>
+<body>
+  <svg class="icon-sprite" aria-hidden="true">
+    <symbol id="i-lens" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path><path d="M8 8.5h5M8 11h3.5"></path></symbol>
+    <symbol id="i-chat" viewBox="0 0 24 24"><path d="M20 14a4 4 0 0 1-4 4H9l-5 3v-7a4 4 0 0 1-1-2.6V7a4 4 0 0 1 4-4h9a4 4 0 0 1 4 4Z"></path><path d="M8 9h8M8 13h5"></path></symbol>
+    <symbol id="i-files" viewBox="0 0 24 24"><path d="M7 3h7l4 4v14H7z"></path><path d="M14 3v5h4M10 12h5M10 16h5"></path><path d="M4 6v12"></path></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24"><ellipse cx="12" cy="5" rx="8" ry="3"></ellipse><path d="M4 5v6c0 1.7 3.6 3 8 3s8-1.3 8-3V5M4 11v6c0 1.7 3.6 3 8 3s8-1.3 8-3v-6"></path></symbol>
+    <symbol id="i-activity" viewBox="0 0 24 24"><path d="M3 12h4l2-7 4 14 2-7h6"></path></symbol>
+    <symbol id="i-settings" viewBox="0 0 24 24"><circle cx="12" cy="12" r="3"></circle><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.9l.1.1-2.8 2.8-.1-.1a1.7 1.7 0 0 0-1.9-.3 1.7 1.7 0 0 0-1 1.6v.2h-4V21a1.7 1.7 0 0 0-1-1.6 1.7 1.7 0 0 0-1.9.3l-.1.1L4.2 17l.1-.1a1.7 1.7 0 0 0 .3-1.9A1.7 1.7 0 0 0 3 14H2.8v-4H3a1.7 1.7 0 0 0 1.6-1 1.7 1.7 0 0 0-.3-1.9L4.2 7 7 4.2l.1.1a1.7 1.7 0 0 0 1.9.3A1.7 1.7 0 0 0 10 3V2.8h4V3a1.7 1.7 0 0 0 1 1.6 1.7 1.7 0 0 0 1.9-.3l.1-.1L19.8 7l-.1.1a1.7 1.7 0 0 0-.3 1.9 1.7 1.7 0 0 0 1.6 1h.2v4H21a1.7 1.7 0 0 0-1.6 1Z"></path></symbol>
+    <symbol id="i-demo" viewBox="0 0 24 24"><path d="M4 19V5h16v14z"></path><path d="m8 15 3-4 2 2 3-5M8 8h.01"></path></symbol>
+    <symbol id="i-plus" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14"></path></symbol>
+    <symbol id="i-upload" viewBox="0 0 24 24"><path d="M12 16V3M7 8l5-5 5 5"></path><path d="M4 14v6h16v-6"></path></symbol>
+    <symbol id="i-send" viewBox="0 0 24 24"><path d="m4 12 16-8-5 16-3-6z"></path><path d="m12 14 8-10"></path></symbol>
+    <symbol id="i-mic" viewBox="0 0 24 24"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5 11a7 7 0 0 0 14 0M12 18v3M9 21h6"></path></symbol>
+    <symbol id="i-search" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6.5"></circle><path d="m15.5 15.5 5 5"></path></symbol>
+    <symbol id="i-refresh" viewBox="0 0 24 24"><path d="M20 7v5h-5"></path><path d="M18.5 17a8 8 0 1 1 1.2-8.7L20 12"></path></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24"><path d="M14 4h6v6M20 4l-9 9"></path><path d="M18 13v7H4V6h7"></path></symbol>
+    <symbol id="i-menu" viewBox="0 0 24 24"><path d="M4 7h16M4 12h16M4 17h16"></path></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="m6 6 12 12M18 6 6 18"></path></symbol>
+    <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 2c.7 5.3 4.7 9.3 10 10-5.3.7-9.3 4.7-10 10-.7-5.3-4.7-9.3-10-10 5.3-.7 9.3-4.7 10-10Z"></path></symbol>
+    <symbol id="i-check" viewBox="0 0 24 24"><path d="m5 12 4 4L19 6"></path></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><path d="m12 3 9 5-9 5-9-5z"></path><path d="m3 12 9 5 9-5M3 16l9 5 9-5"></path></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"></path></symbol>
+    <symbol id="i-image" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><circle cx="9" cy="10" r="2"></circle><path d="m4 17 4-4 3 3 3-4 6 6"></path></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5.5A3.5 3.5 0 0 1 7.5 2H11v17H7.5A3.5 3.5 0 0 0 4 22zM20 5.5A3.5 3.5 0 0 0 16.5 2H13v17h3.5A3.5 3.5 0 0 1 20 22z"></path></symbol>
+    <symbol id="i-quiz" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M9.8 9a2.4 2.4 0 1 1 3.3 2.2c-.8.4-1.1.9-1.1 1.8M12 17h.01"></path></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V10h4v10M10 20V4h4v16M16 20v-7h4v7M3 20h18"></path></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24"><path d="M12 3v12M7 10l5 5 5-5M4 20h16"></path></symbol>
+    <symbol id="i-presentation" viewBox="0 0 24 24"><path d="M4 4h16v12H4zM2 4h20M8 21l4-5 4 5"></path><path d="m8 12 2.5-3 2 2 3.5-4"></path></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="m10 8 6 4-6 4z"></path></symbol>
+    <symbol id="i-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"></circle><path d="M3 12h18M12 3a14 14 0 0 1 0 18M12 3a14 14 0 0 0 0 18"></path></symbol>
+  </svg>
+
+  <div class="app-shell">
+    <aside class="sidebar" id="primary-sidebar">
+      <div class="sidebar-head">
+        <a class="brand" href="#chat" data-view-link="chat" aria-label="SourceLens">
+          <span class="brand-mark"><svg><use href="#i-lens"></use></svg></span>
+          <span><strong>SourceLens</strong><small>AI research workspace</small></span>
+        </a>
+        <button id="sidebar-close" class="icon-button mobile-only" type="button" aria-label="بستن منو"><svg><use href="#i-close"></use></svg></button>
+      </div>
+
+      <button id="new-chat" class="primary-button wide new-chat-button" type="button" aria-label="New conversation" data-i18n-aria="nav.newChat"><svg><use href="#i-plus"></use></svg><span data-i18n="nav.newChat">گفت‌وگوی جدید</span></button>
+      <nav class="nav-list" aria-label="ناوبری اصلی">
+        <p class="nav-label" data-i18n="nav.research">محیط پژوهش</p>
+        <button class="nav-item active" data-view="chat" data-i18n-aria="nav.chat" type="button"><svg><use href="#i-chat"></use></svg><span data-i18n="nav.chat">پرسش و پاسخ</span><i></i></button>
+        <button class="nav-item" data-view="workspaces" data-i18n-aria="nav.workspaces" type="button"><svg><use href="#i-layers"></use></svg><span data-i18n="nav.workspaces">فضاهای کاری</span><i></i></button>
+        <button class="nav-item" data-view="history" data-i18n-aria="nav.history" type="button"><svg><use href="#i-refresh"></use></svg><span data-i18n="nav.history">تاریخچه و خروجی‌ها</span><i></i></button>
+        <button class="nav-item" data-view="documents" data-i18n-aria="nav.documents" type="button"><svg><use href="#i-files"></use></svg><span data-i18n="nav.documents">منابع و پردازش</span><i></i></button>
+        <button class="nav-item" data-view="vector" data-i18n-aria="nav.vector" type="button"><svg><use href="#i-database"></use></svg><span data-i18n="nav.vector">پایگاه برداری</span><i></i></button>
+        <p class="nav-label secondary-label" data-i18n="nav.system">سامانه</p>
+        <button class="nav-item" data-view="traces" data-i18n-aria="nav.traces" type="button"><svg><use href="#i-activity"></use></svg><span data-i18n="nav.traces">فعالیت‌ها</span><i></i></button>
+        <button class="nav-item" data-view="providers" data-i18n-aria="nav.providers" type="button"><svg><use href="#i-layers"></use></svg><span data-i18n="nav.providers">ارائه‌دهندگان</span><i></i></button>
+        <button class="nav-item" data-view="settings" data-i18n-aria="nav.settings" type="button"><svg><use href="#i-settings"></use></svg><span data-i18n="nav.settings">تنظیمات و معماری</span><i></i></button>
+      </nav>
+
+      <section class="history-section">
+        <div class="section-label"><span data-i18n="nav.recent">گفت‌وگوهای اخیر</span><button id="clear-history" type="button" data-i18n="nav.clear">پاک‌کردن</button></div>
+        <div id="chat-history" class="chat-history"></div>
+      </section>
+      <div class="sidebar-health" id="sidebar-health" role="status" aria-live="polite">
+        <span class="health-icon"><i></i></span><span data-i18n="system.checking">در حال بررسی سامانه…</span>
+      </div>
+    </aside>
+
+    <button id="sidebar-scrim" class="sidebar-scrim" type="button" aria-label="بستن منو"></button>
+
+    <main class="main">
+      <header class="topbar">
+        <a class="top-brand" href="#chat" data-view-link="chat" aria-label="SourceLens home"><span class="brand-mark"><svg><use href="#i-lens"></use></svg></span><strong>SourceLens</strong></a>
+        <div class="top-workspace-switcher">
+          <span class="workspace-switcher-icon"><svg><use href="#i-layers"></use></svg></span>
+          <label for="top-workspace-select"><small data-i18n="workspace.active">فضای فعال</small><select id="top-workspace-select" aria-label="Active workspace"></select></label>
+          <button id="top-new-workspace" class="icon-button" type="button" data-i18n-title="workspace.new" data-i18n-aria="workspace.new" title="فضای کاری جدید" aria-label="ساخت فضای کاری جدید"><svg><use href="#i-plus"></use></svg></button>
+        </div>
+        <div class="page-heading">
+          <p class="eyebrow" id="page-eyebrow"><span></span>Research workspace</p>
+          <h1 id="page-title">پرسش از منابع</h1>
+        </div>
+        <label class="global-search" for="global-search"><svg><use href="#i-search"></use></svg><input id="global-search" type="search" autocomplete="off" data-i18n-placeholder="search.global" placeholder="جست‌وجو در منابع، گفتگوها و خروجی‌ها"><kbd>Ctrl K</kbd><span id="global-search-results" class="global-search-results hidden"></span></label>
+        <div class="top-actions">
+          <button id="cancel-active-requests" class="danger-button top-cancel hidden" type="button"><svg><use href="#i-close"></use></svg><span>Cancel active requests</span></button>
+          <button id="language-toggle" class="language-toggle" type="button" aria-label="Switch language"><span>EN</span><i>فا</i></button>
+          <button class="secondary-button top-upload" type="button" data-view-link="documents"><svg><use href="#i-upload"></use></svg><span data-i18n="nav.addSource">افزودن منبع</span></button>
+          <button id="trace-shortcut" class="trace-button" type="button"><svg><use href="#i-activity"></use></svg><span>Flow</span><b id="trace-count">۰</b></button>
+          <button id="menu-button" class="icon-button mobile-only" type="button" aria-label="نمایش منو" aria-expanded="false"><svg><use href="#i-menu"></use></svg></button>
+        </div>
+      </header>
+
+      <section class="view active" id="view-chat">
+        <div class="notebook-grid">
+          <aside id="notebook-sources" class="sources-rail notebook-rail panel-surface">
+            <div class="rail-heading">
+              <div><span class="eyebrow">Sources</span><h2 data-i18n="sources.title">منابع</h2></div>
+              <button class="rail-add-button" type="button" data-view-link="documents" aria-label="Add source"><svg><use href="#i-plus"></use></svg></button>
+            </div>
+            <p class="rail-help" data-i18n="sources.help">منابع مورد استفاده در پاسخ و Studio را انتخاب کنید.</p>
+            <div class="source-all-row">
+              <button id="select-all-sources" class="source-all active" type="button" data-document-filter=""><span><svg><use href="#i-check"></use></svg></span><b data-i18n="sources.all">همهٔ منابع آماده</b></button>
+              <span id="source-ready-count">۰</span>
+            </div>
+            <div id="source-scope-list" class="source-scope-list" aria-label="Selected sources"></div>
+            <button class="source-manage-link" type="button" data-view-link="documents"><svg><use href="#i-settings"></use></svg><span data-i18n="sources.manage">مدیریت و مشاهدهٔ پردازش</span></button>
+          </aside>
+
+          <div class="chat-main panel-surface">
+            <section class="workspace-strip">
+              <div class="workspace-identity">
+                <span class="workspace-avatar"><svg><use href="#i-layers"></use></svg></span>
+                <div><span class="eyebrow" data-i18n="workspace.active">فضای فعال</span><h2 id="active-workspace-name">SourceLens</h2></div>
+              </div>
+              <div class="workspace-facts">
+                <span><b id="hero-document-count">۰</b><small data-i18n="metrics.sources">منبع</small></span>
+                <span><b id="hero-chunk-count">۰</b><small data-i18n="metrics.chunks">قطعه</small></span>
+              </div>
+            </section>
+
+            <div class="document-scope">
+              <span class="scope-title"><svg><use href="#i-files"></use></svg><span data-i18n="chat.scope">دامنهٔ پاسخ</span></span>
+              <div id="chat-document-filter" class="filter-chips" aria-label="Document filters"></div>
+            </div>
+
+            <div id="messages" class="messages" aria-live="polite"></div>
+
+            <div class="composer-shell">
+              <div id="prompt-attachment-preview" class="prompt-attachment hidden" aria-live="polite"></div>
+              <form id="chat-form" class="composer">
+                <div class="composer-tools">
+                  <button id="prompt-image-button" class="composer-tool" type="button" title="Attach image" aria-label="Attach image"><svg><use href="#i-image"></use></svg></button>
+                  <input id="prompt-image-input" class="visually-hidden" type="file" accept="image/png,image/jpeg,image/webp,image/tiff" data-i18n-aria="chat.attachImage" aria-label="Attach image">
+                  <button id="voice-button" class="composer-tool voice-button" type="button" aria-pressed="false" title="Record question" aria-label="Record question"><svg><use href="#i-mic"></use></svg></button>
+                </div>
+                <label class="visually-hidden" for="question-input">Research question</label>
+                <textarea id="question-input" rows="1" maxlength="4000" data-i18n-placeholder="chat.placeholder" placeholder="دربارهٔ منابع خود به فارسی یا English بپرسید…"></textarea>
+                <button class="send-button" type="submit" aria-label="Send"><svg><use href="#i-send"></use></svg></button>
+              </form>
+              <div class="composer-meta"><span id="composer-scope">همهٔ منابع آماده</span><span><kbd>Enter</kbd> <span data-i18n="chat.sendHint">ارسال</span> · <kbd>Shift + Enter</kbd> <span data-i18n="chat.newlineHint">خط جدید</span></span></div>
+            </div>
+          </div>
+
+          <aside id="notebook-studio" class="studio-rail context-rail notebook-rail panel-surface">
+            <div class="context-tabs" role="tablist" aria-label="Studio and evidence">
+              <button id="context-tab-studio" class="active" type="button" role="tab" aria-selected="true" aria-controls="context-panel-studio" data-context-panel="studio"><svg><use href="#i-sparkle"></use></svg><span data-i18n="studio.title">استودیو</span></button>
+              <button id="context-tab-evidence" type="button" role="tab" aria-selected="false" aria-controls="context-panel-evidence" data-context-panel="evidence"><svg><use href="#i-files"></use></svg><span data-i18n="evidence.title">شواهد پاسخ</span></button>
+            </div>
+            <section id="context-panel-studio" class="context-panel active" role="tabpanel" aria-labelledby="context-tab-studio">
+            <div class="rail-heading">
+              <div><span class="eyebrow">Studio</span><h2 data-i18n="studio.title">استودیو</h2></div>
+              <span class="studio-spark"><svg><use href="#i-sparkle"></use></svg></span>
+            </div>
+            <p class="rail-help" data-i18n="studio.help">از منابع انتخاب‌شده خروجی حرفه‌ای و قابل دانلود بسازید.</p>
+            <div id="studio-actions" class="studio-actions">
+              <button class="studio-action featured" type="button" data-artifact-type="audio_overview"><span><svg><use href="#i-mic"></use></svg></span><div><b data-i18n="studio.audioOverview">مرور صوتی</b><small data-i18n="studio.audioOverviewHint">پادکست شخصی‌سازی‌شده با یک تا پنج گوینده</small></div></button>
+              <button class="studio-action featured" type="button" data-artifact-type="slide_deck"><span><svg><use href="#i-presentation"></use></svg></span><div><b data-i18n="studio.slideDeck">مجموعه اسلاید</b><small data-i18n="studio.slideDeckHint">پاورپوینت قابل ویرایش با روایت، نمودار و تصویر</small></div></button>
+              <button class="studio-action featured" type="button" data-artifact-type="video_overview"><span><svg><use href="#i-play"></use></svg></span><div><b data-i18n="studio.videoOverview">مرور ویدیویی</b><small data-i18n="studio.videoOverviewHint">ویدیوی مستند با زیرنویس، رسانه و روایت اختیاری</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="report"><span><svg><use href="#i-files"></use></svg></span><div><b data-i18n="studio.report">گزارش</b><small data-i18n="studio.reportHint">خلاصه، راهنمای مطالعه، FAQ و قالب‌های پژوهشی</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="concept_map"><span><svg><use href="#i-database"></use></svg></span><div><b data-i18n="studio.conceptMap">ذهن‌نگاشت</b><small data-i18n="studio.conceptMapHint">مفاهیم و رابطه‌های میان آن‌ها</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="flashcards"><span><svg><use href="#i-book"></use></svg></span><div><b data-i18n="studio.flashcards">فلش‌کارت</b><small data-i18n="studio.flashcardsHint">مرور سریع مفاهیم و تعریف‌ها</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="quiz"><span><svg><use href="#i-quiz"></use></svg></span><div><b data-i18n="studio.quiz">آزمون</b><small data-i18n="studio.quizHint">سؤال‌های قابل تنظیم همراه با پاسخ تشریحی</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="infographic"><span><svg><use href="#i-chart"></use></svg></span><div><b data-i18n="studio.infographic">اطلاع‌نگاشت</b><small data-i18n="studio.infographicHint">روایت بصری از نکات، فرایندها و اعداد</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="data_table"><span><svg><use href="#i-layers"></use></svg></span><div><b data-i18n="studio.dataTable">جدول داده‌ها</b><small data-i18n="studio.dataTableHint">استخراج و سازمان‌دهی اطلاعات قابل مقایسه</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="chart"><span><svg><use href="#i-chart"></use></svg></span><div><b data-i18n="studio.chart">نمودار داده</b><small data-i18n="studio.chartHint">مقایسه و روندهای عددی</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="timeline"><span><svg><use href="#i-activity"></use></svg></span><div><b data-i18n="studio.timeline">خط زمانی</b><small data-i18n="studio.timelineHint">رویدادها، مراحل و ترتیب تحول</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="comparison"><span><svg><use href="#i-layers"></use></svg></span><div><b data-i18n="studio.comparison">مقایسهٔ منابع</b><small data-i18n="studio.comparisonHint">توافق‌ها، تفاوت‌ها و محدودیت‌ها</small></div></button>
+              <button class="studio-action" type="button" data-artifact-type="research_gap"><span><svg><use href="#i-search"></use></svg></span><div><b data-i18n="studio.gap">شکاف پژوهشی</b><small data-i18n="studio.gapHint">پرسش‌های باز و فرصت‌های پژوهش</small></div></button>
+            </div>
+            <div class="studio-library-heading"><b data-i18n="studio.library">خروجی‌های اخیر</b><button id="refresh-studio" type="button" aria-label="Refresh studio"><svg><use href="#i-refresh"></use></svg></button></div>
+            <div id="studio-artifacts" class="studio-artifacts"><div class="studio-empty"><svg><use href="#i-sparkle"></use></svg><p data-i18n="studio.empty">خروجی‌های ساخته‌شده اینجا ظاهر می‌شوند.</p></div></div>
+            </section>
+            <section id="context-panel-evidence" class="context-panel evidence-context-panel" role="tabpanel" aria-labelledby="context-tab-evidence" hidden>
+              <div class="rail-heading evidence-heading">
+                <div><span class="eyebrow">Evidence</span><h2 data-i18n="evidence.title">شواهد پاسخ</h2></div>
+                <span class="evidence-hint"><svg><use href="#i-external"></use></svg></span>
+              </div>
+              <p class="rail-help" data-i18n="evidence.empty">بعد از هر پاسخ، شاهدهای صفحه‌ای اینجا ظاهر می‌شوند.</p>
+              <div id="evidence-panel" class="evidence-panel"><div class="empty-state evidence-empty"><span><svg><use href="#i-files"></use></svg></span><p data-i18n="evidence.empty">بعد از هر پاسخ، شاهدهای صفحه‌ای اینجا ظاهر می‌شوند.</p></div></div>
+            </section>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-workspaces">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span>Workspaces</p><h2 data-i18n="workspaces.title">فضاهای کاری</h2><p data-i18n="workspaces.subtitle">منابع، گفتگوها، خروجی‌ها و پایگاه دانش هر پروژه را جدا و منظم نگه دارید.</p></div>
+          <button class="primary-button" type="button" data-open-workspace-dialog><svg><use href="#i-plus"></use></svg><span data-i18n="workspace.new">فضای کاری جدید</span></button>
+        </div>
+        <div id="workspace-cards" class="workspace-cards" aria-live="polite"></div>
+      </section>
+
+      <section class="view" id="view-history">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span>Research library</p><h2 data-i18n="history.title">تاریخچه و خروجی‌ها</h2><p data-i18n="history.subtitle">گفتگوهای قبلی و خروجی‌های Studio را برای ادامهٔ پژوهش، مطالعه یا دانلود پیدا کنید.</p></div>
+        </div>
+        <div id="history-library" class="history-library" aria-live="polite"></div>
+      </section>
+
+      <section class="view" id="view-documents">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span>Sources</p><h2 data-i18n="documents.title">منابع فضای کاری</h2><p data-i18n="documents.subtitle">فایل‌ها را اضافه کنید و تمام مراحل استخراج، OCR، تحلیل تصویری و ساخت پایگاه را زنده ببینید.</p></div>
+        </div>
+        <form id="upload-form" class="upload-panel panel-surface">
+          <div class="upload-copy"><span class="section-icon"><svg><use href="#i-upload"></use></svg></span><div><strong data-i18n="documents.add">منابع تازه اضافه کنید</strong><small data-i18n="documents.addHint">چند فایل را هم‌زمان انتخاب کنید؛ پردازش هرکدام مستقل ادامه پیدا می‌کند.</small></div></div>
+          <label id="upload-dropzone" class="dropzone" for="pdf-input">
+            <span class="upload-icon"><svg><use href="#i-upload"></use></svg></span>
+            <strong data-i18n="documents.drop">فایل‌ها را اینجا رها کنید</strong>
+            <small data-i18n="documents.browse">یا برای انتخاب از دستگاه کلیک کنید</small>
+            <span class="file-types">PDF <i></i> TXT <i></i> IMAGE <i></i> AUDIO <i></i> VIDEO</span>
+          </label>
+          <input id="pdf-input" type="file" accept=".pdf,.txt,.md,.csv,.json,.png,.jpg,.jpeg,.webp,.tif,.tiff,.wav,.mp3,.ogg,.m4a,.mp4,.webm,application/pdf,text/*,image/*,audio/*" multiple>
+          <div id="selected-files" class="selected-files" aria-live="polite" data-i18n-empty="documents.selectedEmpty" data-empty-label="فایل‌های انتخاب‌شده اینجا نمایش داده می‌شوند"></div>
+          <div class="upload-actions"><span id="upload-status" role="status" aria-live="polite" data-i18n="upload.max">حداکثر حجم هر فایل: ۱۰۰ مگابایت</span><button class="primary-button" type="submit"><svg><use href="#i-upload"></use></svg><span data-i18n="documents.upload">بارگذاری و پردازش</span></button></div>
+        </form>
+        <section class="web-discovery-panel panel-surface">
+          <div class="web-discovery-copy">
+            <span class="section-icon"><svg><use href="#i-globe"></use></svg></span>
+            <div><span class="eyebrow">Research discovery</span><h3 data-i18n="webSources.title">یافتن منبع در وب</h3><p data-i18n="webSources.body">موضوع را بدهید؛ Exa و Tavily منابع را پیدا می‌کنند و فقط مواردی که انتخاب می‌کنید با متن کامل وارد این فضای کاری می‌شوند.</p></div>
+          </div>
+          <div class="web-discovery-providers"><span>Exa</span><span>Tavily</span><button id="open-web-source-search" class="primary-button" type="button"><svg><use href="#i-search"></use></svg><span data-i18n="webSources.open">جست‌وجوی منابع</span></button></div>
+        </section>
+        <details class="paste-panel panel-surface">
+          <summary><span><svg><use href="#i-files"></use></svg><span data-i18n="documents.paste">افزودن متن بدون فایل</span></span><small data-i18n="documents.pasteHint">یادداشت یا متن خام را مستقیماً وارد کنید</small></summary>
+          <form id="paste-text-form">
+            <label for="paste-title" data-i18n="paste.title">عنوان</label>
+            <input id="paste-title" maxlength="120" value="یادداشت جدید" data-i18n-value="paste.note" required>
+            <label for="paste-content" data-i18n="paste.text">متن</label>
+            <textarea id="paste-content" rows="6" maxlength="2000000" data-i18n-placeholder="paste.placeholder" placeholder="متن فارسی یا انگلیسی را اینجا وارد کنید…" required></textarea>
+            <button class="primary-button" type="submit" data-i18n="paste.submit">افزودن و پردازش</button>
+          </form>
+        </details>
+        <div class="documents-toolbar">
+          <div class="extraction-legend"><span><i class="text"></i><b data-i18n="legend.text">متن داخلی</b></span><span><i class="ocr"></i>OCR</span><span><i class="vlm"></i><b data-i18n="legend.visual">تحلیل بصری</b></span><span><i class="failed"></i><b data-i18n="legend.failed">ناموفق</b></span></div>
+          <div id="processing-summary" class="processing-summary" role="status" aria-live="polite" aria-atomic="true"></div>
+        </div>
+        <div id="documents-list" class="documents-grid"></div>
+      </section>
+
+      <section class="view" id="view-vector">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span>Knowledge base</p><h2 data-i18n="vector.title">پایگاه دانش فضای کاری</h2><p id="chunking-strategy" data-i18n="vector.strategy">قطعه‌بندی بخش‌محور با حفظ صفحه؛ جدول، شکل، OCR و خلاصهٔ بصری قابل‌بازیابی‌اند.</p></div>
+          <button id="rebuild-vector" class="primary-button" type="button"><svg><use href="#i-refresh"></use></svg><span data-i18n="vector.rebuild">بازسازی پایگاه</span></button>
+        </div>
+        <div id="rebuild-box" class="rebuild-box hidden" aria-live="polite"></div>
+        <div id="vector-kpis" class="metrics-grid"></div>
+        <div class="two-column">
+          <article class="panel panel-surface"><div class="panel-heading"><div><span class="eyebrow">Extraction mix</span><h3 data-i18n="vector.mix">روش‌های استخراج</h3></div></div><div id="extraction-distribution" class="distribution"></div></article>
+          <article class="panel panel-surface"><div class="panel-heading"><div><span class="eyebrow">Frequent locations</span><h3 data-i18n="vector.locations">بخش‌ها و صفحه‌های پرتکرار</h3></div></div><div id="top-locations" class="location-list"></div></article>
+        </div>
+        <article class="panel panel-surface chunk-browser">
+          <div class="panel-heading"><div><span class="eyebrow">Hybrid retrieval</span><h3 data-i18n="vector.search">مرور قطعه‌های قابل بازیابی</h3></div></div>
+          <form id="chunk-search" class="search-row">
+            <label class="visually-hidden" for="chunk-query" data-i18n="vector.query">عبارت جست‌وجو</label>
+            <span><svg><use href="#i-search"></use></svg></span>
+            <input id="chunk-query" required data-i18n-placeholder="vector.queryPlaceholder" placeholder="در متن قطعه‌ها جست‌وجو کنید…">
+            <button class="secondary-button" type="submit" data-i18n="vector.submit">جست‌وجو</button>
+          </form>
+          <div id="chunk-list" class="chunk-list"></div>
+        </article>
+      </section>
+
+      <section class="view" id="view-traces">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span>Observability</p><h2 data-i18n="traces.title">جریان کامل درخواست</h2><p data-i18n="traces.subtitle">از بازیابی شواهد تا انتخاب مدل، fallback، زمان پاسخ و نتیجهٔ نهایی را یک‌جا دنبال کنید.</p></div>
+          <button id="refresh-traces" class="secondary-button" type="button"><svg><use href="#i-refresh"></use></svg><span data-i18n="traces.refresh">به‌روزرسانی</span></button>
+        </div>
+        <div id="activity-overview" class="activity-overview" aria-live="polite"></div>
+        <div class="activity-shell">
+          <section class="activity-stream panel-surface"><header><div><span class="eyebrow">Live request log</span><h3 data-i18n="activity.recent">رویدادهای اخیر</h3></div><span class="live-indicator"><i></i>LIVE</span></header><div id="activity-timeline" class="activity-timeline"><div id="trace-list" class="trace-list"></div></div></section>
+          <div id="trace-detail" class="panel trace-detail panel-surface"><div class="empty-state"><span><svg><use href="#i-activity"></use></svg></span><h4 data-i18n="traces.select">یک درخواست را انتخاب کنید</h4><p data-i18n="traces.selectHint">جزئیات کامل اجرا و زمان‌بندی اینجا نمایش داده می‌شود.</p></div></div>
+        </div>
+      </section>
+
+      <section class="view" id="view-providers">
+        <div class="section-intro">
+          <div><p class="eyebrow"><span></span>Provider connections</p><h2 data-i18n="providers.title">ارائه‌دهندگان هوش مصنوعی و OCR</h2><p data-i18n="providers.subtitle">کلیدهای شخصی خود را محلی ثبت کنید و مسیرهای آمادهٔ متن، تصویر، صوت و OCR را ببینید.</p></div>
+          <button id="provider-create" class="primary-button" type="button"><svg><use href="#i-plus"></use></svg><span data-i18n="providers.create">افزودن ارائه‌دهنده</span></button>
+        </div>
+        <aside class="credential-notice panel-surface"><svg><use href="#i-check"></use></svg><div><strong data-i18n="providers.private">کلیدها خصوصی می‌مانند</strong><p data-i18n="providers.privateHint">کلیدها فقط در فایل محلی .env ذخیره می‌شوند و هیچ‌وقت دوباره در پاسخ API یا رابط نمایش داده نمی‌شوند.</p></div></aside>
+        <div class="provider-workbench">
+          <div class="provider-main">
+            <section id="global-model-priority" class="global-model-priority panel-surface" aria-labelledby="global-model-priority-title">
+              <header>
+                <div><span class="eyebrow">Unified fallback chain</span><h3 id="global-model-priority-title">اولویت سراسری مدل‌ها</h3><p id="global-model-priority-hint">همه مدل‌ها، مستقل از ارائه‌دهنده، در یک مسیر واحد امتحان می‌شوند. ترتیب را بر اساس کیفیت و نیاز خود بچینید.</p></div>
+                <span id="global-model-priority-count" class="route-count"></span>
+              </header>
+              <ol id="global-model-priority-list" aria-live="polite"></ol>
+            </section>
+            <section class="integration-settings panel-surface" aria-labelledby="integration-settings-title">
+              <header><div><span class="eyebrow">Research & media APIs</span><h3 id="integration-settings-title" data-i18n="integrations.title">اتصال‌های پژوهش و رسانه</h3><p data-i18n="integrations.body">کلیدهای جست‌وجو، تصویر، ویدیو و موسیقی را از رابط یا فایل .env مدیریت کنید.</p></div><span id="integration-configured-count" class="route-count"></span></header>
+              <form id="integration-settings-form" class="integration-grid">
+                <label data-integration-card="exa"><span><b>Exa Search</b><small id="integration-status-exa" data-i18n="integrations.loading">در حال بررسی…</small></span><input name="exa_api_keys" type="password" dir="ltr" autocomplete="new-password" placeholder="EXA_API_KEYS"><em><input type="checkbox" data-clear-integration="exa_api_keys"><span data-i18n="integrations.clearKeys">حذف کلیدهای ذخیره‌شده</span></em></label>
+                <label data-integration-card="tavily"><span><b>Tavily Search</b><small id="integration-status-tavily" data-i18n="integrations.loading">در حال بررسی…</small></span><input name="tavily_api_keys" type="password" dir="ltr" autocomplete="new-password" placeholder="TAVILY_API_KEYS"><em><input type="checkbox" data-clear-integration="tavily_api_keys"><span data-i18n="integrations.clearKeys">حذف کلیدهای ذخیره‌شده</span></em></label>
+                <label data-integration-card="pexels"><span><b>Pexels Media</b><small id="integration-status-pexels" data-i18n="integrations.loading">در حال بررسی…</small></span><input name="pexels_api_keys" type="password" dir="ltr" autocomplete="new-password" placeholder="PEXELS_API_KEYS"><em><input type="checkbox" data-clear-integration="pexels_api_keys"><span data-i18n="integrations.clearKeys">حذف کلیدهای ذخیره‌شده</span></em></label>
+                <label data-integration-card="jamendo"><span><b>Jamendo Music</b><small id="integration-status-jamendo" data-i18n="integrations.loading">در حال بررسی…</small></span><input name="jamendo_client_ids" type="password" dir="ltr" autocomplete="new-password" placeholder="JAMENDO_CLIENT_IDS"><em><input type="checkbox" data-clear-integration="jamendo_client_ids"><span data-i18n="integrations.clearIds">حذف شناسه‌های ذخیره‌شده</span></em></label>
+                <div class="integration-runtime"><label>Timeout<input id="integration-timeout" name="research_api_timeout_seconds" type="number" min="5" max="120" step="1"></label><label>Cooldown<input id="integration-cooldown" name="research_api_cooldown_seconds" type="number" min="1" max="600" step="1"></label><label>Minimum key gap<input id="integration-key-gap" name="research_api_minimum_gap_seconds" type="number" min="0" max="60" step="0.05"></label></div>
+                <footer><span data-i18n="integrations.privacy">مقادیر محرمانه پس از ذخیره هیچ‌وقت از API بازگردانده نمی‌شوند.</span><button class="primary-button" type="submit"><svg><use href="#i-check"></use></svg><span data-i18n="integrations.save">ذخیره اتصال‌ها</span></button></footer>
+              </form>
+              <section class="font-manager" aria-labelledby="font-manager-title">
+                <header><div><h4 id="font-manager-title">فونت‌های خروجی</h4><p id="font-manager-hint">فونت TTF یا OTF خود را برای اسلاید و ویدیو اضافه کنید.</p></div><form id="font-upload-form"><input id="font-upload-input" type="file" accept=".ttf,.otf,font/ttf,font/otf" required><button class="secondary-button" type="submit"><svg><use href="#i-plus"></use></svg><span id="font-upload-label">افزودن فونت</span></button></form></header>
+                <div id="font-manager-list" class="font-manager-list" aria-live="polite"></div>
+              </section>
+            </section>
+            <div id="provider-settings" class="provider-settings" aria-live="polite"></div>
+          </div>
+          <aside id="provider-runtime-settings" class="provider-runtime panel-surface">
+            <header><span class="eyebrow">Runtime controls</span><h3 data-i18n="providers.runtimeTitle">رفتار pool و پردازش</h3><p data-i18n="providers.runtimeHint">مقادیر واقعی اجرا و بازیابی را بدون تغییر کد تنظیم کنید.</p></header>
+            <form id="provider-runtime-form">
+              <div class="runtime-group"><h4 data-i18n="providers.languageModel">مدل زبانی</h4><div class="runtime-grid">
+                <label>Timeout<input id="runtime-llm-timeout" name="llm_timeout_seconds" type="number" min="5" max="120" step="1"></label>
+                <label>Cooldown<input id="runtime-llm-cooldown" name="llm_pool_cooldown_seconds" type="number" min="1" max="600" step="1"></label>
+                <label>Retry rounds<input id="runtime-llm-retries" name="llm_pool_retry_rounds" type="number" min="1" max="3" step="1"></label>
+                <label>File workers<input id="runtime-workers" name="ingestion_worker_count" type="number" min="1" max="8" step="1"></label>
+              </div></div>
+              <div class="runtime-group"><h4 data-i18n="providers.retrieval">بازیابی</h4><div class="runtime-grid">
+                <label>Top K<input id="runtime-top-k" name="retrieval_top_k" type="number" min="1" max="30" step="1"></label>
+                <label>Min similarity<input id="runtime-similarity" name="retrieval_min_similarity" type="number" min="0" max="1" step="0.01"></label>
+              </div></div>
+              <div class="runtime-group"><h4>OCR</h4><div class="runtime-grid">
+                <label>Key RPM<input id="runtime-ocr-rpm" name="ocr_requests_per_minute" type="number" min="0.1" max="120" step="0.1"></label>
+                <label>Global RPM<input id="runtime-ocr-global-rpm" name="ocr_global_requests_per_minute" type="number" min="0.1" max="120" step="0.1"></label>
+                <label>Cooldown<input id="runtime-ocr-cooldown" name="ocr_cooldown_seconds" type="number" min="1" max="600" step="1"></label>
+              </div></div>
+              <div class="runtime-group"><div class="runtime-title-row"><h4>VLM</h4><label class="toggle-field"><input id="runtime-vlm-enabled" name="vlm_enabled" type="checkbox"><span></span><b data-i18n="providers.enabled">فعال</b></label></div><div class="runtime-grid">
+                <label>Key RPM<input id="runtime-vlm-rpm" name="vlm_requests_per_minute" type="number" min="0.1" max="120" step="0.1"></label>
+                <label>Global RPM<input id="runtime-vlm-global-rpm" name="vlm_global_requests_per_minute" type="number" min="0.1" max="120" step="0.1"></label>
+                <label>Cooldown<input id="runtime-vlm-cooldown" name="vlm_cooldown_seconds" type="number" min="1" max="600" step="1"></label>
+              </div></div>
+              <div class="runtime-group"><h4 data-i18n="providers.podcastRuntime">مرور صوتی</h4><div class="runtime-grid">
+                <label>Turn timeout<input id="runtime-podcast-timeout" name="podcast_turn_timeout_seconds" type="number" min="30" max="300" step="1"></label>
+                <label>Minimum key gap<input id="runtime-podcast-key-gap" name="podcast_minimum_key_gap_seconds" type="number" min="0" max="60" step="1"></label>
+                <label>Idle reconnect<input id="runtime-podcast-idle-refresh" name="podcast_idle_refresh_seconds" type="number" min="30" max="300" step="1"></label>
+              </div><p class="runtime-note" data-i18n="providers.podcastRuntimeHint">این مقادیر برای هر نوبت صوتی اعمال می‌شوند. سهمیه Gemini در سطح پروژه محاسبه می‌شود.</p></div>
+              <button class="primary-button wide" type="submit" data-i18n="providers.runtimeSave">ذخیره تنظیمات اجرا</button>
+            </form>
+          </aside>
+        </div>
+      </section>
+
+      <section class="view" id="view-settings">
+        <div class="section-intro"><div><p class="eyebrow"><span></span>Runtime architecture</p><h2 data-i18n="settings.title">معماری و وضعیت سامانه</h2><p data-i18n="settings.subtitle">نمای زندهٔ providerها، ظرفیت پردازش و مسیر واقعی داده در backend.</p></div></div>
+        <div class="architecture-lane">
+          <article id="arch-ingestion"><span>01</span><strong data-i18n="architecture.ingest">دریافت منابع</strong><small id="arch-ingestion-papers" data-i18n="architecture.ingestHint">PDF، متن، تصویر و صوت</small></article>
+          <i>←</i><article id="arch-extraction"><span>02</span><strong data-i18n="architecture.extract">استخراج هوشمند</strong><small id="arch-extraction-state">متن، OCR، تحلیل بصری یا رونویسی</small></article>
+          <i>←</i><article id="arch-index"><span>03</span><strong data-i18n="architecture.index">آماده‌سازی جست‌وجو</strong><small id="arch-ingestion-chunks" data-i18n="architecture.indexHint">قطعه‌بندی و ساخت پایگاه برداری</small></article>
+          <i>←</i><article id="arch-vector"><span>04</span><strong data-i18n="architecture.retrieve">بازیابی شواهد</strong><small id="arch-retrieval-state">جست‌وجوی معنایی و واژگانی</small></article>
+          <i>←</i><article id="arch-gate"><span>05</span><strong data-i18n="architecture.gate">بررسی کفایت</strong><small id="arch-scope-state">تفکیک شاهد از پاسخ عمومی</small></article>
+          <i>←</i><article id="arch-llm"><span>06</span><strong data-i18n="architecture.answer">پاسخ و گزارش</strong><small id="arch-answer-state">تحلیل، منبع و جریان درخواست</small></article>
+        </div>
+        <div id="arch-route-summary" class="route-summary"></div>
+        <div id="settings-grid" class="settings-grid"></div>
+      </section>
+
+    </main>
+  </div>
+
+  <div id="drawer-backdrop" class="drawer-backdrop hidden"></div>
+  <aside id="evidence-drawer" class="drawer evidence-drawer-card" role="dialog" aria-modal="true" aria-labelledby="drawer-title" aria-hidden="true">
+    <div class="drawer-header"><div><span class="eyebrow"><i></i>Source evidence</span><h2 id="drawer-title" data-i18n="drawer.title">شاهد صفحه‌ای</h2><p data-i18n="drawer.body">متن استخراج‌شده و تصویر اصلی صفحه را کنار هم بررسی کنید.</p></div><button id="drawer-close" class="icon-button" type="button" aria-label="بستن"><svg><use href="#i-close"></use></svg></button></div>
+    <div class="drawer-actions"><a id="drawer-pdf-link" class="secondary-button" target="_blank" rel="noopener"><svg><use href="#i-external"></use></svg><span data-i18n="drawer.open">بازکردن منبع اصلی</span></a></div>
+    <div class="evidence-tabs" role="tablist" aria-label="نمای شاهد">
+      <button class="active" type="button" role="tab" data-evidence-tab="text" aria-selected="true" data-i18n="drawer.text">متن استخراج‌شده</button>
+      <button type="button" role="tab" data-evidence-tab="image" aria-selected="false" data-i18n="drawer.image">تصویر صفحه</button>
+    </div>
+    <section id="evidence-text-preview" class="drawer-panel active" role="tabpanel"></section>
+    <section id="evidence-visual-preview" class="drawer-panel" role="tabpanel"><img id="page-preview-image" alt="تصویر صفحهٔ PDF"></section>
+    <div id="evidence-warnings" class="warning-list"></div>
+  </aside>
+
+  <dialog id="workspace-dialog" class="modal-shell">
+    <form method="dialog" id="workspace-form" class="dialog-card modal-card">
+      <button id="workspace-dialog-close" class="icon-button modal-corner-close" type="button" data-close-dialog="workspace-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button>
+      <span class="dialog-icon"><svg><use href="#i-layers"></use></svg></span>
+      <div><span class="eyebrow">New workspace</span><h2 data-i18n="workspace.new">فضای کاری جدید</h2><p data-i18n="workspace.newHint">منابع مربوط به یک پروژه را در فضای جدا نگه دارید.</p></div>
+      <label for="workspace-name" data-i18n="workspace.name">نام فضای کاری</label>
+      <input id="workspace-name" required maxlength="120" data-i18n-placeholder="workspace.placeholder" placeholder="برای نمونه: پایان‌نامه">
+      <div class="dialog-actions"><button type="button" class="secondary-button" data-close-dialog="workspace-dialog" data-i18n="common.cancel">انصراف</button><button id="create-workspace" value="default" class="primary-button" data-i18n="workspace.create">ایجاد فضای کاری</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="confirm-dialog" class="modal-shell">
+    <form method="dialog" class="dialog-card modal-card">
+      <button id="confirm-dialog-close" class="icon-button modal-corner-close" type="button" data-close-dialog="confirm-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button>
+      <span class="dialog-icon"><svg><use href="#i-refresh"></use></svg></span>
+      <div><span class="eyebrow">Rebuild index</span><h2 data-i18n="rebuild.title">بازسازی پایگاه برداری؟</h2><p data-i18n="rebuild.hint">نسخهٔ تازه ساخته می‌شود و فقط پس از تکمیل جایگزین نسخهٔ فعال خواهد شد.</p></div>
+      <div class="dialog-actions"><button type="button" class="secondary-button" data-close-dialog="confirm-dialog" data-i18n="common.cancel">انصراف</button><button id="confirm-rebuild" value="default" class="primary-button" data-i18n="rebuild.start">شروع بازسازی</button></div>
+    </form>
+  </dialog>
+
+  <dialog id="studio-create-dialog" class="modal-shell studio-create-dialog">
+    <form method="dialog" id="studio-create-form" class="modal-card studio-create-card">
+      <header class="modal-header"><div><span class="eyebrow">Studio setup</span><h2 id="studio-create-title">ساخت خروجی</h2><p id="studio-create-hint" data-i18n="studio.customizeHint">منابع و جزئیات خروجی را پیش از ساخت تنظیم کنید.</p></div><button class="icon-button" type="button" data-close-dialog="studio-create-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button></header>
+      <input id="studio-create-type" type="hidden">
+      <section class="studio-source-picker"><div class="modal-section-head"><div><h3 data-i18n="studio.sourcesTitle">منابع این خروجی</h3><p data-i18n="studio.sourcesHint">انتخاب فعلی شما به‌صورت پیش‌فرض اعمال شده است.</p></div><button id="studio-toggle-sources" class="secondary-button" type="button" data-i18n="studio.selectAll">انتخاب همه</button></div><div id="studio-source-options" class="studio-source-options"></div></section>
+      <div class="studio-common-grid"><label><span data-i18n="studio.customTitle">عنوان دلخواه</span><input id="studio-custom-title" maxlength="180" data-i18n-placeholder="studio.customTitlePlaceholder" placeholder="اختیاری"></label><label><span data-i18n="studio.language">زبان خروجی</span><select id="studio-language"><option value="auto" data-i18n="studio.languageAuto">خودکار</option><option value="fa">فارسی</option><option value="en">English</option></select></label></div>
+      <section><div class="modal-section-head"><div><h3 data-i18n="studio.details">جزئیات و شخصی‌سازی</h3><p data-i18n="studio.defaultsHint">تنظیمات پیشنهادی از قبل انتخاب شده‌اند.</p></div></div><div id="studio-option-fields" class="studio-option-fields"></div></section>
+      <footer class="dialog-actions"><span id="studio-create-status" role="status" aria-live="polite"></span><button type="button" class="secondary-button" data-close-dialog="studio-create-dialog" data-i18n="common.cancel">انصراف</button><button id="studio-create-submit" type="submit" class="primary-button"><svg><use href="#i-sparkle"></use></svg><span data-i18n="studio.create">ساخت خروجی</span></button></footer>
+    </form>
+  </dialog>
+
+  <dialog id="studio-dialog" class="studio-dialog modal-shell">
+    <article class="studio-dialog-card">
+      <header><div><span class="eyebrow">Studio artifact</span><h2 id="studio-dialog-title">Output</h2></div><button id="studio-dialog-close" class="icon-button" type="button" data-close-dialog="studio-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button></header>
+      <div id="studio-dialog-meta" class="studio-dialog-meta"></div>
+      <div id="studio-dialog-body" class="studio-dialog-body"></div>
+      <footer><a id="studio-dialog-download" class="primary-button" href="#" download><svg><use href="#i-download"></use></svg><span data-i18n="studio.download">دانلود خروجی</span></a></footer>
+    </article>
+  </dialog>
+
+  <dialog id="provider-dialog" class="modal-shell provider-dialog">
+    <form method="dialog" id="provider-form" class="dialog-card modal-card provider-dialog-card">
+      <header class="modal-header"><div><span class="eyebrow">Provider registry</span><h2 id="provider-dialog-title" data-i18n="providers.registryTitle">اتصال ارائه‌دهنده</h2><p data-i18n="providers.registryHint">مشخصات اتصال، مدل‌ها و اولویت‌های واقعی pool را تنظیم کنید.</p></div><button id="provider-dialog-close" class="icon-button" type="button" data-close-dialog="provider-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button></header>
+      <input id="provider-original-id" type="hidden">
+      <div class="provider-form-grid">
+        <label><span data-i18n="providers.connectionId">شناسه اتصال</span><input id="provider-id" required maxlength="64" pattern="[a-z0-9][a-z0-9_-]*" dir="ltr" placeholder="openrouter"></label>
+        <label><span data-i18n="providers.displayName">نام نمایشی</span><input id="provider-label" required maxlength="120" placeholder="OpenRouter"></label>
+        <label>Adapter<select id="provider-adapter" required dir="ltr"><option value="openai">OpenAI-compatible</option></select></label>
+        <label>Environment variable<input id="provider-env-variable" required maxlength="81" pattern="[A-Z][A-Z0-9_]*" dir="ltr" placeholder="OPENROUTER_API_KEYS"></label>
+        <label class="span-2">Base URL<input id="provider-base-url" required type="url" dir="ltr" placeholder="https://openrouter.ai/api/v1"></label>
+        <label class="span-2"><span data-i18n="providers.apiKeys">کلیدهای API</span><textarea id="provider-key-input" rows="3" maxlength="20000" dir="ltr" autocomplete="off" spellcheck="false" data-i18n-placeholder="providers.keysKeep" placeholder="برای حفظ کلیدهای فعلی خالی بگذارید"></textarea></label>
+      </div>
+      <div id="provider-capabilities" class="provider-capability-summary"></div>
+      <div class="provider-model-section"><div class="modal-section-head"><div><h3 data-i18n="providers.modelsTitle">مدل‌ها و اولویت</h3><p data-i18n="providers.modelsHint">ترتیب این فهرست، ترتیب تلاش مدل‌ها در pool است.</p></div><button id="provider-add-model" class="secondary-button" type="button"><svg><use href="#i-plus"></use></svg><span data-i18n="providers.addModel">افزودن مدل</span></button></div><div id="provider-model-editor" class="provider-model-editor"></div></div>
+      <label class="toggle-field provider-enabled"><input id="provider-enabled" type="checkbox" checked><span></span><b data-i18n="providers.connectionEnabled">این اتصال فعال باشد</b></label>
+      <p class="credential-warning" data-i18n="providers.storageHint">کلیدها فقط در .env ذخیره می‌شوند؛ اطلاعات اتصال بدون کلید در providers.json قرار می‌گیرد.</p>
+      <footer class="dialog-actions"><button id="provider-delete" class="danger-button hidden" type="button" data-i18n="providers.delete">حذف اتصال</button><span></span><button id="provider-dialog-cancel" type="button" class="secondary-button" data-close-dialog="provider-dialog" data-i18n="common.cancel">انصراف</button><button id="save-provider" type="submit" value="default" class="primary-button" data-i18n="providers.saveSettings">ذخیره تنظیمات</button></footer>
+    </form>
+  </dialog>
+
+  <dialog id="web-source-dialog" class="modal-shell web-source-dialog">
+    <article class="modal-card web-source-card">
+      <header class="modal-header"><div><span class="eyebrow">Web source discovery</span><h2 data-i18n="webSources.dialogTitle">یافتن منابع معتبر</h2><p data-i18n="webSources.dialogBody">نتایج را بررسی کنید و فقط منابع مناسب را برای دریافت متن کامل انتخاب کنید.</p></div><button class="icon-button" type="button" data-close-dialog="web-source-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button></header>
+      <form id="web-source-search-form" class="web-source-search-form">
+        <label class="span-2"><span data-i18n="webSources.query">موضوع یا پرسش پژوهش</span><textarea id="web-source-query" rows="3" maxlength="1200" required data-i18n-placeholder="webSources.queryPlaceholder" placeholder="برای نمونه: تأثیر مدل‌های زبانی در آموزش برنامه‌نویسی"></textarea></label>
+        <label><span data-i18n="webSources.mode">نحوهٔ تنظیم جست‌وجو</span><select id="web-source-mode"><option value="auto" data-i18n="webSources.automatic">خودکار — پیشنهادی</option><option value="custom" data-i18n="webSources.custom">شخصی‌سازی</option></select></label>
+        <label><span data-i18n="webSources.count">تعداد نتیجه</span><input id="web-source-count" type="number" min="1" max="100" value="20"></label>
+        <fieldset><legend data-i18n="webSources.engines">موتورهای جست‌وجو</legend><label><input id="web-source-exa" type="checkbox" checked>Exa</label><label><input id="web-source-tavily" type="checkbox" checked>Tavily</label></fieldset>
+        <label data-web-source-advanced><span data-i18n="webSources.exaDepth">عمق Exa</span><select id="web-source-exa-type"><option value="auto">Auto</option><option value="deep-lite">Deep Lite</option><option value="deep">Deep</option><option value="deep-reasoning">Deep Reasoning</option><option value="fast">Fast</option></select></label>
+        <label data-web-source-advanced><span data-i18n="webSources.tavilyDepth">عمق Tavily</span><select id="web-source-tavily-depth"><option value="advanced">Advanced</option><option value="basic">Basic</option><option value="fast">Fast</option><option value="ultra-fast">Ultra fast</option></select></label>
+        <label data-web-source-advanced><span data-i18n="webSources.contentType">نوع محتوا</span><select id="web-source-topic"><option value="general">General</option><option value="news">News</option><option value="finance">Finance</option></select></label>
+        <label data-web-source-advanced><span data-i18n="webSources.category">دستهٔ Exa</span><select id="web-source-category"><option value="auto">Auto</option><option value="research paper">Research paper</option><option value="news">News</option><option value="company">Company</option><option value="people">People</option><option value="personal site">Personal site</option><option value="financial report">Financial report</option></select></label>
+        <label data-web-source-advanced><span data-i18n="webSources.includeDomains">فقط این دامنه‌ها</span><input id="web-source-domains" dir="ltr" placeholder="arxiv.org, nature.com"></label>
+        <label data-web-source-advanced><span data-i18n="webSources.excludeDomains">حذف این دامنه‌ها</span><input id="web-source-excluded-domains" dir="ltr" placeholder="example.com"></label>
+        <label data-web-source-advanced><span data-i18n="webSources.startDate">از تاریخ</span><input id="web-source-start-date" type="date"></label>
+        <label data-web-source-advanced><span data-i18n="webSources.endDate">تا تاریخ</span><input id="web-source-end-date" type="date"></label>
+        <label data-web-source-advanced><span data-i18n="webSources.freshness">تازگی محتوا</span><select id="web-source-freshness"><option value="balanced">Balanced</option><option value="fresh">Fresh</option><option value="cached">Cached</option></select></label>
+        <footer class="dialog-actions"><span id="web-source-search-status" role="status" aria-live="polite"></span><button class="secondary-button" type="button" data-close-dialog="web-source-dialog" data-i18n="common.cancel">انصراف</button><button id="web-source-search-submit" class="primary-button" type="submit"><svg><use href="#i-search"></use></svg><span data-i18n="webSources.search">جست‌وجو</span></button></footer>
+      </form>
+      <section id="web-source-selection" class="web-source-selection hidden">
+        <header><div><span class="eyebrow">Discovery results</span><h3 id="web-source-result-title" data-i18n="webSources.results">منابع پیشنهادی</h3><p id="web-source-result-summary"></p></div><button id="web-source-toggle-all" class="secondary-button" type="button" data-i18n="webSources.toggleAll">انتخاب/لغو همه</button></header>
+        <div id="web-source-provider-warnings" class="warning-list"></div>
+        <div id="web-source-results" class="web-source-results"></div>
+        <footer class="dialog-actions"><span id="web-source-import-status" role="status" aria-live="polite"></span><button id="web-source-back" class="secondary-button" type="button" data-i18n="webSources.back">تغییر جست‌وجو</button><button id="web-source-import" class="primary-button" type="button"><svg><use href="#i-plus"></use></svg><span data-i18n="webSources.import">افزودن منابع انتخاب‌شده</span></button></footer>
+      </section>
+    </article>
+  </dialog>
+
+  <dialog id="activity-detail-dialog" class="modal-shell activity-detail-dialog">
+    <article class="modal-card"><header class="modal-header"><div><span class="eyebrow">Request detail</span><h2 data-i18n="activity.detail">جزئیات فعالیت</h2></div><button id="activity-detail-close" class="icon-button" type="button" data-close-dialog="activity-detail-dialog" aria-label="Close"><svg><use href="#i-close"></use></svg></button></header><div id="activity-detail-dialog-body" class="activity-detail-dialog-body"></div></article>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script type="module" src="/app.js?v=20260808-live-studio-1"></script>
+</body>
+</html>

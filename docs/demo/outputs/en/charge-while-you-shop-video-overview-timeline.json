@@ -1,0 +1,293 @@
+{
+  "title": "EV Fast Charging at Stores: Turning Shopping Stops into Road-Trip Time",
+  "durationSeconds": 60,
+  "fps": 30,
+  "resolution": "1920x1080",
+  "silentVideo": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-silent.mp4",
+  "musicVideo": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-with-music.mp4",
+  "finalVideo": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-final.mp4",
+  "audio": {
+    "backgroundMusic": true,
+    "musicProvider": "sourcelens-prepared",
+    "musicPlanPath": "",
+    "voiceoverMixed": true
+  },
+  "direction": {
+    "version": "7.0.4",
+    "mode": "autonomous",
+    "seed": "public",
+    "profile": "technology",
+    "style": "warm",
+    "styleLabel": "Warm Documentary",
+    "energy": "balanced",
+    "mediaPolicy": "video-first",
+    "music": {
+      "genre": "ambient",
+      "moods": [
+        "calm",
+        "focused",
+        "modern"
+      ],
+      "instruments": [
+        "soft synthesizer",
+        "piano",
+        "pads"
+      ],
+      "speed": [
+        "low",
+        "medium"
+      ],
+      "instrumental": true,
+      "purpose": "voiceover-bed",
+      "foreground": false,
+      "rhythmDensity": "low",
+      "avoid": [
+        "vocals",
+        "gloomy",
+        "dark",
+        "dramatic",
+        "epic",
+        "aggressive",
+        "heavy percussion"
+      ],
+      "energyCurve": "low-steady-soft-resolve"
+    }
+  },
+  "scenes": [
+    {
+      "scene": 1,
+      "startSeconds": 0,
+      "endSeconds": 12.52,
+      "narrationStartSeconds": 0,
+      "narrationEndSeconds": 12,
+      "transitionInSeconds": 0,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-01.mp4",
+      "mediaCredit": "Gustavo Fring",
+      "mediaSourceUrl": "https://www.pexels.com/video/a-woman-using-her-cellphone-while-waiting-for-her-car-to-be-charged-4818142/",
+      "mediaSelectedQuery": "Charging Behavior The final demand-side input into the national framework is assumed PEV charging behavior. Charging behavior assumptions embedded in EVI-RoadTrip and EVI-OnDemand are relatively straightforward. In these",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "How Drivers Actually Charge",
+      "onScreenText": "Home first, fast when needed",
+      "narration": "Most drivers charge at home, but road trips demand fast public chargers nearby.",
+      "mediaQueries": [
+        "Charging Behavior The final demand-side input into the national framework is assumed PEV charging behavior. Charging behavior assumptions embedded in EVI-RoadTrip and EVI-OnDemand are relatively straightforward. In these",
+        "electric vehicle charging at home garage night",
+        "EV fast charger highway rest stop",
+        "driver plugging in electric car"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "hero-cinematic",
+        "motion": "type-reveal",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "cinematic",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": true,
+          "target": "title",
+          "cps": 8.054126500664278,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.22
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 2,
+      "startSeconds": 12,
+      "endSeconds": 24.52,
+      "narrationStartSeconds": 12,
+      "narrationEndSeconds": 24,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-02.mp4",
+      "mediaCredit": "German Korb",
+      "mediaSourceUrl": "https://www.pexels.com/video/eye-level-footage-of-a-gas-station-with-customer-3777657/",
+      "mediaSelectedQuery": "Going Beyond Gas: Nissan Brings Car Charging to Indianapolis Convenience Store Chain We've seen a steady increase in our customer base since installing the equipment a couple of",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "Convenience Stores Add Fast Charging",
+      "onScreenText": "Ricker's + Nissan = more customers",
+      "narration": "Indiana convenience stores add fast charging, steadily drawing more customers every day.",
+      "mediaQueries": [
+        "Going Beyond Gas: Nissan Brings Car Charging to Indianapolis Convenience Store Chain We've seen a steady increase in our customer base since installing the equipment a couple of",
+        "convenience store EV fast charger daytime",
+        "retail parking lot electric vehicle charging",
+        "Nissan Leaf charging at store"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "spotlight",
+        "motion": "reveal-up",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "cool",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": false,
+          "target": "title",
+          "cps": 7.306564993970096,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 3,
+      "startSeconds": 24,
+      "endSeconds": 36.52,
+      "narrationStartSeconds": 24,
+      "narrationEndSeconds": 36,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-03.mp4",
+      "mediaCredit": "Kindel Media",
+      "mediaSourceUrl": "https://www.pexels.com/video/a-white-electric-car-charging-9790139/",
+      "mediaSelectedQuery": "highway EV fast charging station multiple ports",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "182,000 Fast Ports by 2030",
+      "onScreenText": "65% for renters, 21% ride-hail, 14% travelers",
+      "narration": "By 2030, 182 thousand fast ports serve renters, ride-hail drivers, and long-distance travelers.",
+      "mediaQueries": [
+        "California Air Resources Board 2022 , with many states adopting or considering similar Fast charging serves multiple use cases, and technology is evolving rapidly. The majority of the 182,000",
+        "highway EV fast charging station multiple ports",
+        "urban fast charging hub many cars",
+        "350kW DC fast charger"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "glass-card",
+        "motion": "fade",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "vibrant",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": false,
+          "target": "title",
+          "cps": 8.041233505052514,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 4,
+      "startSeconds": 36,
+      "endSeconds": 48.52,
+      "narrationStartSeconds": 36,
+      "narrationEndSeconds": 48,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0.52,
+      "mediaType": "video",
+      "mediaPath": "scene-04.mp4",
+      "mediaCredit": "olia danilevich",
+      "mediaSourceUrl": "https://www.pexels.com/video/man-using-a-laptop-4974883/",
+      "mediaSelectedQuery": "An Integrated Approach for Multiple LDV Use Cases Moniot, Ge, | | Estimating Fast Charging | | IEEE Transactions on | | Developed and applied EVI",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "One Model for All Use Cases",
+      "onScreenText": "Home + destination + highway = national plan",
+      "narration": "Research models combine home, destination, and highway charging into one national network plan.",
+      "mediaQueries": [
+        "An Integrated Approach for Multiple LDV Use Cases Moniot, Ge, | | Estimating Fast Charging | | IEEE Transactions on | | Developed and applied EVI",
+        "electric vehicle charging network map digital",
+        "data center screens showing EV infrastructure",
+        "researcher analyzing charging models"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "spotlight",
+        "motion": "reveal-up",
+        "transition": "dissolve",
+        "transitionDuration": 0.52,
+        "treatment": "warm",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": false,
+          "target": "title",
+          "cps": 7.7548464960884305,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    },
+    {
+      "scene": 5,
+      "startSeconds": 48,
+      "endSeconds": 60,
+      "narrationStartSeconds": 48,
+      "narrationEndSeconds": 60,
+      "transitionInSeconds": 0.52,
+      "transitionOutSeconds": 0,
+      "mediaType": "video",
+      "mediaPath": "scene-05.mp4",
+      "mediaCredit": "Gustavo Fring",
+      "mediaSourceUrl": "https://www.pexels.com/video/a-woman-checking-a-charging-device-for-her-electric-car-4818032/",
+      "mediaSelectedQuery": "electric car parked in residential driveway charging",
+      "mediaFallbackReason": "resolved-by-sourcelens",
+      "title": "Smart Charging Defaults to Home",
+      "onScreenText": "Fast charging only when necessary",
+      "narration": "Vehicles maximize home charging, using fast options only when truly needed away.",
+      "mediaQueries": [
+        "minutes a Charging behavior | All models attempt to maximize use of home charging | | --- | --- | | | when available and utilize charging away",
+        "electric car parked in residential driveway charging",
+        "driver checking phone while EV charges",
+        "morning EV unplug routine"
+      ],
+      "visual": {
+        "intent": "footage",
+        "layout": "closing-statement",
+        "motion": "type-reveal",
+        "transition": "fade",
+        "transitionDuration": 0.52,
+        "treatment": "soft",
+        "icon": "sparkles",
+        "typing": {
+          "enabled": true,
+          "target": "title",
+          "cps": 7.954495586967096,
+          "variance": 0.2,
+          "cursor": true,
+          "cursorHold": 0.34,
+          "cursorBlink": false,
+          "initialDelay": 0.14
+        },
+        "chart": null,
+        "steps": null,
+        "comparison": null,
+        "timeline": null
+      }
+    }
+  ]
+}

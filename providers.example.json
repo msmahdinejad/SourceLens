@@ -1,0 +1,39 @@
+{
+  "version": 1,
+  "providers": [
+    {
+      "id": "openrouter",
+      "label": "OpenRouter",
+      "base_url": "https://openrouter.ai/api/v1",
+      "api_key_env": "OPENROUTER_API_KEYS",
+      "enabled": false,
+      "models": [
+        {
+          "id": "replace-with-a-tool-capable-model-id",
+          "label": "Custom quality model",
+          "capabilities": ["chat", "tools", "vision"],
+          "chat_priority": 20,
+          "vision_priority": 20,
+          "enabled": true
+        }
+      ]
+    },
+    {
+      "id": "local-openai-compatible",
+      "label": "Local OpenAI-compatible server",
+      "base_url": "http://127.0.0.1:11434/v1",
+      "api_key_env": "LOCAL_MODEL_API_KEYS",
+      "enabled": false,
+      "models": [
+        {
+          "id": "replace-with-your-local-model-id",
+          "label": "Local model",
+          "capabilities": ["chat", "tools"],
+          "chat_priority": 200,
+          "vision_priority": 1000,
+          "enabled": true
+        }
+      ]
+    }
+  ]
+}

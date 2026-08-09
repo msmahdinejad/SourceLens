@@ -1,0 +1,107 @@
+[project]
+name = "paperlens"
+version = "2.2.0"
+description = "A self-hosted multilingual research workspace with agentic RAG and cited outputs"
+readme = "README.md"
+requires-python = ">=3.12,<3.13"
+license = { file = "LICENSE" }
+keywords = ["agentic-rag", "rag", "multimodal", "pdf", "ocr", "research", "notebook"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3.12",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "chromadb",
+    "fastapi",
+    "fonttools",
+    "google-genai",
+    "httpx",
+    "matplotlib",
+    "markdown-it-py",
+    "numpy",
+    "openai",
+    "pdfplumber>=0.11.10",
+    "pillow",
+    "pydantic",
+    "pydantic-settings",
+    "pypdfium2==5.12.1",
+    "rich",
+    "sentence-transformers",
+    "typer",
+    "uvicorn[standard]",
+    "python-multipart",
+    "latex2mathml>=3.81.0",
+]
+
+[project.optional-dependencies]
+voice = ["faster-whisper"]
+ocr = ["pillow", "pytesseract"]
+dev = [
+    "httpx2",
+    "pytest",
+    "pytest-cov",
+    "python-pptx",
+    "reportlab",
+    "ruff",
+]
+
+[project.scripts]
+paperlens = "paperlens.cli:app"
+
+[project.urls]
+Homepage = "https://github.com/msmahdinejad/SourceLens"
+Repository = "https://github.com/msmahdinejad/SourceLens.git"
+Documentation = "https://github.com/msmahdinejad/SourceLens#readme"
+Issues = "https://github.com/msmahdinejad/SourceLens/issues"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/paperlens"]
+exclude = [
+    "src/paperlens/assets/fonts/Kalameh",
+    "src/paperlens/assets/fonts/IRANYekanX",
+    "src/paperlens/web/fonts",
+    "src/paperlens/renderers/*/node_modules",
+]
+
+[tool.hatch.build.targets.sdist]
+exclude = [
+    "/.agents",
+    "/.env",
+    "/.venv",
+    "/data/cache",
+    "/data/chroma",
+    "/data/fonts",
+    "/data/traces",
+    "/data/workspaces",
+    "/dist",
+    "/docs/demo",
+    "/outputs",
+    "/outputs/.gitkeep",
+    "/papers/*.pdf",
+    "/release",
+    "/src/paperlens/assets/fonts/Kalameh",
+    "/src/paperlens/assets/fonts/IRANYekanX",
+    "/src/paperlens/web/fonts",
+    "/src/paperlens/renderers/*/node_modules",
+    "/tmp",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = [".", "src"]
+addopts = "-q"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+exclude = [".venv", "dist", "release", "tmp"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "UP", "SIM"]

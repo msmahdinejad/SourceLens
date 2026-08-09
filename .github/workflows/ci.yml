@@ -1,0 +1,90 @@
+name: CI
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+concurrency:
+  group: ci-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+          cache: npm
+          cache-dependency-path: |
+            src/paperlens/renderers/deck_engine/package-lock.json
+            src/paperlens/renderers/video_engine/package-lock.json
+      - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+        with:
+          enable-cache: true
+      - name: Install FFmpeg
+        run: choco install ffmpeg --no-progress --yes
+      - run: uv sync --frozen --extra dev
+      - run: npm ci --prefix src/paperlens/renderers/deck_engine
+      - run: npm ci --prefix src/paperlens/renderers/video_engine
+      - run: python scripts/repository_policy.py audit
+      - run: uv run python scripts/license_audit.py
+      - run: uv run ruff check .
+      - run: uv run pytest --cov=paperlens --cov-report=term-missing
+      - run: node --check src/paperlens/web/app.js
+      - run: node --test tests/node/video_engine.test.mjs tests/node/studio_live.test.mjs
+      - run: npm audit --omit=dev --prefix src/paperlens/renderers/deck_engine
+      - run: npm audit --omit=dev --prefix src/paperlens/renderers/video_engine
+      - run: uv run --with pip-audit==2.10.1 pip-audit --ignore-vuln PYSEC-2026-311 --progress-spinner off
+      - run: uv build
+      - run: uv run python scripts/build_release.py
+      - name: Build clean exported source
+        shell: pwsh
+        run: |
+          Push-Location release/SourceLens
+          uv build
+          Pop-Location
+      - run: uv run python scripts/repository_policy.py audit-archive dist release/SourceLens-final.zip
+
+  linux-smoke:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-python@v6
+        with:
+          python-version: "3.12"
+      - uses: actions/setup-node@v6
+        with:
+          node-version: "20"
+      - uses: astral-sh/setup-uv@08807647e7069bb48b6ef5acd8ec9567f424441b # v8.1.0
+      - name: Install FFmpeg
+        run: sudo apt-get update && sudo apt-get install --yes --no-install-recommends ffmpeg
+      - run: uv sync --frozen --extra dev
+      - run: npm ci --prefix src/paperlens/renderers/deck_engine
+      - run: npm ci --prefix src/paperlens/renderers/video_engine
+      - run: python scripts/repository_policy.py audit
+      - run: uv run python scripts/license_audit.py
+      - run: uv run pytest tests/test_release.py -q
+      - run: node --check src/paperlens/web/app.js
+      - run: node --test tests/node/video_engine.test.mjs tests/node/studio_live.test.mjs
+      - run: uv build
+      - run: uv run python scripts/build_release.py
+      - name: Build and install clean exported source
+        run: |
+          cd release/SourceLens
+          uv build
+          uv venv "$RUNNER_TEMP/sourcelens-smoke" --python 3.12
+          uv pip install --python "$RUNNER_TEMP/sourcelens-smoke/bin/python" dist/*.whl
+          "$RUNNER_TEMP/sourcelens-smoke/bin/python" -c "import paperlens"
+      - run: uv run python scripts/repository_policy.py audit-archive dist release/SourceLens-final.zip

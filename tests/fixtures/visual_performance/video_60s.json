@@ -1,0 +1,72 @@
+{
+  "contract_version": "paperlens.visual-engine.v1",
+  "artifact_type": "video_overview",
+  "artifact_id": "artifact-benchmark60",
+  "workspace_id": "benchmark",
+  "language": "fa",
+  "plan": {
+    "title": "ارزیابی موتور بصری SourceLens",
+    "scenes": [
+      {
+        "title": "شروع پژوهش",
+        "on_screen_text": "یک روایت دقیق و مستند",
+        "narration": "پژوهش با یک پرسش روشن و منابع قابل بررسی آغاز می‌شود.",
+        "duration_seconds": 10,
+        "resolved_media": { "kind": "card" },
+        "visual": { "hierarchy": "title", "spacing": "airy", "emphasis": "title", "transition": "fade" }
+      },
+      {
+        "title": "فرمول پایه",
+        "on_screen_text": "E = mc²",
+        "narration": "فرمول‌ها باید بدون تغییر معنا و با خوانایی کامل نمایش داده شوند.",
+        "duration_seconds": 10,
+        "resolved_media": { "kind": "card" },
+        "visual": { "hierarchy": "subject", "spacing": "balanced", "emphasis": "body", "transition": "dissolve" }
+      },
+      {
+        "title": "شواهد قابل پیگیری",
+        "on_screen_text": "هر ادعا به منبع و صفحه متصل است",
+        "narration": "هر ادعا باید به منبع و صفحه یا بخش دقیق خود متصل بماند.",
+        "duration_seconds": 10,
+        "resolved_media": { "kind": "card" },
+        "visual": { "hierarchy": "subject", "spacing": "airy", "emphasis": "body", "transition": "slideleft" }
+      },
+      {
+        "title": "چیدمان راست به چپ",
+        "on_screen_text": "متن فارسی، فاصله‌گذاری و تایپوگرافی طبیعی",
+        "narration": "چیدمان راست به چپ و فاصله‌گذاری باید در همه قاب‌ها پایدار باشد.",
+        "duration_seconds": 10,
+        "resolved_media": { "kind": "card" },
+        "visual": { "hierarchy": "title", "spacing": "balanced", "emphasis": "title", "transition": "smoothleft" }
+      },
+      {
+        "title": "زمان‌بندی طبیعی",
+        "on_screen_text": "سرعت صدا ثابت می‌ماند",
+        "narration": "مدت ویدیو با زمان صحنه‌ها تنظیم می‌شود و سرعت صدا هرگز افزایش نمی‌یابد.",
+        "duration_seconds": 10,
+        "resolved_media": { "kind": "card" },
+        "visual": { "hierarchy": "subject", "spacing": "airy", "emphasis": "body", "transition": "fadeblack" }
+      },
+      {
+        "title": "جمع‌بندی",
+        "on_screen_text": "خروجی سریع، دقیق و قابل بازبینی",
+        "narration": "نتیجه باید سریع، دقیق و برای بازبینی پژوهشگر آماده باشد.",
+        "duration_seconds": 10,
+        "resolved_media": { "kind": "card" },
+        "visual": { "hierarchy": "title", "spacing": "airy", "emphasis": "title", "transition": "fade" }
+      }
+    ]
+  },
+  "options": {
+    "duration_seconds": 60,
+    "aspect_ratio": "landscape",
+    "resolution": "1080p",
+    "fps": "24",
+    "media_mode": "motion_graphics",
+    "music": "off",
+    "narration": "subtitles",
+    "include_captions": true,
+    "presenter_name": "پژوهشگر نمونه",
+    "organization": "دانشگاه نمونه"
+  }
+}

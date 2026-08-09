@@ -1,0 +1,148 @@
+{
+  "language": "en",
+  "artifacts": [
+    {
+      "artifact_type": "audio_overview",
+      "title": "Charge While You Shop: Audio Overview",
+      "path": "charge-while-you-shop-audio-overview.mp3",
+      "size": 2272940,
+      "sha256": "de0a250bdb39f1a196c494bdbd9a9cb8de4bc5acb185efe2629b3d9faede7825",
+      "assets": [
+        {
+          "role": "transcript",
+          "path": "charge-while-you-shop-audio-overview-transcript.txt",
+          "size": 1556,
+          "sha256": "ea5bcbb682ba8f21c0fafac4d5547b3e503f78af3f72166c08e4555a0b0cbe3f"
+        }
+      ]
+    },
+    {
+      "artifact_type": "report",
+      "title": "Charge While You Shop: Evidence Brief",
+      "path": "charge-while-you-shop-report.md",
+      "size": 9843,
+      "sha256": "a850ca0454249dc8c10b350d668f992d5cd7b4a0331d2288915358a2d8765afb",
+      "assets": []
+    },
+    {
+      "artifact_type": "concept_map",
+      "title": "Retail EV Charging Concept Map",
+      "path": "charge-while-you-shop-concept-map.json",
+      "size": 9724,
+      "sha256": "4ce51e5f77f0290480206a577554b2f3c603be13084d7c169349ea0c924fe54d",
+      "assets": []
+    },
+    {
+      "artifact_type": "flashcards",
+      "title": "Retail EV Charging Flashcards",
+      "path": "charge-while-you-shop-flashcards.json",
+      "size": 4744,
+      "sha256": "6a06d9062d5b2336c24bd4aa82ae43a82887bc87c916515d182b7429cbaaeab7",
+      "assets": []
+    },
+    {
+      "artifact_type": "quiz",
+      "title": "Retail EV Charging Quiz",
+      "path": "charge-while-you-shop-quiz.json",
+      "size": 6059,
+      "sha256": "744a8aae7a22918fd9b2e53e54f5135ee7f9e4977b80c70ffa3644cedaa09aaa",
+      "assets": []
+    },
+    {
+      "artifact_type": "infographic",
+      "title": "From Parking Space to Mobility Hub",
+      "path": "charge-while-you-shop-infographic.json",
+      "size": 7574,
+      "sha256": "b7e56bb9a88fc67bb9af13a4521f45c82e7a5d0609adb3beaa33a677ad90354f",
+      "assets": []
+    },
+    {
+      "artifact_type": "data_table",
+      "title": "Retail Charging Evidence Table",
+      "path": "charge-while-you-shop-data-table.json",
+      "size": 7913,
+      "sha256": "e14b64a3fc3e08740cdc545eabf6f2a5ffc8c8c621baa40c91009bec32fa0dea",
+      "assets": []
+    },
+    {
+      "artifact_type": "chart",
+      "title": "Public Charging Evidence Chart",
+      "path": "charge-while-you-shop-chart.json",
+      "size": 5788,
+      "sha256": "e87b784af7f013a65254e75fefcc77cc09cfbbf9896ecc33508a8426d14d57b4",
+      "assets": []
+    },
+    {
+      "artifact_type": "timeline",
+      "title": "Retail EV Charging Timeline",
+      "path": "charge-while-you-shop-timeline.json",
+      "size": 6695,
+      "sha256": "d0b2b3f4f71a6dc05cb7cc7edcf06ebb4c9a775f0f4207cff695be1f00166828",
+      "assets": []
+    },
+    {
+      "artifact_type": "comparison",
+      "title": "Retail Charging Options Compared",
+      "path": "charge-while-you-shop-comparison.md",
+      "size": 9255,
+      "sha256": "7c4686b8523aa5cd05ab0103945d583613336823ddecbde2e8f62757b11bda90",
+      "assets": []
+    },
+    {
+      "artifact_type": "research_gap",
+      "title": "Open Questions in Retail EV Charging",
+      "path": "charge-while-you-shop-research-gap.md",
+      "size": 15346,
+      "sha256": "97af9da246806b66f383b459efda45b4492c08c9bda4267c7e131536bf8ded65",
+      "assets": []
+    },
+    {
+      "artifact_type": "slide_deck",
+      "title": "Charge While You Shop",
+      "path": "charge-while-you-shop-slide-deck.pptx",
+      "size": 1391579,
+      "sha256": "6cb4d75e00b3f3d8ba480897fc3aed9f886d6a874edb24327b25e495e233f027",
+      "assets": [
+        {
+          "role": "manifest",
+          "path": "charge-while-you-shop-slide-deck-manifest.json",
+          "size": 2930,
+          "sha256": "1bdb93a5f5954daf3eaf92c283d1e80b54b2b9265c8b451823020e6369f42062"
+        }
+      ]
+    },
+    {
+      "artifact_type": "video_overview",
+      "title": "Charge While You Shop in 60 Seconds",
+      "path": "charge-while-you-shop-video-overview.mp4",
+      "size": 54632213,
+      "sha256": "1a56bf927c6faa817281617475f8293920bf5bc6104889b6ba9ed6eeaa612b1e",
+      "assets": [
+        {
+          "role": "manifest",
+          "path": "charge-while-you-shop-video-overview-manifest.json",
+          "size": 8505,
+          "sha256": "e1fe327b6a415b62add96e98b55766b249d1a95033c040171b08c3bb7618199c"
+        },
+        {
+          "role": "captions",
+          "path": "charge-while-you-shop-video-overview-captions.srt",
+          "size": 606,
+          "sha256": "8ce414878b5ed00c02416c7ce9425ab045460ae5a54ddb41eb472e59fe1776ea"
+        },
+        {
+          "role": "timeline",
+          "path": "charge-while-you-shop-video-overview-timeline.json",
+          "size": 10726,
+          "sha256": "3158e2f7b8c58f8dc1cc4d036cedfb91803d0d58e9d7fd72067779eb2dae2557"
+        },
+        {
+          "role": "music_credits",
+          "path": "audio-credits.txt",
+          "size": 391,
+          "sha256": "a2faa3f33d99181ffc56d710c3dad74da65dc97fcabfa37a6d99756c4bc1a0bf"
+        }
+      ]
+    }
+  ]
+}

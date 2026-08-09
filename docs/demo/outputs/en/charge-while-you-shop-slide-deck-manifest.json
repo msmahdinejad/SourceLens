@@ -1,0 +1,113 @@
+{
+  "contract_version": "paperlens.visual-engine.v1",
+  "artifact_type": "slide_deck",
+  "engine": {
+    "name": "sourcelens-deck-renderer",
+    "version": "5.1.0"
+  },
+  "created_at": "2026-08-09T15:28:45.596534+00:00",
+  "assets": [
+    {
+      "role": "output:pptx_filename",
+      "path": "presentation.pptx",
+      "size": 1391579,
+      "sha256": "6cb4d75e00b3f3d8ba480897fc3aed9f886d6a874edb24327b25e495e233f027",
+      "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
+    },
+    {
+      "role": "diagnostic",
+      "path": "deck-plan.normalized.json",
+      "size": 23478,
+      "sha256": "987ad49b4bb6491ea43599ac9dca7d18786322e7b5e868aedb38d709a50daa79",
+      "media_type": "application/json"
+    }
+  ],
+  "metadata": {
+    "slide_count": 8,
+    "layout_distribution": {
+      "cover_cinematic": 1,
+      "editorial_split": 2,
+      "big_statement": 2,
+      "cards_icon": 1,
+      "comparison_dual": 1,
+      "closing_actions": 1
+    },
+    "supported_layouts": [
+      "cover_cinematic",
+      "editorial_split",
+      "cards_icon",
+      "metrics_dashboard",
+      "timeline_story",
+      "comparison_dual",
+      "chart_focus",
+      "matrix_2x2",
+      "process_flow",
+      "photo_mosaic",
+      "quote_photo",
+      "big_statement",
+      "case_study",
+      "table_clean",
+      "funnel",
+      "dashboard",
+      "closing_actions"
+    ],
+    "editable": true,
+    "editable_charts": true,
+    "font_family": "Vazirmatn",
+    "aspect_ratio": "wide",
+    "canvas_inches": {
+      "width": 13.333,
+      "height": 7.5
+    },
+    "media_credits": [
+      {
+        "source_url": "https://www.pexels.com/photo/public-charger-for-electric-vehicles-4678065/",
+        "credit": "Reinhard Bruckner"
+      },
+      {
+        "source_url": "https://www.pexels.com/photo/electric-car-charging-at-station-with-multiple-chargers-37576187/",
+        "credit": "Giant Asparagus"
+      },
+      {
+        "source_url": "https://www.pexels.com/photo/wind-turbines-and-solar-panels-during-daytime-9800092/",
+        "credit": "Kindel Media"
+      }
+    ]
+  },
+  "warnings": [],
+  "events": [
+    {
+      "type": "progress",
+      "stage": "normalizing",
+      "progress": 8,
+      "message": "Validating and repairing the slide plan",
+      "details": {}
+    },
+    {
+      "type": "diagnostic",
+      "stage": "assets_ready",
+      "progress": 28,
+      "message": "Resolved slide media received from SourceLens",
+      "details": {
+        "asset_count": 3
+      }
+    },
+    {
+      "type": "progress",
+      "stage": "rendering",
+      "progress": 42,
+      "message": "Rendering editable PowerPoint shapes and charts",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "completed",
+      "progress": 100,
+      "message": "PowerPoint rendering completed",
+      "details": {
+        "slide_count": 8,
+        "output": "presentation.pptx"
+      }
+    }
+  ]
+}

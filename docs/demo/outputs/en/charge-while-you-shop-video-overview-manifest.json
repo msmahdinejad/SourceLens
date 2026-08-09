@@ -1,0 +1,319 @@
+{
+  "contract_version": "paperlens.visual-engine.v1",
+  "artifact_type": "video_overview",
+  "engine": {
+    "name": "sourcelens-video-renderer",
+    "version": "7.0.4-paperlens"
+  },
+  "created_at": "2026-08-09T15:40:05.720684+00:00",
+  "assets": [
+    {
+      "role": "output:video_filename",
+      "path": "video-overview.mp4",
+      "size": 54632213,
+      "sha256": "1a56bf927c6faa817281617475f8293920bf5bc6104889b6ba9ed6eeaa612b1e",
+      "media_type": "video/mp4"
+    },
+    {
+      "role": "output:timeline_filename",
+      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-timeline.json",
+      "size": 10742,
+      "sha256": "dce2a6d68773d1d6e83c3855423b9ada69e4fce53ca9d17d46680a0fee401a02",
+      "media_type": "application/json"
+    },
+    {
+      "role": "output:captions_filename",
+      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-subtitles.srt",
+      "size": 606,
+      "sha256": "8ce414878b5ed00c02416c7ce9425ab045460ae5a54ddb41eb472e59fe1776ea",
+      "media_type": "text/plain"
+    },
+    {
+      "role": "output:narration_filename",
+      "path": "narration.wav",
+      "size": 1355084,
+      "sha256": "b78c7e6e9bca54f07e10468552d4c5448fb54a57b85e7b56212a7b67770d5eff",
+      "media_type": "audio/wav"
+    },
+    {
+      "role": "diagnostic",
+      "path": "diagnostics/video-plan.json",
+      "size": 35527,
+      "sha256": "d1753f0512787ad22dfcda63de2f59098406c748579a8445806d7be3ff26c3fe",
+      "media_type": "application/json"
+    },
+    {
+      "role": "diagnostic",
+      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-voiceover.txt",
+      "size": 613,
+      "sha256": "3fc9a7b8f1aaa4f38671ba7ca4d80f6e81c34f56ab116cac2714f6e77497aa93",
+      "media_type": "text/plain"
+    },
+    {
+      "role": "diagnostic",
+      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-content.md",
+      "size": 4533,
+      "sha256": "8ca177d0866e85e810b7be7a76811d4b2738ac4f3c2f08c275dbf5b04e6b14c7",
+      "media_type": "text/markdown"
+    },
+    {
+      "role": "diagnostic",
+      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-media-credits.txt",
+      "size": 561,
+      "sha256": "facebec973ecea6a78c0d0fb8494a0e47f3314e0f429f63f5cda72babf793968",
+      "media_type": "text/plain"
+    },
+    {
+      "role": "diagnostic",
+      "path": "audio-credits.txt",
+      "size": 391,
+      "sha256": "a2faa3f33d99181ffc56d710c3dad74da65dc97fcabfa37a6d99756c4bc1a0bf",
+      "media_type": "text/plain"
+    }
+  ],
+  "metadata": {
+    "scene_count": 5,
+    "duration_seconds": 60,
+    "resolution": "1920x1080",
+    "fps": 30,
+    "transition_mode": "xfade-composite",
+    "direction": {
+      "version": "7.0.4",
+      "mode": "autonomous",
+      "seed": "public",
+      "profile": "technology",
+      "style": "warm",
+      "styleLabel": "Warm Documentary",
+      "energy": "balanced",
+      "mediaPolicy": "video-first",
+      "music": {
+        "genre": "ambient",
+        "moods": [
+          "calm",
+          "focused",
+          "modern"
+        ],
+        "instruments": [
+          "soft synthesizer",
+          "piano",
+          "pads"
+        ],
+        "speed": [
+          "low",
+          "medium"
+        ],
+        "instrumental": true,
+        "purpose": "voiceover-bed",
+        "foreground": false,
+        "rhythmDensity": "low",
+        "avoid": [
+          "vocals",
+          "gloomy",
+          "dark",
+          "dramatic",
+          "epic",
+          "aggressive",
+          "heavy percussion"
+        ],
+        "energyCurve": "low-steady-soft-resolve"
+      }
+    },
+    "media_distribution": {
+      "video": 5
+    },
+    "media_credits": [
+      {
+        "kind": "video",
+        "credit": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/video/a-woman-using-her-cellphone-while-waiting-for-her-car-to-be-charged-4818142/"
+      },
+      {
+        "kind": "video",
+        "credit": "German Korb",
+        "source_url": "https://www.pexels.com/video/eye-level-footage-of-a-gas-station-with-customer-3777657/"
+      },
+      {
+        "kind": "video",
+        "credit": "Kindel Media",
+        "source_url": "https://www.pexels.com/video/a-white-electric-car-charging-9790139/"
+      },
+      {
+        "kind": "video",
+        "credit": "olia danilevich",
+        "source_url": "https://www.pexels.com/video/man-using-a-laptop-4974883/"
+      },
+      {
+        "kind": "video",
+        "credit": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/video/a-woman-checking-a-charging-device-for-her-electric-car-4818032/"
+      }
+    ],
+    "font_family": "Vazirmatn",
+    "music_status": "ready",
+    "typewriter_scene_count": 2,
+    "narration_fit": {
+      "sourceDuration": 28.23,
+      "targetDuration": 60,
+      "tempoRatio": 1,
+      "speedChanged": false,
+      "overflowSeconds": 0
+    },
+    "quality_gate": {
+      "passed": true,
+      "durationSeconds": 60,
+      "width": 1920,
+      "height": 1080,
+      "videoCodec": "h264",
+      "audioCodec": "aac",
+      "hasAudio": true
+    },
+    "stage_metrics": {
+      "media": {
+        "duration_ms": 1,
+        "cache_hit": false,
+        "byte_count": 65168980,
+        "attempt": 5
+      },
+      "overlays": {
+        "duration_ms": 641,
+        "item_duration_ms": [
+          378,
+          354,
+          355,
+          248,
+          263
+        ],
+        "worker_count": 3,
+        "rasterizer": "resvg",
+        "browser_renders": 0
+      },
+      "video": {
+        "segment_duration_ms": [
+          24433,
+          20082,
+          19822,
+          12440,
+          14931
+        ],
+        "segment_wall_ms": 35029,
+        "segment_cpu_ms": 91708,
+        "composition_ms": 48187,
+        "worker_count": 3,
+        "recommended_worker_count": 3,
+        "intermediate": {
+          "codec": "libx264",
+          "preset": "ultrafast",
+          "crf": 1
+        }
+      }
+    }
+  },
+  "warnings": [],
+  "events": [
+    {
+      "type": "progress",
+      "stage": "directing",
+      "progress": 8,
+      "message": "Applying SourceLens visual direction",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "resolving_media",
+      "progress": 18,
+      "message": "Resolving scene media with video-first fallbacks",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "resolving_media",
+      "progress": 33,
+      "message": "Scene media resolved",
+      "details": {
+        "duration_ms": 1,
+        "cache_hit": false,
+        "byte_count": 65168980,
+        "attempt": 5
+      }
+    },
+    {
+      "type": "progress",
+      "stage": "rendering_overlays",
+      "progress": 34,
+      "message": "Rendering RTL layouts and Persian typewriter overlays",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "rendering_overlays",
+      "progress": 51,
+      "message": "RTL overlays rendered",
+      "details": {
+        "duration_ms": 641,
+        "item_duration_ms": [
+          378,
+          354,
+          355,
+          248,
+          263
+        ],
+        "worker_count": 3,
+        "rasterizer": "resvg",
+        "browser_renders": 0
+      }
+    },
+    {
+      "type": "progress",
+      "stage": "rendering_video",
+      "progress": 52,
+      "message": "Compositing cinematic motion and transitions",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "rendering_video",
+      "progress": 77,
+      "message": "Scene video and transitions rendered",
+      "details": {
+        "duration_ms": 83216,
+        "segment_duration_ms": [
+          24433,
+          20082,
+          19822,
+          12440,
+          14931
+        ],
+        "segment_wall_ms": 35029,
+        "segment_cpu_ms": 91708,
+        "composition_ms": 48187,
+        "worker_count": 3,
+        "recommended_worker_count": 3,
+        "intermediate": {
+          "codec": "libx264",
+          "preset": "ultrafast",
+          "crf": 1
+        }
+      }
+    },
+    {
+      "type": "progress",
+      "stage": "mixing_audio",
+      "progress": 78,
+      "message": "Mixing SourceLens-prepared narration and music",
+      "details": {}
+    },
+    {
+      "type": "progress",
+      "stage": "completed",
+      "progress": 100,
+      "message": "SourceLens video rendering completed",
+      "details": {
+        "scene_count": 5,
+        "duration_seconds": 60,
+        "media_distribution": {
+          "video": 5
+        }
+      }
+    }
+  ]
+}
