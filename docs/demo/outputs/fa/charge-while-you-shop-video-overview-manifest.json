@@ -1,100 +1,102 @@
 {
   "contract_version": "paperlens.visual-engine.v1",
+  "artifact_id": "public-demo-fa-video",
   "artifact_type": "video_overview",
   "engine": {
     "name": "sourcelens-video-renderer",
     "version": "7.0.4-paperlens"
   },
-  "created_at": "2026-08-09T17:15:14.293136+00:00",
+  "created_at": "2026-08-09T20:17:43.967169+00:00",
   "assets": [
     {
       "role": "output:video_filename",
       "path": "video-overview.mp4",
-      "size": 59742116,
-      "sha256": "f3704520a678e98a4d510266dcff8d8182948f70128529ecad44d04bca200db7",
+      "size": 43996768,
+      "sha256": "911daba1dda85be2960c51c95664d132e5c6cd6f498d7e6a2f8c74ee1883e2f4",
       "media_type": "video/mp4"
     },
     {
       "role": "output:timeline_filename",
-      "path": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-timeline.json",
-      "size": 13098,
-      "sha256": "d76f9b5a67b07dcaed38d1c7bfa68985ec2a0fccde29ce274c2f147e19dc93c3",
+      "path": "شارژ-سریع-خودرو-برقی-در-فروشگاه‌ها-timeline.json",
+      "size": 11567,
+      "sha256": "74568c5fc0ef2f20fb8dc1d6d67b952ab1435c712a66cb8a571d60952d305153",
       "media_type": "application/json"
     },
     {
       "role": "output:captions_filename",
-      "path": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-subtitles.srt",
-      "size": 1613,
-      "sha256": "f9f9c5eb5d9f1d103dc4bb1c770640cfe1507d8647aa582669cf3ee7e9b3fe24",
+      "path": "شارژ-سریع-خودرو-برقی-در-فروشگاه‌ها-subtitles.srt",
+      "size": 1069,
+      "sha256": "62c3efcf7a6bcd93da200d6cdcc1a923b41e124ace2859e88df3b2b1b50aed45",
       "media_type": "text/plain"
     },
     {
       "role": "output:narration_filename",
       "path": "narration.wav",
-      "size": 2681564,
-      "sha256": "9f87c5370e59df3be97275a402378da373b1fa48dd1dbbe4ba28f6d6c35d9fc9",
+      "size": 1890284,
+      "sha256": "e7a53cde269d2ef8968a3b1e00cf37b8518d7193bb5cb1ee74cc57f35b6035a1",
       "media_type": "audio/wav"
     },
     {
       "role": "diagnostic",
       "path": "diagnostics/video-plan.json",
-      "size": 43378,
-      "sha256": "8640eb20af51fb30e5f4421c7a1f48f28901dacc5025f22a2b931ced1dfc5ba3",
+      "size": 37198,
+      "sha256": "3f1b56d3b00a9964495317d3f0a402ad976915a94b07df2a0ce8e40f50fc4576",
       "media_type": "application/json"
     },
     {
       "role": "diagnostic",
-      "path": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-voiceover.txt",
-      "size": 1659,
-      "sha256": "7ded8c61c911c7e759dd7fde210556fc62cb9205bca97cac39798dd61e51b8fc",
+      "path": "شارژ-سریع-خودرو-برقی-در-فروشگاه‌ها-voiceover.txt",
+      "size": 1070,
+      "sha256": "3fb0f677d6497e3361999699f64a9308d8ab9a52c00ec84aeaec180d4767941f",
       "media_type": "text/plain"
     },
     {
       "role": "diagnostic",
-      "path": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-content.md",
-      "size": 5800,
-      "sha256": "3eadc923bf47f0a118cb48b41116d10ddd471f08aae7b74bf0c479989881738a",
+      "path": "شارژ-سریع-خودرو-برقی-در-فروشگاه‌ها-content.md",
+      "size": 5002,
+      "sha256": "bf16aa6cf5f7583cd329b99f21e68bb8849100ed280dbd46629122f20556239c",
       "media_type": "text/markdown"
     },
     {
       "role": "diagnostic",
-      "path": "شارژ-سریع-در-فروشگاه؛-وقتی-توقف-کوتاه-به-فرصتی-تبدیل-می‌شود-media-credits.txt",
-      "size": 539,
-      "sha256": "1e5896ec14d8ba4cd342fff3dd6fcde3d3e21fcb89bdd5755af0e75d5dfa2532",
+      "path": "شارژ-سریع-خودرو-برقی-در-فروشگاه‌ها-media-credits.txt",
+      "size": 511,
+      "sha256": "e0a67b4965273e209cf42f7638aa504d7c21251e00b07bc0da204d029b4f2fd3",
       "media_type": "text/plain"
     },
     {
       "role": "diagnostic",
       "path": "audio-credits.txt",
-      "size": 376,
-      "sha256": "be20ba85a1ef350d34f1d694fc97791416e3d1c7b774c038a3435fbb5bbec7f0",
+      "size": 535,
+      "sha256": "08330e71db6cb1c49913378c2d92309c95123bcacbadd554756499edf3564c44",
       "media_type": "text/plain"
     }
   ],
   "metadata": {
     "scene_count": 5,
-    "duration_seconds": 60,
+    "duration_seconds": 50,
     "resolution": "1920x1080",
     "fps": 30,
     "transition_mode": "xfade-composite",
     "direction": {
       "version": "7.0.4",
       "mode": "autonomous",
-      "seed": "public",
-      "profile": "educational",
-      "style": "warm",
-      "styleLabel": "Warm Documentary",
+      "seed": "public-demo-fa-video",
+      "profile": "business",
+      "style": "cinematic",
+      "styleLabel": "Cinematic Dark",
       "energy": "balanced",
       "mediaPolicy": "video-first",
       "music": {
-        "genre": "ambient",
+        "genre": "lounge",
         "moods": [
           "calm",
-          "focused",
-          "gentle"
+          "professional",
+          "focused"
         ],
         "instruments": [
           "piano",
+          "soft guitar",
           "pads"
         ],
         "speed": [
@@ -123,18 +125,8 @@
     "media_credits": [
       {
         "kind": "video",
-        "credit": "Esra Erdoğdu",
-        "source_url": "https://www.pexels.com/video/snowy-train-station-in-winter-black-white-35795702/"
-      },
-      {
-        "kind": "video",
-        "credit": "Mikhail Nilov",
-        "source_url": "https://www.pexels.com/video/man-using-cellphone-while-holding-his-credit-card-6898026/"
-      },
-      {
-        "kind": "video",
-        "credit": "Nowrin Sanjana",
-        "source_url": "https://www.pexels.com/video/vibrant-night-street-scene-with-neon-lights-38031213/"
+        "credit": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/video/a-woman-checking-a-charging-device-for-her-electric-car-4818032/"
       },
       {
         "kind": "video",
@@ -144,22 +136,32 @@
       {
         "kind": "video",
         "credit": "Kindel Media",
-        "source_url": "https://www.pexels.com/video/close-up-shot-of-a-car-at-a-charging-station-9790134/"
+        "source_url": "https://www.pexels.com/video/solar-panels-in-the-parking-lot-9788714/"
+      },
+      {
+        "kind": "video",
+        "credit": "Kindel Media",
+        "source_url": "https://www.pexels.com/video/a-solar-panel-roof-9790033/"
+      },
+      {
+        "kind": "video",
+        "credit": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/video/a-woman-doing-her-shopping-while-charging-her-car-4818165/"
       }
     ],
     "font_family": "Kalameh",
     "music_status": "ready",
     "typewriter_scene_count": 3,
     "narration_fit": {
-      "sourceDuration": 55.865,
-      "targetDuration": 60,
+      "sourceDuration": 39.38,
+      "targetDuration": 50,
       "tempoRatio": 1,
       "speedChanged": false,
       "overflowSeconds": 0
     },
     "quality_gate": {
       "passed": true,
-      "durationSeconds": 60,
+      "durationSeconds": 50,
       "width": 1920,
       "height": 1080,
       "videoCodec": "h264",
@@ -170,16 +172,16 @@
       "media": {
         "duration_ms": 1,
         "cache_hit": false,
-        "byte_count": 82259512,
-        "attempt": 1
+        "byte_count": 38301602,
+        "attempt": 5
       },
       "overlays": {
-        "duration_ms": 592,
+        "duration_ms": 599,
         "item_duration_ms": [
-          353,
-          330,
-          330,
-          236,
+          575,
+          327,
+          336,
+          242,
           239
         ],
         "worker_count": 3,
@@ -188,15 +190,15 @@
       },
       "video": {
         "segment_duration_ms": [
-          9988,
-          8924,
-          8931,
-          6854,
-          7331
+          8169,
+          7141,
+          7324,
+          6196,
+          6074
         ],
-        "segment_wall_ms": 16289,
-        "segment_cpu_ms": 42028,
-        "composition_ms": 21227,
+        "segment_wall_ms": 13428,
+        "segment_cpu_ms": 34904,
+        "composition_ms": 15194,
         "worker_count": 3,
         "recommended_worker_count": 3,
         "intermediate": {
@@ -231,8 +233,8 @@
       "details": {
         "duration_ms": 1,
         "cache_hit": false,
-        "byte_count": 82259512,
-        "attempt": 1
+        "byte_count": 38301602,
+        "attempt": 5
       }
     },
     {
@@ -248,12 +250,12 @@
       "progress": 51,
       "message": "RTL overlays rendered",
       "details": {
-        "duration_ms": 592,
+        "duration_ms": 599,
         "item_duration_ms": [
-          353,
-          330,
-          330,
-          236,
+          575,
+          327,
+          336,
+          242,
           239
         ],
         "worker_count": 3,
@@ -274,17 +276,17 @@
       "progress": 77,
       "message": "Scene video and transitions rendered",
       "details": {
-        "duration_ms": 37516,
+        "duration_ms": 28622,
         "segment_duration_ms": [
-          9988,
-          8924,
-          8931,
-          6854,
-          7331
+          8169,
+          7141,
+          7324,
+          6196,
+          6074
         ],
-        "segment_wall_ms": 16289,
-        "segment_cpu_ms": 42028,
-        "composition_ms": 21227,
+        "segment_wall_ms": 13428,
+        "segment_cpu_ms": 34904,
+        "composition_ms": 15194,
         "worker_count": 3,
         "recommended_worker_count": 3,
         "intermediate": {
@@ -308,7 +310,7 @@
       "message": "SourceLens video rendering completed",
       "details": {
         "scene_count": 5,
-        "duration_seconds": 60,
+        "duration_seconds": 50,
         "media_distribution": {
           "video": 5
         }

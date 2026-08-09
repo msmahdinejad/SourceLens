@@ -1,24 +1,25 @@
 {
   "contract_version": "paperlens.visual-engine.v1",
+  "artifact_id": "public-demo-fa-deck",
   "artifact_type": "slide_deck",
   "engine": {
     "name": "sourcelens-deck-renderer",
     "version": "5.1.0"
   },
-  "created_at": "2026-08-09T14:31:43.649383+00:00",
+  "created_at": "2026-08-09T20:11:42.300769+00:00",
   "assets": [
     {
       "role": "output:pptx_filename",
       "path": "presentation.pptx",
-      "size": 1095124,
-      "sha256": "a4fd6d01969404618f2b30dd5c2373c7f8c7e2fee953578dfeae69c46019cfca",
+      "size": 1693852,
+      "sha256": "ebdc7f5d8ee7e5c7e4e7776d84491f3f055c498ffee7e26594841601f69dd028",
       "media_type": "application/vnd.openxmlformats-officedocument.presentationml.presentation"
     },
     {
       "role": "diagnostic",
       "path": "deck-plan.normalized.json",
-      "size": 21131,
-      "sha256": "15bcd3d714e16b769194acc5eec12c18a6941b97881f29ff7052bfc7ee77172c",
+      "size": 24002,
+      "sha256": "05fe7cc9e590204b5ae06d5b3756f1e92313905470dc037f0f1127ab26338ebd",
       "media_type": "application/json"
     }
   ],
@@ -26,11 +27,9 @@
     "slide_count": 8,
     "layout_distribution": {
       "cover_cinematic": 1,
-      "editorial_split": 2,
-      "chart_focus": 1,
-      "comparison_dual": 1,
-      "process_flow": 1,
-      "cards_icon": 1,
+      "cards_icon": 2,
+      "editorial_split": 3,
+      "timeline_story": 1,
       "closing_actions": 1
     },
     "supported_layouts": [
@@ -62,16 +61,20 @@
     },
     "media_credits": [
       {
-        "source_url": "https://www.pexels.com/photo/garage-place-for-electric-car-20589759/",
-        "credit": "Jakub Zerdzicki"
+        "source_url": "https://www.pexels.com/photo/public-charger-for-electric-vehicles-4678065/",
+        "credit": "Reinhard Bruckner"
       },
       {
-        "source_url": "https://www.pexels.com/photo/electric-car-charging-at-station-with-multiple-chargers-37576187/",
-        "credit": "Giant Asparagus"
-      },
-      {
-        "source_url": "https://www.pexels.com/photo/ev-charger-in-california-usa-9800004/",
+        "source_url": "https://www.pexels.com/photo/charging-of-a-vehicle-in-a-chraging-station-9799740/",
         "credit": "Kindel Media"
+      },
+      {
+        "source_url": "https://www.pexels.com/photo/electric-cars-charging-on-stations-9800029/",
+        "credit": "Kindel Media"
+      },
+      {
+        "source_url": "https://www.pexels.com/photo/electric-vehicle-charging-station-in-urban-area-37851831/",
+        "credit": "panumas nikhomkhai"
       }
     ]
   },
@@ -90,7 +93,7 @@
       "progress": 28,
       "message": "Resolved slide media received from SourceLens",
       "details": {
-        "asset_count": 3
+        "asset_count": 4
       }
     },
     {

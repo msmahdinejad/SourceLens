@@ -1,19 +1,23 @@
 1
-00:00:00,000 --> 00:00:11,920
-Most drivers charge at home, but road trips demand fast public chargers nearby.
+00:00:00,000 --> 00:00:08,920
+Growing adoption requires a reliable public charging network to support every driver.
 
 2
-00:00:12,000 --> 00:00:23,920
-Indiana convenience stores add fast charging, steadily drawing more customers every day.
+00:00:09,000 --> 00:00:17,920
+Retail site hosts increasingly integrate chargers to capture value from everyday stops.
 
 3
-00:00:24,000 --> 00:00:35,920
-By 2030, 182 thousand fast ports serve renters, ride-hail drivers, and long-distance travelers.
+00:00:18,000 --> 00:00:25,920
+Smart charge management helps integrate clean energy while serving flexible grid demands.
 
 4
-00:00:36,000 --> 00:00:47,920
-Research models combine home, destination, and highway charging into one national network plan.
+00:00:26,000 --> 00:00:33,920
+Specialized simulation models match infrastructure design precisely to typical daily driving behavior.
 
 5
-00:00:48,000 --> 00:00:59,920
-Vehicles maximize home charging, using fast options only when truly needed away.
+00:00:34,000 --> 00:00:41,920
+Drivers strongly prefer fast charging options to minimize wait times during trips.
+
+6
+00:00:42,000 --> 00:00:49,920
+High power ports ensure quick turnaround times, turning shopping hours into useful travel range.

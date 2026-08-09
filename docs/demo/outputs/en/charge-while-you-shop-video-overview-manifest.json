@@ -1,89 +1,90 @@
 {
   "contract_version": "paperlens.visual-engine.v1",
+  "artifact_id": "public-demo-en-video",
   "artifact_type": "video_overview",
   "engine": {
     "name": "sourcelens-video-renderer",
     "version": "7.0.4-paperlens"
   },
-  "created_at": "2026-08-09T15:40:05.720684+00:00",
+  "created_at": "2026-08-09T20:21:29.159083+00:00",
   "assets": [
     {
       "role": "output:video_filename",
       "path": "video-overview.mp4",
-      "size": 54632213,
-      "sha256": "1a56bf927c6faa817281617475f8293920bf5bc6104889b6ba9ed6eeaa612b1e",
+      "size": 34753276,
+      "sha256": "cdf36722418b6fcc1afcfa162cedb68ee11687e4f6f8a05f053e31b0fb78e9a3",
       "media_type": "video/mp4"
     },
     {
       "role": "output:timeline_filename",
-      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-timeline.json",
-      "size": 10742,
-      "sha256": "dce2a6d68773d1d6e83c3855423b9ada69e4fce53ca9d17d46680a0fee401a02",
+      "path": "Turning-Shopping-Time-into-Travel-Time-timeline.json",
+      "size": 11868,
+      "sha256": "cce3b3fc751fd8be3f6734768c86fe66768e01b7160d57196dbe0501bdb23987",
       "media_type": "application/json"
     },
     {
       "role": "output:captions_filename",
-      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-subtitles.srt",
-      "size": 606,
-      "sha256": "8ce414878b5ed00c02416c7ce9425ab045460ae5a54ddb41eb472e59fe1776ea",
+      "path": "Turning-Shopping-Time-into-Travel-Time-subtitles.srt",
+      "size": 744,
+      "sha256": "e85ce84970336b33c11b0e5e35ad2c6523a1991d99ee8e3004ca8bb042de1ca4",
       "media_type": "text/plain"
     },
     {
       "role": "output:narration_filename",
       "path": "narration.wav",
-      "size": 1355084,
-      "sha256": "b78c7e6e9bca54f07e10468552d4c5448fb54a57b85e7b56212a7b67770d5eff",
+      "size": 1642124,
+      "sha256": "79a144cf314d39d7fb6219b6603bc7948b1f4976bb37f9567af79f156856f3b6",
       "media_type": "audio/wav"
     },
     {
       "role": "diagnostic",
       "path": "diagnostics/video-plan.json",
-      "size": 35527,
-      "sha256": "d1753f0512787ad22dfcda63de2f59098406c748579a8445806d7be3ff26c3fe",
+      "size": 39048,
+      "sha256": "20230cc07847aea70249b89b06f871cff27a4b89125c2594be5bab94e01d15e7",
       "media_type": "application/json"
     },
     {
       "role": "diagnostic",
-      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-voiceover.txt",
-      "size": 613,
-      "sha256": "3fc9a7b8f1aaa4f38671ba7ca4d80f6e81c34f56ab116cac2714f6e77497aa93",
+      "path": "Turning-Shopping-Time-into-Travel-Time-voiceover.txt",
+      "size": 706,
+      "sha256": "475962a6268862d2bbfcc912fffd9b51690026d8f42f05ad65c70e1c0a6714b9",
       "media_type": "text/plain"
     },
     {
       "role": "diagnostic",
-      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-content.md",
-      "size": 4533,
-      "sha256": "8ca177d0866e85e810b7be7a76811d4b2738ac4f3c2f08c275dbf5b04e6b14c7",
+      "path": "Turning-Shopping-Time-into-Travel-Time-content.md",
+      "size": 4963,
+      "sha256": "b226a272fa5afb9e31386e77872750bf45cd8ea3b1af33e794ab24435d02aa0c",
       "media_type": "text/markdown"
     },
     {
       "role": "diagnostic",
-      "path": "EV-Fast-Charging-at-Stores-Turning-Shopping-Stops-into-Road-Trip-Time-media-credits.txt",
-      "size": 561,
-      "sha256": "facebec973ecea6a78c0d0fb8494a0e47f3314e0f429f63f5cda72babf793968",
+      "path": "Turning-Shopping-Time-into-Travel-Time-media-credits.txt",
+      "size": 591,
+      "sha256": "6bf79d359beb7c9f36a90f2b57f483da8efdf383d8ac483adbd3615241c115fb",
       "media_type": "text/plain"
     },
     {
       "role": "diagnostic",
       "path": "audio-credits.txt",
-      "size": 391,
-      "sha256": "a2faa3f33d99181ffc56d710c3dad74da65dc97fcabfa37a6d99756c4bc1a0bf",
+      "size": 519,
+      "sha256": "7cd2d9b70f9c6abbf2f535775f2d61e302295c0bf9cb0df9d29648ebfb473300",
       "media_type": "text/plain"
     }
   ],
   "metadata": {
-    "scene_count": 5,
-    "duration_seconds": 60,
+    "scene_count": 6,
+    "duration_seconds": 50,
     "resolution": "1920x1080",
     "fps": 30,
     "transition_mode": "xfade-composite",
     "direction": {
       "version": "7.0.4",
       "mode": "autonomous",
-      "seed": "public",
+      "seed": "public-demo-en-video",
       "profile": "technology",
-      "style": "warm",
-      "styleLabel": "Warm Documentary",
+      "style": "cinematic",
+      "styleLabel": "Cinematic Dark",
       "energy": "balanced",
       "mediaPolicy": "video-first",
       "music": {
@@ -119,48 +120,53 @@
       }
     },
     "media_distribution": {
-      "video": 5
+      "video": 6
     },
     "media_credits": [
       {
         "kind": "video",
-        "credit": "Gustavo Fring",
-        "source_url": "https://www.pexels.com/video/a-woman-using-her-cellphone-while-waiting-for-her-car-to-be-charged-4818142/"
-      },
-      {
-        "kind": "video",
-        "credit": "German Korb",
-        "source_url": "https://www.pexels.com/video/eye-level-footage-of-a-gas-station-with-customer-3777657/"
-      },
-      {
-        "kind": "video",
         "credit": "Kindel Media",
-        "source_url": "https://www.pexels.com/video/a-white-electric-car-charging-9790139/"
-      },
-      {
-        "kind": "video",
-        "credit": "olia danilevich",
-        "source_url": "https://www.pexels.com/video/man-using-a-laptop-4974883/"
+        "source_url": "https://www.pexels.com/video/video-of-signage-9789996/"
       },
       {
         "kind": "video",
         "credit": "Gustavo Fring",
         "source_url": "https://www.pexels.com/video/a-woman-checking-a-charging-device-for-her-electric-car-4818032/"
+      },
+      {
+        "kind": "video",
+        "credit": "Kindel Media",
+        "source_url": "https://www.pexels.com/video/a-car-charging-in-the-parking-area-9790138/"
+      },
+      {
+        "kind": "video",
+        "credit": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/video/woman-cable-charging-car-4818166/"
+      },
+      {
+        "kind": "video",
+        "credit": "Gustavo Fring",
+        "source_url": "https://www.pexels.com/video/woman-charging-her-car-4817953/"
+      },
+      {
+        "kind": "video",
+        "credit": "Kindel Media",
+        "source_url": "https://www.pexels.com/video/a-white-electric-car-charging-9790139/"
       }
     ],
     "font_family": "Vazirmatn",
     "music_status": "ready",
     "typewriter_scene_count": 2,
     "narration_fit": {
-      "sourceDuration": 28.23,
-      "targetDuration": 60,
+      "sourceDuration": 34.21,
+      "targetDuration": 50,
       "tempoRatio": 1,
       "speedChanged": false,
       "overflowSeconds": 0
     },
     "quality_gate": {
       "passed": true,
-      "durationSeconds": 60,
+      "durationSeconds": 50,
       "width": 1920,
       "height": 1080,
       "videoCodec": "h264",
@@ -171,17 +177,18 @@
       "media": {
         "duration_ms": 1,
         "cache_hit": false,
-        "byte_count": 65168980,
-        "attempt": 5
+        "byte_count": 34548408,
+        "attempt": 6
       },
       "overlays": {
-        "duration_ms": 641,
+        "duration_ms": 710,
         "item_duration_ms": [
-          378,
           354,
-          355,
-          248,
-          263
+          320,
+          329,
+          235,
+          350,
+          355
         ],
         "worker_count": 3,
         "rasterizer": "resvg",
@@ -189,15 +196,16 @@
       },
       "video": {
         "segment_duration_ms": [
-          24433,
-          20082,
-          19822,
-          12440,
-          14931
+          7865,
+          6097,
+          5977,
+          5838,
+          5857,
+          5817
         ],
-        "segment_wall_ms": 35029,
-        "segment_cpu_ms": 91708,
-        "composition_ms": 48187,
+        "segment_wall_ms": 13682,
+        "segment_cpu_ms": 37451,
+        "composition_ms": 16233,
         "worker_count": 3,
         "recommended_worker_count": 3,
         "intermediate": {
@@ -232,8 +240,8 @@
       "details": {
         "duration_ms": 1,
         "cache_hit": false,
-        "byte_count": 65168980,
-        "attempt": 5
+        "byte_count": 34548408,
+        "attempt": 6
       }
     },
     {
@@ -249,13 +257,14 @@
       "progress": 51,
       "message": "RTL overlays rendered",
       "details": {
-        "duration_ms": 641,
+        "duration_ms": 710,
         "item_duration_ms": [
-          378,
           354,
-          355,
-          248,
-          263
+          320,
+          329,
+          235,
+          350,
+          355
         ],
         "worker_count": 3,
         "rasterizer": "resvg",
@@ -275,17 +284,18 @@
       "progress": 77,
       "message": "Scene video and transitions rendered",
       "details": {
-        "duration_ms": 83216,
+        "duration_ms": 29915,
         "segment_duration_ms": [
-          24433,
-          20082,
-          19822,
-          12440,
-          14931
+          7865,
+          6097,
+          5977,
+          5838,
+          5857,
+          5817
         ],
-        "segment_wall_ms": 35029,
-        "segment_cpu_ms": 91708,
-        "composition_ms": 48187,
+        "segment_wall_ms": 13682,
+        "segment_cpu_ms": 37451,
+        "composition_ms": 16233,
         "worker_count": 3,
         "recommended_worker_count": 3,
         "intermediate": {
@@ -308,10 +318,10 @@
       "progress": 100,
       "message": "SourceLens video rendering completed",
       "details": {
-        "scene_count": 5,
-        "duration_seconds": 60,
+        "scene_count": 6,
+        "duration_seconds": 50,
         "media_distribution": {
-          "video": 5
+          "video": 6
         }
       }
     }

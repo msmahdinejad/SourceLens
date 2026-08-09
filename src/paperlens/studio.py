@@ -2336,6 +2336,8 @@ class StudioService:
             "video_overview": StudioService._normalize_video_overview,
         }[artifact.artifact_type]
         payload = normalizer(payload)
+        if artifact.artifact_type == "video_overview":
+            StudioService._validate_video_scene_language(artifact.language, payload)
         if artifact.artifact_type == "video_overview" and artifact.options.get(
             "_agent_video_plan"
         ):
@@ -3259,6 +3261,33 @@ class StudioService:
         }
 
     @staticmethod
+    def _validate_video_scene_language(language: str, payload: dict[str, Any]) -> None:
+        """Reject source boilerplate or wrong-language copy before it reaches the renderer."""
+        boilerplate = re.compile(
+            r"https?://|www\.|for details see|\b(?:references?|publication|doi)\b",
+            re.IGNORECASE,
+        )
+        for index, scene in enumerate(payload.get("scenes") or [], start=1):
+            if not isinstance(scene, dict):
+                continue
+            for field in ("title", "kicker", "on_screen_text", "narration"):
+                value = str(scene.get(field) or "").strip()
+                if not value:
+                    continue
+                if boilerplate.search(value):
+                    raise ValueError(
+                        f"Scene {index} {field} contains source or reference boilerplate"
+                    )
+                persian = len(re.findall(r"[\u0600-\u06ff]", value))
+                latin = len(re.findall(r"[A-Za-z]", value))
+                if language == "fa" and (
+                    persian < (8 if field == "narration" else 2) or latin > persian
+                ):
+                    raise ValueError(f"Scene {index} {field} is not clean Persian")
+                if language == "en" and persian > max(2, latin // 5):
+                    raise ValueError(f"Scene {index} {field} is not clean English")
+
+    @staticmethod
     def _narration_signature(value: str) -> str:
         return re.sub(r"[^\w]+", " ", value.casefold(), flags=re.UNICODE).strip()
 
@@ -3467,8 +3496,10 @@ class StudioService:
             }
             if callable(bounded_runner) and runner is bounded_runner:
                 arguments["max_attempts"] = 6
-                arguments["max_credential_attempts"] = 1
-                arguments["max_output_tokens"] = 3_000
+                arguments["max_credential_attempts"] = 6
+                arguments["max_output_tokens"] = (
+                    6_000 if artifact.artifact_type == "slide_deck" else 3_000
+                )
             return runner(
                 is_renderable,
                 **arguments,
@@ -3487,7 +3518,7 @@ class StudioService:
                 user_input=user_input,
                 validation_profile=f"studio:{artifact.artifact_type}",
                 max_attempts=6,
-                max_credential_attempts=1,
+                max_credential_attempts=6,
             )
         return self.language_model.run(instructions=instructions, user_input=user_input)
 

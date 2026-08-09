@@ -748,6 +748,26 @@ def test_agentic_video_contract_rejects_excessive_total_narration() -> None:
         StudioService._apply_video_agent_plan(payload, plan)
 
 
+def test_video_scene_language_gate_rejects_source_boilerplate_and_wrong_language() -> None:
+    payload = {
+        "scenes": [
+            {
+                "title": "Charging Behavior",
+                "kicker": "اولویت راننده",
+                "on_screen_text": "For details see: https://example.test/publication/123",
+                "narration": "این روایت فارسی درباره شارژ هنگام خرید و ادامه سفر است.",
+            }
+        ]
+    }
+
+    with pytest.raises(ValueError, match="not clean Persian"):
+        StudioService._validate_video_scene_language("fa", payload)
+
+    payload["scenes"][0]["title"] = "رفتار شارژ"
+    with pytest.raises(ValueError, match="source or reference boilerplate"):
+        StudioService._validate_video_scene_language("fa", payload)
+
+
 def test_agentic_video_contract_allows_persian_natural_speech_budget() -> None:
     plan = {
         "total_duration_seconds": 60,
@@ -1498,8 +1518,8 @@ def test_slide_deck_quality_fallback_reaches_a_cross_provider_tier() -> None:
 
     assert result.text
     assert model.arguments["max_attempts"] == 6
-    assert model.arguments["max_credential_attempts"] == 1
-    assert model.arguments["max_output_tokens"] == 3_000
+    assert model.arguments["max_credential_attempts"] == 6
+    assert model.arguments["max_output_tokens"] == 6_000
 
 
 def test_structured_studio_outputs_use_the_bounded_quality_route() -> None:
@@ -1541,7 +1561,7 @@ def test_structured_studio_outputs_use_the_bounded_quality_route() -> None:
 
     assert result.text
     assert model.arguments["max_attempts"] == 6
-    assert model.arguments["max_credential_attempts"] == 1
+    assert model.arguments["max_credential_attempts"] == 6
     assert model.arguments["max_output_tokens"] == 3_000
 
 
@@ -1621,7 +1641,7 @@ def test_markdown_studio_outputs_bound_provider_tiers_when_supported() -> None:
 
     assert result.text
     assert model.arguments["max_attempts"] == 6
-    assert model.arguments["max_credential_attempts"] == 1
+    assert model.arguments["max_credential_attempts"] == 6
 
 
 def test_persian_markdown_output_retries_cross_script_contamination() -> None:

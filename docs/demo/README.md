@@ -43,7 +43,7 @@ of every English artifact.
 | 10 | Source comparison | [Markdown](outputs/en/charge-while-you-shop-comparison.md) |
 | 11 | Research-gap analysis | [Markdown](outputs/en/charge-while-you-shop-research-gap.md) |
 | 12 | Editable slide deck | **[Download PowerPoint](https://github.com/msmahdinejad/SourceLens/raw/main/docs/demo/outputs/en/charge-while-you-shop-slide-deck.pptx)** · [manifest](outputs/en/charge-while-you-shop-slide-deck-manifest.json) |
-| 13 | 60-second video overview | **[Download MP4](https://github.com/msmahdinejad/SourceLens/raw/main/docs/demo/outputs/en/charge-while-you-shop-video-overview.mp4)** · [captions](outputs/en/charge-while-you-shop-video-overview-captions.srt) · [timeline](outputs/en/charge-while-you-shop-video-overview-timeline.json) · [manifest](outputs/en/charge-while-you-shop-video-overview-manifest.json) · [music credits](outputs/en/audio-credits.txt) |
+| 13 | Video overview | **[Download MP4](https://github.com/msmahdinejad/SourceLens/raw/main/docs/demo/outputs/en/charge-while-you-shop-video-overview.mp4)** · [captions](outputs/en/charge-while-you-shop-video-overview-captions.srt) · [timeline](outputs/en/charge-while-you-shop-video-overview-timeline.json) · [manifest](outputs/en/charge-while-you-shop-video-overview-manifest.json) · [music credits](outputs/en/audio-credits.txt) |
 
 The complete Persian set is listed in the [Persian demo page](README.fa.md) and indexed in
 [outputs/fa/index.json](outputs/fa/index.json).
@@ -74,7 +74,7 @@ created from the same seven-source boundary.
 
 ![Completed video overview in Studio](assets/15-video-studio-en.png)
 
-The English and Persian decks are editable. Both videos are 60-second 1920×1080 H.264/AAC files
+The English and Persian decks are editable. Both videos are 50-second 1920×1080 H.264/AAC files
 with captions, distinct verified media, natural-speed narration, safe text margins, timelines, and
 provenance manifests. The audio overviews include their generated transcripts.
 The Jamendo tracks are CC BY-NC 3.0 and the demo videos are for non-commercial use; exact track,
@@ -85,9 +85,41 @@ artist, source, and license details are retained in the linked credit files.
 The Persian run used the same source boundary. Its RTL conversation and Studio workflows retained
 source selection, citations, evidence inspection, live progress, and downloadable artifacts.
 
+## Evaluation protocol
+
+The run used the public product surface rather than hand-authored substitutes:
+
+1. upload and process two licensed papers;
+2. review and import five web results through Search;
+3. select the same seven-document scope for every Studio request;
+4. generate each catalog format independently in English and Persian;
+5. download outputs and sidecars from the application API without rewriting their content;
+6. verify file structure, hashes, language integrity, media provenance, codecs, fonts, and privacy.
+
+| Area | Acceptance evidence |
+| --- | --- |
+| Corpus | 7 ready documents, 236 indexed chunks, stable selected-source scope |
+| Grounding | source labels and citations remain attached to generated claims |
+| Studio | 13 ready formats per language, downloadable from the workspace |
+| Audio | Gemini 3.1 Live, Puck with Kore/Aoede, natural speed, transcript, no repeated segment |
+| Slides | editable PowerPoint, substantive narrative, licensed API media; Kalameh in Persian |
+| Video | Gemini-planned story, Gemini 3.1 Live/Puck narration, real Pexels footage, captions and timeline |
+| Release | SHA-256 index, manifest privacy scan, license audit, Windows and Linux CI |
+
+Run the deterministic public-demo gate with:
+
+```powershell
+uv run python scripts/validate_public_demo.py
+```
+
+The retrieval benchmark, provider smoke tests, renderer suites, and release audit are documented in
+[retrieval-benchmark.md](../retrieval-benchmark.md) and enforced by the repository tests. Live API
+availability and external quotas remain environment-dependent and are reported as provider state,
+not hidden as application success.
+
 ## Evaluation reports
 
-The concise release report is available in both languages as PDF and editable PowerPoint:
+The complete release evaluation is available in both languages as PDF and editable PowerPoint:
 
 - [English PDF](outputs/SourceLens-demo-evaluation-en.pdf) ·
   [English PowerPoint](outputs/SourceLens-demo-evaluation-en.pptx)

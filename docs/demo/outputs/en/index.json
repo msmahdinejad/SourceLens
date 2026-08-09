@@ -5,14 +5,14 @@
       "artifact_type": "audio_overview",
       "title": "Charge While You Shop: Audio Overview",
       "path": "charge-while-you-shop-audio-overview.mp3",
-      "size": 2272940,
-      "sha256": "de0a250bdb39f1a196c494bdbd9a9cb8de4bc5acb185efe2629b3d9faede7825",
+      "size": 2818412,
+      "sha256": "afe889cbfb552b0808fc62d8599fabed5952917040f8ab8d24a17cd1a0769e54",
       "assets": [
         {
           "role": "transcript",
           "path": "charge-while-you-shop-audio-overview-transcript.txt",
-          "size": 1556,
-          "sha256": "ea5bcbb682ba8f21c0fafac4d5547b3e503f78af3f72166c08e4555a0b0cbe3f"
+          "size": 2007,
+          "sha256": "2a78b1192210b9082e2261e1eb92833890dc8b45fb6a56a0644fe4adb5a35615"
         }
       ]
     },
@@ -100,47 +100,47 @@
       "artifact_type": "slide_deck",
       "title": "Charge While You Shop",
       "path": "charge-while-you-shop-slide-deck.pptx",
-      "size": 1391579,
-      "sha256": "6cb4d75e00b3f3d8ba480897fc3aed9f886d6a874edb24327b25e495e233f027",
+      "size": 1476083,
+      "sha256": "f18c3388ff4f5209754dfd9f009cf5156dc2137ad34aaae5897693bf2e8cd3de",
       "assets": [
         {
           "role": "manifest",
           "path": "charge-while-you-shop-slide-deck-manifest.json",
-          "size": 2930,
-          "sha256": "1bdb93a5f5954daf3eaf92c283d1e80b54b2b9265c8b451823020e6369f42062"
+          "size": 3147,
+          "sha256": "32cb45150672f6d277886caa0cf5e9b13d2fda63bfd6e927b681321fa746b6df"
         }
       ]
     },
     {
       "artifact_type": "video_overview",
-      "title": "Charge While You Shop in 60 Seconds",
+      "title": "Charge While You Shop: Video Overview",
       "path": "charge-while-you-shop-video-overview.mp4",
-      "size": 54632213,
-      "sha256": "1a56bf927c6faa817281617475f8293920bf5bc6104889b6ba9ed6eeaa612b1e",
+      "size": 34753276,
+      "sha256": "cdf36722418b6fcc1afcfa162cedb68ee11687e4f6f8a05f053e31b0fb78e9a3",
       "assets": [
         {
           "role": "manifest",
           "path": "charge-while-you-shop-video-overview-manifest.json",
-          "size": 8505,
-          "sha256": "e1fe327b6a415b62add96e98b55766b249d1a95033c040171b08c3bb7618199c"
+          "size": 8562,
+          "sha256": "8b5673ae1308e2b8ddabff3d666c1507d947084e589e1e0495d9bcfc1eec5af4"
         },
         {
           "role": "captions",
           "path": "charge-while-you-shop-video-overview-captions.srt",
-          "size": 606,
-          "sha256": "8ce414878b5ed00c02416c7ce9425ab045460ae5a54ddb41eb472e59fe1776ea"
+          "size": 744,
+          "sha256": "e85ce84970336b33c11b0e5e35ad2c6523a1991d99ee8e3004ca8bb042de1ca4"
         },
         {
           "role": "timeline",
           "path": "charge-while-you-shop-video-overview-timeline.json",
-          "size": 10726,
-          "sha256": "3158e2f7b8c58f8dc1cc4d036cedfb91803d0d58e9d7fd72067779eb2dae2557"
+          "size": 11867,
+          "sha256": "fc6430ea3863d6cabc12dcaa48cbf87b07f3596f8494364fd9e6d76e3444a3f5"
         },
         {
           "role": "music_credits",
           "path": "audio-credits.txt",
-          "size": 391,
-          "sha256": "a2faa3f33d99181ffc56d710c3dad74da65dc97fcabfa37a6d99756c4bc1a0bf"
+          "size": 519,
+          "sha256": "7cd2d9b70f9c6abbf2f535775f2d61e302295c0bf9cb0df9d29648ebfb473300"
         }
       ]
     }

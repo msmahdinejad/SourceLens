@@ -41,7 +41,7 @@
 | ۱۰ | مقایسهٔ منابع | [Markdown](outputs/fa/charge-while-you-shop-comparison.md) |
 | ۱۱ | تحلیل شکاف پژوهشی | [Markdown](outputs/fa/charge-while-you-shop-research-gap.md) |
 | ۱۲ | مجموعه‌اسلاید ویرایش‌پذیر | **[دریافت PowerPoint](https://github.com/msmahdinejad/SourceLens/raw/main/docs/demo/outputs/fa/charge-while-you-shop-slide-deck.pptx)** · [مانیفست](outputs/fa/charge-while-you-shop-slide-deck-manifest.json) |
-| ۱۳ | مرور ویدیویی ۶۰ ثانیه‌ای | **[دریافت MP4](https://github.com/msmahdinejad/SourceLens/raw/main/docs/demo/outputs/fa/charge-while-you-shop-video-overview.mp4)** · [زیرنویس](outputs/fa/charge-while-you-shop-video-overview-captions.srt) · [خط زمانی](outputs/fa/charge-while-you-shop-video-overview-timeline.json) · [مانیفست](outputs/fa/charge-while-you-shop-video-overview-manifest.json) · [اعتبار موسیقی](outputs/fa/audio-credits.txt) |
+| ۱۳ | مرور ویدیویی | **[دریافت MP4](https://github.com/msmahdinejad/SourceLens/raw/main/docs/demo/outputs/fa/charge-while-you-shop-video-overview.mp4)** · [زیرنویس](outputs/fa/charge-while-you-shop-video-overview-captions.srt) · [خط زمانی](outputs/fa/charge-while-you-shop-video-overview-timeline.json) · [مانیفست](outputs/fa/charge-while-you-shop-video-overview-manifest.json) · [اعتبار موسیقی](outputs/fa/audio-credits.txt) |
 
 مجموعهٔ کامل انگلیسی در [صفحهٔ انگلیسی دمو](README.md) و
 [فهرست خروجی‌های انگلیسی](outputs/en/index.json) در دسترس است.
@@ -70,7 +70,7 @@
 
 ![مرور ویدیویی تکمیل‌شده در استودیو](assets/15-video-studio-en.png)
 
-مجموعه‌اسلایدهای هر دو زبان ویرایش‌پذیرند. هر دو ویدیو دقیقاً ۶۰ ثانیه، با وضوح Full HD، کدگذاری
+مجموعه‌اسلایدهای هر دو زبان ویرایش‌پذیرند. هر دو ویدیو ۵۰ ثانیه، با وضوح Full HD، کدگذاری
 H.264/AAC، رسانه‌های یکتای تأییدشده، گفتار با سرعت طبیعی، حاشیهٔ امن متن، زیرنویس، خط زمانی و مانیفست
 منشأ ساخته شده‌اند. مرورهای صوتی نیز همراه رونوشت تولیدشده ارائه شده‌اند.
 موسیقی‌های Jamendo مجوز CC BY-NC 3.0 دارند و ویدیوهای دمو فقط برای استفادهٔ غیرتجاری‌اند؛ نام قطعه،
@@ -81,9 +81,41 @@ H.264/AAC، رسانه‌های یکتای تأییدشده، گفتار با س
 پاسخ فارسی از همان منابع منتخب ساخته شد و رابط راست‌به‌چپ، انتخاب منبع، استناد، پنل شواهد و رویدادهای
 زندهٔ تولید را در تمام مسیر حفظ کرد.
 
+## روش ارزیابی
+
+این اجرا از مسیر عمومی محصول انجام شد و هیچ خروجی جایگزینِ دست‌ساز وارد آن نشد:
+
+1. دو مقالهٔ دارای مجوز بارگذاری و پردازش شدند؛
+2. پنج نتیجهٔ وب پس از بررسی از Search وارد شدند؛
+3. همان محدودهٔ هفت‌منبعی برای همهٔ درخواست‌های استودیو انتخاب شد؛
+4. هر قالب به‌طور مستقل در فارسی و انگلیسی تولید شد؛
+5. فایل‌ها و پیوست‌ها بدون بازنویسی محتوا از API برنامه دریافت شدند؛
+6. ساختار، هش، زبان، منشأ رسانه، کدک، فونت و حریم خصوصی بررسی شد.
+
+| بخش | شاهد پذیرش |
+| --- | --- |
+| مجموعه منبع | ۷ سند آماده، ۲۳۶ قطعهٔ نمایه‌شده و محدودهٔ انتخاب‌شدهٔ پایدار |
+| استناد | برچسب منبع و ارجاع در کنار ادعاهای تولیدشده حفظ شده است |
+| استودیو | ۱۳ قالب آماده برای هر زبان و قابل دریافت از فضای کاری |
+| صوت | Gemini 3.1 Live، صدای Puck همراه Kore یا Aoede، سرعت طبیعی، رونوشت و بدون قطعهٔ تکراری |
+| اسلاید | پاورپوینت ویرایش‌پذیر، روایت مفید، رسانهٔ مجاز API و فونت کلمه در فارسی |
+| ویدیو | طرح روایی جمنای، گفتار Live 3.1/Puck، ویدیوی واقعی Pexels، زیرنویس و خط زمانی |
+| انتشار | فهرست SHA-256، کنترل حریم مانیفست، ممیزی مجوز و CI ویندوز و لینوکس |
+
+کنترل قطعی دموی عمومی با این فرمان اجرا می‌شود:
+
+```powershell
+uv run python scripts/validate_public_demo.py
+```
+
+معیار بازیابی، آزمون زندهٔ ارائه‌دهندگان، مجموعه‌تست رندر و ممیزی انتشار در
+[سند معیار بازیابی](../retrieval-benchmark.md) ثبت و با تست‌های مخزن اعمال می‌شوند. دسترسی زندهٔ API
+و سهمیهٔ سرویس‌های بیرونی وابسته به محیط است و وضعیت واقعی آن گزارش می‌شود؛ نه اینکه به‌عنوان موفقیت
+پنهان ثبت شود.
+
 ## گزارش‌های ارزیابی
 
-گزارش کوتاه و مینیمال انتشار در هر دو زبان به‌صورت PDF و PowerPoint ویرایش‌پذیر موجود است:
+گزارش کامل و مینیمال انتشار در هر دو زبان به‌صورت PDF و PowerPoint ویرایش‌پذیر موجود است:
 
 - [PDF فارسی](outputs/SourceLens-demo-evaluation-fa.pdf) ·
   [PowerPoint فارسی](outputs/SourceLens-demo-evaluation-fa.pptx)

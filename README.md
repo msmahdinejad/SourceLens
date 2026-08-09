@@ -8,7 +8,7 @@
   </p>
 
   [![CI](https://github.com/msmahdinejad/SourceLens/actions/workflows/ci.yml/badge.svg)](https://github.com/msmahdinejad/SourceLens/actions/workflows/ci.yml)
-  [![Release](https://img.shields.io/badge/release-v2.2.0-0f766e)](https://github.com/msmahdinejad/SourceLens/releases/tag/v2.2.0)
+  [![Release](https://img.shields.io/badge/release-v2.2.1-0f766e)](https://github.com/msmahdinejad/SourceLens/releases/tag/v2.2.1)
   [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
   [![Node 20+](https://img.shields.io/badge/Node.js-20%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
@@ -43,7 +43,8 @@ The **Charge While You Shop** walkthrough asks a practical question: can retail 
 convenient, reliable, interoperable, and grid-aware EV charging stops? SourceLens processed two
 openly licensed studies, added five curated web sources through Search, indexed **236 chunks**, and
 generated every Studio format in both English and Persian—**26 application-generated outputs** in
-total. Both overview videos are exactly **60 seconds**.
+total. The refreshed overview videos run for **50 seconds**, with exact runtimes recorded
+in their public manifests.
 
 **[Explore the English demo and downloads](docs/demo/README.md)** ·
 **[مشاهدهٔ دمو و خروجی‌های فارسی](docs/demo/README.fa.md)**
@@ -82,7 +83,7 @@ downloaded from its Studio card.
 
 ![Completed PowerPoint artifact in SourceLens Studio](docs/demo/assets/13-slide-deck-studio-en.png)
 
-![Completed 60-second video overview in SourceLens Studio](docs/demo/assets/15-video-studio-en.png)
+![Completed video overview in SourceLens Studio](docs/demo/assets/15-video-studio-en.png)
 
 The visual renderers preserve citations, typography, safe margins, captions, notes, and media
 provenance. Video narration stays at its natural speed.

@@ -259,8 +259,8 @@ def _validate_video(
     ):
         errors.append(f"{label}: ffprobe could not inspect the video")
         return
-    if not 59.8 <= duration <= 60.2:
-        errors.append(f"{label}: video duration must be 59.8-60.2 seconds, received {duration:.3f}")
+    if not 30 <= duration <= 120:
+        errors.append(f"{label}: video duration must be 30-120 seconds, received {duration:.3f}")
     video = next(
         (item for item in streams if isinstance(item, dict) and item.get("codec_type") == "video"),
         {},

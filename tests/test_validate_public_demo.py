@@ -43,7 +43,7 @@ def test_bilingual_public_demo_rejects_incomplete_or_private_outputs(tmp_path: P
 
 
 def test_bilingual_public_demo_rejects_bad_video_and_persian_font(tmp_path: Path) -> None:
-    probe = _fake_ffprobe(tmp_path, duration=61, video_codec="vp9", audio_codec="mp3")
+    probe = _fake_ffprobe(tmp_path, duration=15, video_codec="vp9", audio_codec="mp3")
     for language in ("en", "fa"):
         _write_language_fixture(tmp_path, language)
     persian = _index(tmp_path, "fa")

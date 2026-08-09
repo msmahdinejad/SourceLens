@@ -1,10 +1,10 @@
 Audio credits
 =============
-Track: cinematic background
-Artist: Anton S.A.
+Track: Organizational Structure Determine the Effectiveness of Strategies　　邦題：組織構造は戦略の実効性を決定する
+Artist: Ambient Samurai - Ichiro NAKAGAWA
 Provider: Jamendo
-Source: https://www.jamendo.com/track/1307452
-License: https://creativecommons.org/licenses/by-nc/3.0/
+Source: https://www.jamendo.com/track/667885
+License: https://creativecommons.org/licenses/by/3.0/
 Content ID status: unknown
 ShareAlike: no
 Usage note: Jamendo's free API access and the selected Creative Commons track license must be respected; this build treats the result as non-commercial.
