@@ -26,6 +26,7 @@ from pydantic import BaseModel, ConfigDict, Field
 
 from paperlens.config import Settings
 from paperlens.conversations import ConversationMemory
+from paperlens.corpus.index import migrate_legacy_chroma_configurations
 from paperlens.domain import Evidence
 from paperlens.fonts import FontRegistry
 from paperlens.ingestion import DocumentIngestionResult
@@ -137,6 +138,10 @@ app = create_application(container)
 
 def startup_application() -> None:
     """Run explicit, idempotent migrations before recovering background work."""
+    current = settings()
+    migrate_legacy_chroma_configurations(
+        current.resolve_path(current.chroma_path, PROJECT_ROOT)
+    )
     for workspace in workspace_store().list():
         if not workspace.vector_collection_id or not any(
             document.status == "ready"
@@ -786,8 +791,10 @@ def _collection_name(current: Settings) -> str:
 
 def _collection(current: Settings | None = None):
     current = current or settings()
+    vector_path = current.resolve_path(current.chroma_path, PROJECT_ROOT)
+    migrate_legacy_chroma_configurations(vector_path)
     client = chromadb.PersistentClient(
-        path=str(current.resolve_path(current.chroma_path, PROJECT_ROOT))
+        path=str(vector_path)
     )
     return client.get_collection(_collection_name(current))
 
@@ -1322,12 +1329,14 @@ def _inspect_workspace_vector(workspace_id: str) -> dict[str, Any]:
     if not workspace.vector_collection_id:
         return base
     try:
+        vector_path = current.resolve_path(current.chroma_path, PROJECT_ROOT)
+        migrate_legacy_chroma_configurations(vector_path)
         client = chromadb.PersistentClient(
-            path=str(current.resolve_path(current.chroma_path, PROJECT_ROOT))
+            path=str(vector_path)
         )
         collection = client.get_collection(workspace.vector_collection_id)
         payload = collection.get(include=["metadatas"])
-    except Exception:  # noqa: BLE001 - a missing stale collection is an empty inspection
+    except chromadb.errors.InvalidCollectionException:
         return base
     metadatas = payload.get("metadatas") or []
     methods = Counter(str(item.get("extraction_method", "text")) for item in metadatas)

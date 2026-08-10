@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import json
+import sqlite3
 import threading
 import time
 from collections import deque
@@ -9,12 +11,78 @@ from typing import Protocol
 
 import chromadb
 import numpy as np
+from chromadb.api.configuration import (
+    CollectionConfigurationInternal,
+    ConfigurationParameter,
+    HNSWConfigurationInternal,
+)
 from google import genai
 from google.genai import types
 from openai import OpenAI
 
 from paperlens.domain import DocumentChunk, Evidence
 from paperlens.provider_failover import ProviderFailoverError, ProviderPool
+
+_chroma_configuration_lock = threading.Lock()
+
+
+def migrate_legacy_chroma_configurations(path: Path) -> int:
+    """Repair empty Chroma 1.x collection configs for the pinned 0.6 runtime."""
+    database = path / "chroma.sqlite3"
+    if not database.is_file():
+        return 0
+    with _chroma_configuration_lock, sqlite3.connect(database, timeout=30) as connection:
+        tables = {
+            str(row[0])
+            for row in connection.execute(
+                "SELECT name FROM sqlite_master WHERE type = 'table'"
+            )
+        }
+        if not {"collections", "collection_metadata"}.issubset(tables):
+            return 0
+        rows = list(
+            connection.execute(
+                """
+                SELECT collections.id, collections.config_json_str,
+                       COALESCE(collection_metadata.str_value, 'l2')
+                FROM collections
+                LEFT JOIN collection_metadata
+                  ON collection_metadata.collection_id = collections.id
+                 AND collection_metadata.key = 'hnsw:space'
+                """
+            )
+        )
+        legacy = []
+        for collection_id, raw_configuration, distance_space in rows:
+            try:
+                configuration = json.loads(raw_configuration or "{}")
+            except (TypeError, ValueError):
+                continue
+            if configuration != {}:
+                continue
+            space = str(distance_space)
+            if space not in {"cosine", "ip", "l2"}:
+                space = "l2"
+            hnsw = HNSWConfigurationInternal(
+                [ConfigurationParameter("space", space)]
+            )
+            migrated = CollectionConfigurationInternal(
+                [ConfigurationParameter("hnsw_configuration", hnsw)]
+            )
+            legacy.append((migrated.to_json_str(), str(collection_id)))
+        if not legacy:
+            return 0
+
+        backup = database.with_suffix(".sqlite3.pre-0.6-config.bak")
+        if not backup.exists():
+            with sqlite3.connect(backup) as destination:
+                connection.backup(destination)
+        connection.executemany(
+            "UPDATE collections SET config_json_str = ? WHERE id = ?",
+            legacy,
+        )
+        connection.commit()
+        return len(legacy)
 
 
 class TextEmbedder(Protocol):
@@ -263,6 +331,7 @@ class ChromaEmbeddingIndex:
     ) -> None:
         path.mkdir(parents=True, exist_ok=True)
         self.embedder = embedder
+        migrate_legacy_chroma_configurations(path)
         self.client = chromadb.PersistentClient(path=str(path))
         dimensions = getattr(embedder, "dimensions", None)
         collection_metadata: dict[str, str | int] = {

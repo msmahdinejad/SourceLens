@@ -1,10 +1,13 @@
 from __future__ import annotations
 
+import json
+import sqlite3
 from collections.abc import Sequence
 from pathlib import Path
 
 import numpy as np
 import pytest
+from chromadb.api.client import SharedSystemClient
 
 from paperlens.corpus.index import ChromaEmbeddingIndex
 from paperlens.domain import PaperChunk
@@ -161,3 +164,32 @@ def test_collection_rejects_embedding_dimension_mismatch(tmp_path: Path) -> None
 
     with pytest.raises(ValueError, match="dimensions"):
         ChromaEmbeddingIndex(path, SizedEmbedder(4), collection_name="sized")
+
+
+def test_legacy_collection_configuration_is_migrated_without_reembedding(
+    tmp_path: Path,
+) -> None:
+    path = tmp_path / "chroma"
+    index = _index(path)
+    index.upsert([_chunk("homecharge-1", "homecharge", "Residual architecture.")])
+    del index
+    SharedSystemClient.clear_system_cache()
+    with sqlite3.connect(path / "chroma.sqlite3") as connection:
+        connection.execute(
+            "UPDATE collections SET config_json_str = '{}' WHERE name = ?",
+            ("integration_chunks",),
+        )
+        connection.commit()
+
+    migrated = _index(path)
+
+    assert migrated.count() == 1
+    with sqlite3.connect(path / "chroma.sqlite3") as connection:
+        raw = connection.execute(
+            "SELECT config_json_str FROM collections WHERE name = ?",
+            ("integration_chunks",),
+        ).fetchone()[0]
+    configuration = json.loads(raw)
+    assert configuration["_type"] == "CollectionConfigurationInternal"
+    assert configuration["hnsw_configuration"]["space"] == "cosine"
+    assert (path / "chroma.sqlite3.pre-0.6-config.bak").is_file()

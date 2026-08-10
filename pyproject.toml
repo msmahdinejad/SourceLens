@@ -1,6 +1,6 @@
 [project]
 name = "paperlens"
-version = "2.2.1"
+version = "2.2.2"
 description = "A self-hosted multilingual research workspace with agentic RAG and cited outputs"
 readme = "README.md"
 requires-python = ">=3.12,<3.13"

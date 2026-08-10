@@ -100,6 +100,27 @@ def test_workspace_upload_process_and_page_preview(workspace_runtime) -> None:
     assert vector.json()["dimensions"] == 3
 
 
+def test_vector_inspection_does_not_report_runtime_failures_as_empty(
+    tmp_path: Path,
+    monkeypatch: pytest.MonkeyPatch,
+) -> None:
+    store = WorkspaceStore(tmp_path / "workspaces")
+    workspace = store.create_workspace("Broken vector store")
+    store.save(
+        workspace.model_copy(update={"vector_collection_id": "broken-collection"})
+    )
+    monkeypatch.setattr(webapp, "workspace_store", lambda: store)
+    monkeypatch.setattr(webapp, "migrate_legacy_chroma_configurations", lambda _path: 0)
+
+    def broken_client(*_args, **_kwargs):
+        raise RuntimeError("database schema is incompatible")
+
+    monkeypatch.setattr(webapp.chromadb, "PersistentClient", broken_client)
+
+    with pytest.raises(RuntimeError, match="schema is incompatible"):
+        webapp._inspect_workspace_vector(workspace.workspace_id)
+
+
 def test_demo_install_reprocesses_ready_documents_missing_extraction(
     workspace_runtime,
     monkeypatch: pytest.MonkeyPatch,

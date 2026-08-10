@@ -8,7 +8,7 @@
   </p>
 
   [![CI](https://github.com/msmahdinejad/SourceLens/actions/workflows/ci.yml/badge.svg)](https://github.com/msmahdinejad/SourceLens/actions/workflows/ci.yml)
-  [![Release](https://img.shields.io/badge/release-v2.2.1-0f766e)](https://github.com/msmahdinejad/SourceLens/releases/tag/v2.2.1)
+  [![Release](https://img.shields.io/badge/release-v2.2.2-0f766e)](https://github.com/msmahdinejad/SourceLens/releases/tag/v2.2.2)
   [![Python 3.12](https://img.shields.io/badge/Python-3.12-3776AB?logo=python&logoColor=white)](https://www.python.org/)
   [![Node 20+](https://img.shields.io/badge/Node.js-20%2B-339933?logo=nodedotjs&logoColor=white)](https://nodejs.org/)
   [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
