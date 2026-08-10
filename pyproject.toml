@@ -14,7 +14,7 @@ classifiers = [
     "Topic :: Scientific/Engineering :: Artificial Intelligence",
 ]
 dependencies = [
-    "chromadb",
+    "chromadb==0.6.3",
     "fastapi",
     "fonttools",
     "google-genai",
@@ -97,6 +97,9 @@ exclude = [
 testpaths = ["tests"]
 pythonpath = [".", "src"]
 addopts = "-q"
+filterwarnings = [
+    "ignore:Accessing the 'model_fields' attribute on the instance is deprecated:DeprecationWarning:chromadb.types",
+]
 
 [tool.ruff]
 line-length = 100
