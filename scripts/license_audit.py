@@ -109,9 +109,10 @@ def _python_license(package) -> str:
     if classifiers:
         return " OR ".join(classifiers)
     for filename in package.metadata.get_all("License-File", []):
-        license_text = package.read_text(f"licenses/{Path(filename).name}")
-        if license_text:
-            return license_text
+        for candidate in (f"licenses/{Path(filename).name}", filename):
+            license_text = package.read_text(candidate)
+            if license_text:
+                return license_text
     return _VERIFIED_LICENSE_METADATA_GAPS.get(
         (_package_name(package).casefold(), str(package.version)), ""
     )
