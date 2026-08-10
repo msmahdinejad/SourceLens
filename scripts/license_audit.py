@@ -13,6 +13,9 @@ _NODE_LOCKS = (
     "src/paperlens/renderers/video_engine/package-lock.json",
 )
 _VERIFIED_LICENSE_METADATA_GAPS = {
+    # Chroma's Linux wheel stores the declared LICENSE outside the paths exposed by
+    # importlib.metadata. The bundled file is Apache-2.0 (sha256:b40930bbcf80744c...).
+    ("chroma-hnswlib", "0.7.6"): "Apache-2.0",
     # NVIDIA publishes this 2,512-byte meta-package without License metadata or payload files.
     # The locked wheel (sha256:d693caaa261214ddd7dbb60d68e71cbed884e68c2be7509778f3051da0b91c3f)
     # only selects CUDA components, whose use remains subject to NVIDIA's CUDA Toolkit EULA.
